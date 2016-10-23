@@ -15,12 +15,17 @@ flow = client.flow_from_clientsecrets(
         'https://www.googleapis.com/auth/userinfo.email'
     ],
     redirect_uri='http://localhost:8000/oauth2callback')
+flow.params["access_type"] = "online"
 
 
 @app.route("/")
 def root():
     if 'cred' in session:
+        print("have creds")
         credentials = client.OAuth2Credentials.from_json(session['cred'])  # get creds
+        if credentials.access_token_expired:
+            auth_uri = flow.step1_get_authorize_url()  # init oauth
+            return redirect(auth_uri)
         http_auth = credentials.authorize(httplib2.Http())
         gservice = make_gmail_service(http_auth)
         msgs = list_gmail_messages(gservice)  # get list of msgs
@@ -30,6 +35,7 @@ def root():
             s = s + ("message.snippet: %s<br/>" % (msg['snippet']))  # print msg.snippet
         return s
     else:
+        print("getting auth")
         auth_uri = flow.step1_get_authorize_url()  # init oauth
         return redirect(auth_uri)
 
