@@ -15,15 +15,16 @@ flow = client.flow_from_clientsecrets(
         'https://www.googleapis.com/auth/userinfo.email'
     ],
     redirect_uri='http://localhost:8000/oauth2callback')
-flow.params["access_type"] = "online"
+# flow.params["access_type"] = "offline"
 
 
 @app.route("/")
 def root():
     if 'cred' in session:
-        print("have creds")
+        print("already have creds", session['cred'])
         credentials = client.OAuth2Credentials.from_json(session['cred'])  # get creds
         if credentials.access_token_expired:
+            print("expired creds")
             auth_uri = flow.step1_get_authorize_url()  # init oauth
             return redirect(auth_uri)
         http_auth = credentials.authorize(httplib2.Http())
@@ -48,8 +49,10 @@ def oauth_handler():
         return 'error'
     else:
         auth_code = request.args['code']
+        print('got code', auth_code)
         credentials = flow.step2_exchange(auth_code)
         session['cred'] = credentials.to_json()  # store credentials in session
+        print('new creds', session['cred'])
         return redirect('/')
     return "got it"
 
