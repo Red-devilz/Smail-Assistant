@@ -1,0 +1,46 @@
+From:
+"CS13D023 MANAS THAKUR" <cs13d023@smail.iitm.ac.in>
+
+Date:
+29-9-2016
+
+Body:
+
+CS3310:JUL-NOV 2016 -> Forums -> Discussion Forum for Assignment 3:
+Intermediate Code Generation -> Error while executing miniIR interpreter
+https://courses.iitm.ac.in/mod/forum/discuss.php?d=3D1239
+---------------------------------------------------------------------
+Re: Error while executing miniIR interpreter
+by CS13D023 MANAS THAKUR - Thursday, 29 September 2016, 8:23 AM
+---------------------------------------------------------------------
+Yes, it will work with java8.
+
+@All: In case you do not have java8, here are the steps to obtain your own
+miniIR interpreter (compatible with the java version present on your
+system):=20
+
+=20	* Unjar miniIR.jj:=C2=A0=C2=A0=C2=A0 jar xf miniIR.jj
+ 	* Remove all the class files from the unjarred directory
+ 	* Compile:=C2=A0=C2=A0=C2=A0 javac PgInterpreter.java
+ 	* jar the contents again:=C2=A0=C2=A0=C2=A0 jar cvfm miniIR.jar MANIFEST.=
+MF .
+
+
+
+---------------------------------------------------------------------
+This is a copy of a message posted on the CS3310:JUL-NOV 2016 website.
+
+To reply click on this link:
+https://courses.iitm.ac.in/mod/forum/post.php?reply=3D2625
+
+---------------------------------------------------------------------
+Unsubscribe from this forum:
+https://courses.iitm.ac.in/mod/forum/subscribe.php?id=3D218
+
+---------------------------------------------------------------------
+Change your forum digest preferences:
+https://courses.iitm.ac.in/mod/forum/index.php?id=3D4150
+
+
+
+

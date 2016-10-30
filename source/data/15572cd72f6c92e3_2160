@@ -1,0 +1,593 @@
+From:
+btech-bounces@smail.iitm.ac.in
+
+Date:
+21-6-2016
+
+Body:
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none"><!--P{margin-top:0;margin-b=
+ottom:0;} --></style>
+</head>
+<body dir=3D"ltr" style=3D"font-size:10pt;color:#000000;background-color:#F=
+FFFFF;font-family:Calibri,Arial,Helvetica,sans-serif;">
+<!--[if gte mso 9]><xml>=0A=
+ <o:OfficeDocumentSettings>=0A=
+  <o:RelyOnVML/>=0A=
+  <o:AllowPNG/>=0A=
+ </o:OfficeDocumentSettings>=0A=
+</xml><![endif]--><!--[if gte mso 9]><xml>=0A=
+ <w:WordDocument>=0A=
+  <w:View>Normal</w:View>=0A=
+  <w:Zoom>0</w:Zoom>=0A=
+  <w:TrackMoves/>=0A=
+  <w:TrackFormatting/>=0A=
+  <w:PunctuationKerning/>=0A=
+  <w:ValidateAgainstSchemas/>=0A=
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>=0A=
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>=0A=
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>=0A=
+  <w:DoNotPromoteQF/>=0A=
+  <w:LidThemeOther>EN-US</w:LidThemeOther>=0A=
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>=0A=
+  <w:LidThemeComplexScript>HI</w:LidThemeComplexScript>=0A=
+  <w:Compatibility>=0A=
+   <w:BreakWrappedTables/>=0A=
+   <w:SnapToGridInCell/>=0A=
+   <w:WrapTextWithPunct/>=0A=
+   <w:UseAsianBreakRules/>=0A=
+   <w:DontGrowAutofit/>=0A=
+   <w:SplitPgBreakAndParaMark/>=0A=
+   <w:DontVertAlignCellWithSp/>=0A=
+   <w:DontBreakConstrainedForcedTables/>=0A=
+   <w:DontVertAlignInTxbx/>=0A=
+   <w:Word11KerningPairs/>=0A=
+   <w:CachedColBalance/>=0A=
+  </w:Compatibility>=0A=
+  <m:mathPr>=0A=
+   <m:mathFont m:val=3D"Cambria Math"/>=0A=
+   <m:brkBin m:val=3D"before"/>=0A=
+   <m:brkBinSub m:val=3D"--"/>=0A=
+   <m:smallFrac m:val=3D"off"/>=0A=
+   <m:dispDef/>=0A=
+   <m:lMargin m:val=3D"0"/>=0A=
+   <m:rMargin m:val=3D"0"/>=0A=
+   <m:defJc m:val=3D"centerGroup"/>=0A=
+   <m:wrapIndent m:val=3D"1440"/>=0A=
+   <m:intLim m:val=3D"subSup"/>=0A=
+   <m:naryLim m:val=3D"undOvr"/>=0A=
+  </m:mathPr></w:WordDocument>=0A=
+</xml><![endif]--><!--[if gte mso 9]><xml>=0A=
+ <w:LatentStyles DefLockedState=3D"false" DefUnhideWhenUsed=3D"true"=0A=
+  DefSemiHidden=3D"true" DefQFormat=3D"false" DefPriority=3D"99"=0A=
+  LatentStyleCount=3D"267">=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"0" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Normal"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"9" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"heading 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 7"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 8"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 9"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 7"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 8"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 9"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"35" QFormat=3D"true" Name=3D=
+"caption"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"10" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Title"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"1" Name=3D"Default Paragraph=
+ Font"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"11" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Subtitle"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"22" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Strong"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"20" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Emphasis"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"59" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Table Grid"/>=0A=
+  <w:LsdException Locked=3D"false" UnhideWhenUsed=3D"false" Name=3D"Placeho=
+lder Text"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"1" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"No Spacing"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light List"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Dark List"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" UnhideWhenUsed=3D"false" Name=3D"Revisio=
+n"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"34" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"List Paragraph"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"29" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Quote"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"30" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Intense Quote"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"19" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Subtle Emphasis"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"21" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Intense Emphasis"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"31" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Subtle Reference"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"32" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Intense Reference"/>=
+=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"33" SemiHidden=3D"false"=0A=
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Book Title"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"37" Name=3D"Bibliography"/>=
+=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"39" QFormat=3D"true" Name=3D=
+"TOC Heading"/>=0A=
+ </w:LatentStyles>=0A=
+</xml><![endif]--><!--[if gte mso 10]>=0A=
+<style>=0A=
+ /* Style Definitions */=0A=
+ table.MsoNormalTable=0A=
+	{mso-style-name:"Table Normal";=0A=
+	mso-tstyle-rowband-size:0;=0A=
+	mso-tstyle-colband-size:0;=0A=
+	mso-style-noshow:yes;=0A=
+	mso-style-priority:99;=0A=
+	mso-style-qformat:yes;=0A=
+	mso-style-parent:"";=0A=
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;=0A=
+	mso-para-margin-top:0in;=0A=
+	mso-para-margin-right:0in;=0A=
+	mso-para-margin-bottom:10.0pt;=0A=
+	mso-para-margin-left:0in;=0A=
+	line-height:115%;=0A=
+	mso-pagination:widow-orphan;=0A=
+	font-size:11.0pt;=0A=
+	mso-bidi-font-size:10.0pt;=0A=
+	font-family:"Calibri","sans-serif";=0A=
+	mso-ascii-font-family:Calibri;=0A=
+	mso-ascii-theme-font:minor-latin;=0A=
+	mso-fareast-font-family:"Times New Roman";=0A=
+	mso-fareast-theme-font:minor-fareast;=0A=
+	mso-hansi-font-family:Calibri;=0A=
+	mso-hansi-theme-font:minor-latin;=0A=
+	mso-bidi-font-family:Mangal;=0A=
+	mso-bidi-theme-font:minor-bidi;}=0A=
+</style>=0A=
+<![endif]-->
+<p class=3D"MsoNormal"><span style=3D"font-size: 14pt;"><span style=3D"font=
+-family: &quot;Arial Unicode MS&quot;,&quot;sans-serif&quot;;" lang=3D"HI">=
+&#2346;&#2381;&#2352;&#2367;&#2351;&#2332;&#2344;&#2379;&#2306;/</span>Dear=
+ All</span></p>
+<p class=3D"MsoNormal">&nbsp;<span style=3D"font-size: 14pt;"></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size: 14pt;"><span style=3D"font=
+-family: &quot;Arial Unicode MS&quot;,&quot;sans-serif&quot;;" lang=3D"HI">=
+&#2325;&#2371;&#2346;&#2351;&#2366;
+</span><span style=3D"font-family: &quot;Arial Unicode MS&quot;,&quot;sans-=
+serif&quot;;" lang=3D"HI">24</span><span style=3D"font-family: &quot;Arial =
+Unicode MS&quot;,&quot;sans-serif&quot;;" lang=3D"HI"> &#2332;&#2370;&#2344=
+;
+</span><span style=3D"font-family: &quot;Arial Unicode MS&quot;,&quot;sans-=
+serif&quot;;" lang=3D"HI">2016</span><span style=3D"font-family: &quot;Aria=
+l Unicode MS&quot;,&quot;sans-serif&quot;;" lang=3D"HI"> &#2325;&#2379; &#2=
+342;&#2379;&#2346;&#2361;&#2352;
+</span><span style=3D"font-family: &quot;Arial Unicode MS&quot;,&quot;sans-=
+serif&quot;;" lang=3D"HI">2.00
+</span><span style=3D"font-family: &quot;Arial Unicode MS&quot;,&quot;sans-=
+serif&quot;;" lang=3D"HI">&#2348;&#2332;&#2375; &#2310;&#2351;&#2379;&#2332=
+;&#2367;&#2340; &#2346;&#2368;&#2319;&#2330;.&#2337;&#2368;. &#2360;&#2306;=
+&#2327;&#2379;&#2359;&#2381;&#2336;&#2368; &#2357;&#2366;&#2352;&#2381;&#23=
+40;&#2366; &#2350;&#2375;&#2306; &#2349;&#2366;&#2327; &#2354;&#2375;&#2306=
+; &#2404;
+</span></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size: 14pt;">Kindly attend the f=
+ollowing PHD Seminar on 24<sup style=3D"">th</sup> June @ 2.00 p.m.</span><=
+/p>
+<p class=3D"MsoNormal">&nbsp;</p>
+<p class=3D"MsoNormal" style=3D"line-height:16.0pt"><span style=3D"font-siz=
+e: 14pt;"><span style=3D"font-family: &quot;Arial Unicode MS&quot;,&quot;sa=
+ns-serif&quot;;" lang=3D"HI">&#2360;&#2343;&#2344;&#2381;&#2351;&#2357;&#23=
+66;&#2342;/</span>Thanks<span style=3D"font-family: &quot;Mangal&quot;,&quo=
+t;serif&quot;;" lang=3D"HI">
+</span></span></p>
+<p class=3D"MsoNormal">&nbsp;</p>
+<p class=3D"MsoNormal"><span style=3D"font-size: 14pt;"><span style=3D"font=
+-family: &quot;Arial Unicode MS&quot;,&quot;sans-serif&quot;;" lang=3D"HI">=
+&#2357;&#2367;&#2349;&#2366;&#2327;&#2366;&#2343;&#2381;&#2351;&#2325;&#238=
+1;&#2359;/</span>Head of&nbsp; the Department</span></p>
+<p><br>
+</p>
+<p>--------------------------------------------------------------</p>
+<p><br>
+</p>
+<p style=3D"text-align: center;"><span style=3D"font-size: 14pt;"><span sty=
+le=3D"text-decoration: underline;" lang=3D"HI"><strong style=3D"">&#2309;&#=
+2344;&#2369;&#2346;&#2381;&#2352;&#2351;&#2369;&#2325;&#2381;&#2340; &#2351=
+;&#2366;&#2306;&#2340;&#2381;&#2352;&#2367;&#2325;&#2368; &#2357;&#2367;&#2=
+349;&#2366;&#2327;</strong></span><span style=3D"text-decoration: underline=
+;"><strong style=3D"">,</strong></span><span style=3D"text-decoration: unde=
+rline;" lang=3D"HI"><strong style=3D"">
+ &#2310;&#2312;.&#2310;&#2312;.&#2335;&#2368;.&#2319;&#2350;. </strong></sp=
+an></span></p>
+<p style=3D"text-align: center;"><span style=3D"text-decoration: underline;=
+ font-size: 14pt;"><strong style=3D"">DEPARTMENT OF APPLIED MECHANICS, IITM=
+</strong></span></p>
+<p style=3D"text-align: center;"><span style=3D"font-size: 14pt;"><span sty=
+le=3D"text-decoration: underline;" lang=3D"HI"><strong style=3D"">&#2346;&#=
+2368;&#2319;&#2330;.&#2337;&#2368;.&#2309;&#2344;&#2369;&#2360;&#2306;&#234=
+3;&#2366;&#2344; &#2346;&#2381;&#2352;&#2360;&#2381;&#2340;&#2366;&#2357; &=
+#2360;&#2306;&#2327;&#2379;&#2359;&#2381;&#2336;&#2368;</strong></span><spa=
+n style=3D"text-decoration: underline;" lang=3D"HI"><strong style=3D"">
+</strong></span><span style=3D"text-decoration: underline;" lang=3D"HI"><st=
+rong style=3D"">/
+</strong></span><span style=3D"text-decoration: underline;"><strong style=
+=3D"">PHD RESEARCH PROPOSAL SEMINAR</strong></span></span></p>
+<p><strong style=3D"font-size: 14pt;">&nbsp;</strong></p>
+<p style=3D"text-align: justify;"><span style=3D"font-size: 14pt;">&#2358;&=
+#2381;&#2352;&#2368;. &#2332;&#2367;&#2340;&#2367;&#2344; &#2332;&#2367;&#2=
+340;, AM12D013, &#2336;&#2379;&#2360; &#2351;&#2366;&#2306;&#2340;&#2381;&#=
+2352;&#2367;&#2325;&#2368; &#2360;&#2350;&#2370;&#2361; &#2325;&#2368; &#23=
+46;&#2368;&#2319;&#2330;.&#2337;&#2368;. &#2360;&#2306;&#2327;&#2379;&#2359=
+;&#2381;&#2336;&#2368; &#2357;&#2366;&#2352;&#2381;&#2340;&#2366;, 24 &#233=
+2;&#2370;&#2344; 2016, &#2358;&#2369;&#2325;&#2381;&#2352;&#2357;&#2366;&#2=
+352; &#2325;&#2379; 2.00 &#2348;&#2332;&#2375; &#2344;&#2381;&#2351;&#2370;=
+&#2335;&#2344; &#2361;&#2377;&#2354;, &#2357;&#2366;&#2306;&#2340;&#2352;&#=
+2367;&#2325;&#2381;&#2359; &#2349;&#2357;&#2344;, &#2309;&#2344;&#2369;&#23=
+46;&#2381;&#2352;&#2351;&#2369;&#2325;&#2381;&#2340; &#2351;&#2366;&#2306;&=
+#2340;&#2381;&#2352;&#2367;&#2325;&#2368; &#2357;&#2367;&#2349;&#2366;&#232=
+7; &#2350;&#2375;&#2306; &#2310;&#2351;&#2379;&#2332;&#2367;&#2340; &#2325;=
+&#2368; &#2332;&#2366;&#2319;&#2327;&#2368; &#2404; &#2360;&#2306;&#2327;&#=
+2379;&#2359;&#2381;&#2336;&#2368;
+ &#2357;&#2366;&#2352;&#2381;&#2340;&#2366; &#2325;&#2375; &#2357;&#2367;&#=
+2357;&#2352;&#2339; &#2344;&#2367;&#2350;&#2381;&#2344;&#2366;&#2344;&#2369=
+;&#2360;&#2366;&#2352; &#2361;&#2376; &#8211; </span></p>
+<p style=3D"text-align: justify;"><br>
+<span style=3D"font-size: 14pt;"></span></p>
+<p style=3D"text-align: justify;"><span style=3D"font-size: 14pt;"><strong =
+style=3D"">On Friday the 24</strong><strong style=3D""><sup style=3D"">th</=
+sup></strong><strong style=3D""> June 2016, we have PhD Research Proposal S=
+eminar Talk by</strong><strong style=3D"">&nbsp;&nbsp;
+</strong><span style=3D"text-decoration: underline;"><strong style=3D"">Mr.=
+ Jithin Jith, AM12D013, Solid Mechanics</strong></span><span style=3D"text-=
+decoration: underline;"><strong style=3D""> Group</strong></span><span styl=
+e=3D"text-decoration: underline;"><strong style=3D"">
+</strong></span><strong style=3D"">at 2.00 p.m. i</strong><strong style=3D"=
+">n Newton Hall, Aerospace Building, Department of Applied Mechanics. The d=
+etails of the talk are as follows:</strong></span></p>
+<p style=3D"text-align: justify;"><strong style=3D"font-size: 14pt;">______=
+_____________________________________________________</strong></p>
+<p style=3D"text-align: justify;"><span style=3D"font-size: 14pt;">&#2357;&=
+#2366;&#2352;&#2381;&#2340;&#2366; &#2325;&#2366; &#2357;&#2367;&#2359;&#23=
+51; </span>
+</p>
+<p style=3D"text-align: justify;"><span style=3D"font-size: 14pt;"><strong =
+style=3D"">Title of the talk
+</strong><strong style=3D"">&nbsp;</strong><strong style=3D"">&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp; </strong><strong style=3D"">&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</strong><strong style=3D"">: </strong><strong style=3D"">&nbsp;&nbsp;&nbsp=
+;</strong><strong style=3D"">&#8220;Analysis of Fluid Structure&nbsp;intera=
+ction in Centrifugal</strong></span></p>
+<p style=3D"text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style=3D"font-size: 14pt;"><strong>Impellers with High Density Gases =
+&quot;</strong></span><br>
+<span style=3D"font-size: 14pt;"><strong style=3D""></strong><strong style=
+=3D""></strong></span></p>
+<p style=3D"text-align: justify;"><span style=3D"font-size: 14pt;">&#2342;&=
+#2367;&#2344;&#2366;&#2306;&#2325;/<strong style=3D"">Date</strong><strong =
+style=3D"">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;
+</strong><strong style=3D"">:</strong><strong style=3D"">&nbsp;&nbsp;&nbsp;=
+ </strong><strong style=3D"">&nbsp;</strong><strong style=3D"">24</strong><=
+strong style=3D""><sup style=3D"">th</sup></strong><strong style=3D"">
+</strong><strong style=3D"">&nbsp;</strong><strong style=3D"">June (Friday)=
+</strong></span></p>
+<p style=3D"text-align: justify;"><span style=3D"font-size: 14pt;">&#2360;&=
+#2350;&#2351;/<strong style=3D"">Time</strong><strong style=3D"">&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;
+</strong><strong style=3D"">:</strong><strong style=3D""> </strong><strong =
+style=3D"">&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong style=3D"">2.00 p.m.</s=
+trong></span></p>
+<p style=3D"text-align: justify;"><span style=3D"font-size: 14pt;">&#2360;&=
+#2381;&#2341;&#2366;&#2344;/<strong style=3D"">Venue</strong><strong style=
+=3D"">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;</strong><strong style=3D"">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</strong><strong style=3D"">: </strong><strong style=3D"">&nbsp;&nbsp;&nbsp=
+;&nbsp;</strong><strong style=3D"">Newton Hall, Aerospace Building &#8211; =
+1</strong><strong style=3D""><sup style=3D"">st</sup></strong><strong style=
+=3D""> Floor, D</strong><strong style=3D"">ept. of Applied
+</strong></span></p>
+<p style=3D"text-align: justify;"><span style=3D"font-size: 14pt;"><strong =
+style=3D"">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp; Mechanics, IIT Madras.
+</strong></span></p>
+<p style=3D"text-align: justify;"><span style=3D"font-size: 14pt;">&#2358;&=
+#2379;&#2343; &#2344;&#2367;&#2352;&#2381;&#2342;&#2375;&#2358;&#2325;/<str=
+ong style=3D"">Guide</strong><strong style=3D"">&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</strong><strong style=3D"">:</strong><strong style=3D"">&nbsp;&nbsp;&nbsp;=
+ </strong><strong style=3D"">Dr. Sayan Gupta/Dr. Sunetra Sarkar
+</strong></span></p>
+<p style=3D"text-align: justify;"><strong style=3D"font-size: 14pt;">&nbsp;=
+</strong></p>
+<p style=3D"text-align: justify;"><span style=3D"font-size: 14pt;"><span st=
+yle=3D"text-decoration: underline;" lang=3D"HI">&#2360;&#2366;&#2352; /</sp=
+an><span style=3D"text-decoration: underline;"><strong style=3D"">ABSTRACT =
+:</strong></span></span></p>
+<p style=3D"text-align: justify;">&nbsp;</p>
+<p style=3D"text-align: justify;"><span style=3D"font-size: 14pt;">Conventi=
+onal acousto-elastic interaction studies ignore the viscosity and thermal c=
+onductivity of the fluid, and consequently neglect the energy dissipation c=
+aused by these factors which can result
+ in a shift in the natural frequencies of the acousto-elastic system as wel=
+l as a reduction in the amplitude of the system response.</span></p>
+<p style=3D"text-align: justify;">&nbsp;</p>
+<p style=3D"text-align: justify;"><span style=3D"font-size: 14pt;">In this =
+study, a numerically efficient computational technique for solving acousto-=
+elastic interaction problems in bounded fluid media - in the frequency doma=
+in - while incorporating these dissipative
+ *visco-thermal* effects is developed.&nbsp; The fluid is modelled using th=
+e linearised Navier-Stokes equations, the structure using linear elasticity=
+, and a frequency domain acousto-elastic solver is implemented using the fi=
+nite element method. In order to reduce
+ the computational time taken by the finite element solver, model order red=
+uction of the acousto-elastic system is performed.</span></p>
+<p style=3D"text-align: justify;">&nbsp;</p>
+<p style=3D"text-align: justify;"><span style=3D"font-size: 14pt;">Model or=
+der reduction is done using two methods - Arnoldi reduction and Proper Orth=
+ogonal Decomposition(POD). The reduced order models are shown to be signifi=
+cantly computationally cheaper than
+ the original model.&nbsp; Also, of the two reduced order models, the Arnol=
+di reduced</span></p>
+<p style=3D"text-align: justify;"><span style=3D"font-size: 14pt;">model is=
+ shown to be more computationally efficient. As an illustrative example, th=
+e developed solver is applied to the problem of an idealized centrifugal im=
+peller vibrating in a fluid-filled cavity.</span></p>
+<p style=3D"text-align: justify;">&nbsp;</p>
+<p style=3D"text-align: center;"><span style=3D"font-size: 14pt;">// &#2360=
+;&#2349;&#2368; &#2360;&#2366;&#2342;&#2352; &#2310;&#2350;&#2306;&#2340;&#=
+2381;&#2352;&#2367;&#2340; &#2361;&#2376;&#2306; //
+</span></p>
+<p style=3D"text-align: center;"><strong style=3D"font-size: 14pt;">// ALL =
+ARE WELCOME //</strong></p>
+<p><span style=3D"font-size: 14pt;">&#2360;&#2343;&#2344;&#2381;&#2351;&#23=
+57;&#2366;&#2342;/Thanks</span></p>
+<p><span style=3D"font-size: 14pt;">&#2357;&#2376;. &#2350;&#2375;&#2325;&#=
+2354;&#2366;/Y. Mekala</span></p>
+<p><span style=3D"font-size: 14pt;">&#2357;&#2367;&#2349;&#2366;&#2327;&#23=
+66;&#2343;&#2381;&#2351;&#2325;&#2381;&#2359; &#2325;&#2366; &#2325;&#2366;=
+&#2352;&#2381;&#2351;&#2366;&#2354;&#2351;/HoD&#8217;s Office</span></p>
+<p><span style=3D"font-size: 14pt;">&#2309;&#2344;&#2369;&#2346;&#2381;&#23=
+52;&#2351;&#2369;&#2325;&#2381;&#2340; &#2351;&#2366;&#2306;&#2340;&#2381;&=
+#2352;&#2367;&#2325;&#2368; &#2357;&#2367;&#2349;&#2366;&#2327;, &#2310;&#2=
+312;.&#2310;&#2312;.&#2335;&#2368;.&#2319;&#2350;.</span></p>
+<p><span style=3D"font-size: 14pt;">Applied Mechanics Dept, IITM</span></p>
+<p><br style=3D"font-size: 14pt;">
+</p>
+<div id=3D"Signature">
+<div class=3D"BodyFragment"><span style=3D"font-size: 14pt;"></span><font s=
+ize=3D"2"><span style=3D"font-size:10pt;"></span></font></div>
+</div>
+</body>
+</html>
+
+

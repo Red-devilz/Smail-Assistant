@@ -1,0 +1,31 @@
+From:
+btech-bounces@smail.iitm.ac.in
+
+Date:
+23-6-2016
+
+Body:
+Dear Users of HPCE space,
+
+Here are some changes @ virgo cluster.
+
+1. In Virgo super cluster, SMT has been enabled. This has increased the num=
+ber of cores to almost double. The 4096 core cluster will now act as 8192 c=
+ore machine. As we have increased number of cores, the wait time for jobs i=
+n the queue has considerably come down. So for up to  32 processors (ppn) y=
+ou can keep the nodes =3D 1.  This should be more efficient than asking 2 n=
+odes with 16 processors per node. If you are looking for > 32 processors yo=
+u should ask for > 1 node.
+
+2. It has been decided to create a new logical partition from the parallel =
+partition to cater to very large jobs requiring more than 128 cores as ther=
+e has been demand for such queues. 64 nodes from 192 nodes have been config=
+ured to run very large jobs. On these nodes 8 new queues have been configur=
+ed. Now you can use upto 512 processors (see the queue details in the attac=
+hment). Please send us feedback at hpce@iitm.ac.in. Happy super-computing.
+
+Warm regards,
+Krishna.
+
+
+

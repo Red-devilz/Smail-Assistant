@@ -54,6 +54,11 @@ def get_message(service, user_id, msg_id):
     body = get_msg_body(mime_msg)
 
     date = email.utils.parsedate(mime_msg['Date'])
+
+    #  Return None if Hangouts message
+    #  if(date==None):
+        #  return None
+
     day = date[2]
     month = date[1]
     year = date[0]
@@ -73,8 +78,8 @@ def get_message(service, user_id, msg_id):
     return msg
 
 
-def save(msg):
-    filename = msg['id']
+def save(msg,cnt):
+    filename = msg['id'] + "_" +str(cnt)
     f = open(data_path+filename,'w')
     f.write("From:\n"+msg['from']+"\n\n")
     f.write("Date:\n"+msg['date']+"\n\n")
@@ -101,8 +106,9 @@ def get_all_mail(gservice):
         for msg in msgs["messages"]:
             tc+=1
             msg = get_message(gservice,None,msg['id'])
-            save(msg)
-            print ("Message %d saved"%(tc))
+            if(msg!=None):
+                save(msg,tc)
+                print ("Message %d saved"%(tc))
         
         # Checking if there is an another batch of message in line            
         if 'nextPageToken' in msgs:

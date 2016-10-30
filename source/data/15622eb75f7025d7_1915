@@ -1,0 +1,60 @@
+From:
+seminars-bounces@list.iitm.ac.in
+
+Date:
+25-7-2016
+
+Body:
+Dear all,
+
+It is my pleasure to invite you all to the following PhD seminar.
+
+Regards,
+John.
+
+Title: Balanced Allocation: Patience is not a Virtue
+Speaker: William K. Moses Jr. (CS12D020)
+Guide: Prof. John Augustine
+Date: August 9th, 2016 (Tuesday)
+Time: 4:30 pm - 5:30 pm (note the slightly unusual time)
+Venue: BSB 361
+
+Abstract:
+Load balancing is a common problem in multiple domains. The version that we=
+ are interested in is where a load balancer must allocate process requests =
+to servers such that the number of requests (load) on each server is minimi=
+zed. The theoretical framework to analyze this is called the balls-in-bins =
+model where process requests are denoted by balls and servers are denoted b=
+y bins.
+
+The greedy algorithm Greedy[d] of Azar et al. places each ball by probing d=
+ > 1 random bins and placing the ball in the least loaded of them. It ensur=
+es a maximum load that is exponentially better than the strategy of placing=
+ each ball uniformly at random. Vocking showed that a slightly asymmetric v=
+ariant, Left[d], provides a further significant improvement. However, this =
+improvement comes at an additional computational cost of imposing structure=
+ on the bins.
+
+We present a fully decentralized and easy-to-implement algorithm called Fir=
+stDiff[d] that combines the simplicity of Greedy[d] and the improved balanc=
+e of Left[d]. The key idea in FirstDiff[d] is to probe until a different bi=
+n size from the first observation is located, then place the ball. Although=
+ the number of probes could be quite large for some of the balls, we show t=
+hat FirstDiff[d] requires only d probes on average per ball (in both the st=
+andard and the heavily-loaded settings). Thus the number of probes is no gr=
+eater than either that of Greedy[d] or Left[d]. More importantly, we show t=
+hat FirstDiff[d] closely matches the improved maximum load ensured by Left[=
+d] in both the standard and heavily-loaded settings. We further provide a t=
+ight lower bound on the maximum load up to O(log log log n) terms. We addit=
+ionally give experimental data that FirstDiff[d] is indeed as good as Left[=
+d], if not better, in practice.
+
+
+_______________________________________________
+Seminars mailing list
+Seminars@list.iitm.ac.in
+http://mx.iitm.ac.in/mailman/listinfo/seminars
+
+
+
+

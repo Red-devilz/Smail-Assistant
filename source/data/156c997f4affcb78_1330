@@ -1,0 +1,132 @@
+From:
+osiitm_2016@googlegroups.com
+
+Date:
+27-8-2016
+
+Body:
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta content=3D"text/html; charset=3Dus-ascii">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style>
+<!--
+@font-face
+	{font-family:"Cambria Math"}
+@font-face
+	{font-family:Calibri}
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline}
+span.EmailStyle17
+	{font-family:"Calibri",sans-serif;
+	color:windowtext}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif}
+@page WordSection1
+	{margin:72.0pt 72.0pt 72.0pt 72.0pt}
+div.WordSection1
+	{}
+-->
+</style>
+</head>
+<body lang=3D"EN-IN" link=3D"blue" vlink=3D"purple">
+<div>Hi Rajat</div>
+<div><br>
+</div>
+<div>This is how I understand they get 64tb.</div>
+<div><br>
+</div>
+<div>It comes more from the seg. unit than paging unit.</div>
+<div><br>
+</div>
+<div>there are 13 seg registers..</div>
+<div>each seg has 32 bit offset</div>
+<div>and can be from gdt or ldt..</div>
+<div>thus total space is2^(32&#43;13&#43;2)=3D64tb.</div>
+<div><br>
+</div>
+<div>http://stackoverflow.com/questions/5444984/64-terabytes-of-virtual-mem=
+ory-how</div>
+<div><br>
+</div>
+<div>if you connect this to what we did in class&nbsp;</div>
+<div>we actually have 4 segments ... kernel code and data</div>
+<div>and user code and data. so speaking in the same language we are actual=
+ly working with 16gb of virtual memory space.</div>
+<div><br>
+</div>
+<div>However the addressable space is just 4gb ie 2^32. ie. all the 16gb ge=
+t mapped to the same 4gb of addressable space. This is what we are working =
+with and splitting into kernel space and user space.</div>
+<div><br>
+</div>
+<div>Chester</div>
+<div><br>
+</div>
+<div><br>
+</div>
+<div>
+<div style=3D"font-size:7px; color:#575757">Sent from Samsung Mobile</div>
+</div>
+<br>
+<br>
+<div>-------- Original message --------</div>
+<div>From: Rajat Rao </div>
+<div>Date:2016/08/26 11:46 PM (GMT&#43;05:30) </div>
+<div>To: Chester Rebeiro </div>
+<div>Subject: Virtual Memory Limit </div>
+<div><br>
+</div>
+<div>
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Dear Sir,</p>
+<p class=3D"MsoNormal">&nbsp;</p>
+<p class=3D"MsoNormal">Attached are pages 37, 38 from Computer Organization=
+ by William Stallings (8th Edition). &nbsp;The tables show 16 bit processor=
+s supporting 64TB of virtual memory. Could you please explain exactly what =
+limits the virtual memory supported?</p>
+<p class=3D"MsoNormal">&nbsp;</p>
+<p class=3D"MsoNormal">&nbsp;</p>
+<p class=3D"MsoNormal"><span style=3D"">Best Regards,</span></p>
+<p class=3D"MsoNormal"><span style=3D"">Rajat Rao </span></p>
+<p class=3D"MsoNormal"><span style=3D"">Mobile: &#43;91-9789094996</span></=
+p>
+<p class=3D"MsoNormal"><span style=3D"">E-Mail: rajatrao96@gmail.com</span>=
+</p>
+<p class=3D"MsoNormal">&nbsp;</p>
+<p class=3D"MsoNormal">&nbsp;</p>
+</div>
+</div>
+</body>
+</html>
+
+<p></p>
+
+-- <br />
+You received this message because you are subscribed to the Google Groups &=
+quot;osiitm_2016&quot; group.<br />
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to <a href=3D"mailto:osiitm_2016+unsubscribe@googlegroups.com">osiitm_=
+2016+unsubscribe@googlegroups.com</a>.<br />
+To post to this group, send email to <a href=3D"mailto:osiitm_2016@googlegr=
+oups.com">osiitm_2016@googlegroups.com</a>.<br />
+To view this discussion on the web visit <a href=3D"https://groups.google.c=
+om/d/msgid/osiitm_2016/9608vrsfaiu6lvtot4hl47yv.1472260816003%40email.andro=
+id.com?utm_medium=3Demail&utm_source=3Dfooter">https://groups.google.com/d/=
+msgid/osiitm_2016/9608vrsfaiu6lvtot4hl47yv.1472260816003%40email.android.co=
+m</a>.<br />
+For more options, visit <a href=3D"https://groups.google.com/d/optout">http=
+s://groups.google.com/d/optout</a>.<br />
+
+

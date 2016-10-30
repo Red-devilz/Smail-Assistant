@@ -1,0 +1,41 @@
+From:
+"CS14B028 SRINIDHI PRABHU" <cs14b028@smail.iitm.ac.in>
+
+Date:
+29-10-2016
+
+Body:
+
+CS3310:JUL-NOV 2016 -> Forums -> Discussion forum for Assignment 5: Registe=
+r
+allocation -> MAIN THREAD for doubts and discussions on Assignment 5
+https://courses.iitm.ac.in/mod/forum/discuss.php?d=3D1326
+---------------------------------------------------------------------
+Re: Doubts and discussions on Assignment 5
+by CS14B028 SRINIDHI PRABHU - Saturday, 29 October 2016, 6:20 PM
+---------------------------------------------------------------------
+I generated a miniRA code for a program. It parses according to the miniRA
+grammar. However, when I run the program using the given jar, I get the
+following error -
+ERROR: line 436: The second operand of HLOAD must point to the heap.
+Please check near the following source code:=20
+=C2=A0 HLOAD=C2=A0=C2=A0 s0=C2=A0 s1=C2=A0 0 (line:436 col:19)
+
+I am not able to understand why I'm getting this error. Also, the meaning
+of the error is not clear. Can I know what it means?=20
+
+=C2=A0
+
+---------------------------------------------------------------------
+This is a copy of a message posted on the CS3310:JUL-NOV 2016 website.
+
+To reply click on this link:
+https://courses.iitm.ac.in/mod/forum/post.php?reply=3D2955
+
+---------------------------------------------------------------------
+Change your forum digest preferences:
+https://courses.iitm.ac.in/mod/forum/index.php?id=3D4150
+
+
+
+

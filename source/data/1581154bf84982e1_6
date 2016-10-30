@@ -1,0 +1,46 @@
+From:
+"CS12D023 AMAN NOUGRAHIYA" <cs12d023@smail.iitm.ac.in>
+
+Date:
+29-10-2016
+
+Body:
+
+CS3310:JUL-NOV 2016 -> Forums -> Discussion forum for Assignment 5: Registe=
+r
+allocation -> MAIN THREAD for doubts and discussions on Assignment 5
+https://courses.iitm.ac.in/mod/forum/discuss.php?d=3D1326
+---------------------------------------------------------------------
+Re: Doubts and discussions on Assignment 5
+by CS12D023 AMAN NOUGRAHIYA - Saturday, 29 October 2016, 9:35 PM
+---------------------------------------------------------------------
+Dear SP,=20
+
+The=20HLOAD command loads a value from the heap. (Consider it to be a porti=
+on
+of memory that is shared by all the functions.) It takes three arguments,
+say r1, l1 and i1, in order. "r1" is the register where we want to store
+the loaded value. "l1" is an address in memory. "i1" is that offset from
+"l1" from where the value has to be read.
+The error means what it says -- s1[0] might not be a heap location in your
+program. Unless I see your program, I can't help out much with the issue.
+If you do not want to share the code publicly, you may mail me the same at
+aman.nougrahiya@gmail.com. I will try to find the error in there.=20
+
+Thanks.
+Warm=20regards,
+Aman.
+
+---------------------------------------------------------------------
+This is a copy of a message posted on the CS3310:JUL-NOV 2016 website.
+
+To reply click on this link:
+https://courses.iitm.ac.in/mod/forum/post.php?reply=3D2960
+
+---------------------------------------------------------------------
+Change your forum digest preferences:
+https://courses.iitm.ac.in/mod/forum/index.php?id=3D4150
+
+
+
+

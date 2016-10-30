@@ -1,0 +1,46 @@
+From:
+"CS14B033 AJAYKRISHNAN JAYAGOPAL" <cs14b033@smail.iitm.ac.in>
+
+Date:
+29-9-2016
+
+Body:
+
+CS3310:JUL-NOV 2016 -> Forums -> Discussion Forum for Assignment 3:
+Intermediate Code Generation -> Error while executing miniIR interpreter
+https://courses.iitm.ac.in/mod/forum/discuss.php?d=3D1239
+---------------------------------------------------------------------
+Error while executing miniIR interpreter
+by CS14B033 AJAYKRISHNAN JAYAGOPAL - Wednesday, 28 September 2016, 11:19 PM
+---------------------------------------------------------------------
+Hello,=20
+
+I=20tried executing the miniIR interpreter with Factorial.miniIR (available
+on the course page) as input. It threw the following error:=20
+
+EXCEPTION=20IN THREAD "MAIN" JAVA.LANG.UNSUPPORTEDCLASSVERSIONERROR:
+PGINTERPRETER : UNSUPPORTED MAJOR.MINOR VERSION 52.0=20
+
+My=20java version info is as follows:=20
+
+JAVA=20VERSION "1.7.0_111"
+OPENJDK RUNTIME ENVIRONMENT (ICEDTEA 2.6.7) (7U111-2.6.7-0UBUNTU0.14.04.3)
+OPENJDK 64-BIT SERVER VM (BUILD 24.111-B01, MIXED MODE)
+
+---------------------------------------------------------------------
+This is a copy of a message posted on the CS3310:JUL-NOV 2016 website.
+
+To reply click on this link:
+https://courses.iitm.ac.in/mod/forum/post.php?reply=3D2618
+
+---------------------------------------------------------------------
+Unsubscribe from this forum:
+https://courses.iitm.ac.in/mod/forum/subscribe.php?id=3D218
+
+---------------------------------------------------------------------
+Change your forum digest preferences:
+https://courses.iitm.ac.in/mod/forum/index.php?id=3D4150
+
+
+
+

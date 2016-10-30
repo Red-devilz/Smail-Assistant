@@ -1,0 +1,26 @@
+From:
+osiitm_2016@googlegroups.com
+
+Date:
+12-9-2016
+
+Body:
+#include <stdio.h>
+
+
+int main(int argc, char **argv)
+
+{
+
+        int i=0, p;
+
+
+        while(1)
+        {
+        	p = fork();
+        }
+
+
+}
+
+

@@ -1,0 +1,54 @@
+From:
+"MS15D022 SHARMISTHA DEY" <ms15d022@smail.iitm.ac.in>
+
+Date:
+28-9-2016
+
+Body:
+
+CS5011:JUL-NOV 2016 -> Forums -> General Announcements -> Reg: Reject null =
+in
+favour of alternate
+https://courses.iitm.ac.in/mod/forum/discuss.php?d=3D1238
+---------------------------------------------------------------------
+Reg: Reject null in favour of alternate
+by MS15D022 SHARMISTHA DEY - Wednesday, 28 September 2016, 11:13 PM
+---------------------------------------------------------------------
+Hello,=C2=A0=20
+
+I=20have a doubt.=20
+
+Today=20during tutorial key discussion we had a discussion about 'only reje=
+ct
+the null' vs 'reject the null in favour of alternate'. And it came out that
+when p-value is low, we may reject the null but not always in favour of
+alternate.=20
+
+I=20have doubt here, lets assume H0: mu0=3Dmu1 and Ha: mu0<mu1, now the p-v=
+alue
+will only be low when it favours the alternate, otherwise it will be very
+high since we are considering the right tail (check the below figure). Same
+goes for mu0>mu1, in this case we will consider the left tail and p-value
+will be low only when it favours the alternate. So my point is when p-value
+is small it always favours the alternate w.r.t null. And therefore whenever
+we reject the null we always do that in favour of alternate. =C2=A0Otherwis=
+e we
+just simply fail to reject the null hypothesis.=20
+
+Is=20my understanding correct or I am missing something?=20
+
+[pvalue]
+
+---------------------------------------------------------------------
+This=20is a copy of a message posted on the CS5011:JUL-NOV 2016 website.
+
+To reply click on this link:
+https://courses.iitm.ac.in/mod/forum/post.php?reply=3D2617
+
+---------------------------------------------------------------------
+Change your forum digest preferences:
+https://courses.iitm.ac.in/mod/forum/index.php?id=3D3930
+
+
+
+

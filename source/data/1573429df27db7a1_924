@@ -1,0 +1,130 @@
+From:
+osiitm_2016@googlegroups.com
+
+Date:
+16-9-2016
+
+Body:
+1. It looked like CPU0 was getting the Rescheduling interrupt twice as many
+times as the others. Why is this the case? Is it because CPU0 is running
+some user program that blocks for user input frequently?
+2. The local timer interrupts were also not uniform. 6 out of 8 CPUs had
+got about 100,000 when I ran it, while 2 of them had only 40,000.
+
+This is interesting. Can you shed some light on your machine's
+configuration.
+
+3. The Thermal event interrupts were the only interrupts that were uniform
+for all CPUs. I think this is because all CPUs need to be cooled down
+together since they are close by and there is no way of cooling down one
+while keeping the others running.
+
+looks like you are running on a Laptop, which have more heating issues.
+
+4. PCI MSIs are present for various devices like ethernet, sound card,
+etc., but not for USB. Are the USB MSIs grouped under PCIe MSI and the
+device driver then does the interpretation?
+
+USB interrupts are a bit different.
+A USB device would send (something like) and MSI interrupt to a USB host
+controller.
+The USB host controller is a PCIe device.
+It would then send an MSI to the IO-APIC.
+
+(So in a sense, all USB devices, would use the same interrupt line). The
+USB host controller
+is smart enough to distinguish one device's interrupt from another.
+
+On Fri, Sep 16, 2016 at 11:25 PM, RAJAT S RAO ee14b101 <
+ee14b101@smail.iitm.ac.in> wrote:
+
+> 1. It looked like CPU0 was getting the Rescheduling interrupt twice as
+> many times as the others. Why is this the case? Is it because CPU0 is
+> running some user program that blocks for user input frequently?
+> 2. The local timer interrupts were also not uniform. 6 out of 8 CPUs had
+> got about 100,000 when I ran it, while 2 of them had only 40,000.
+> 3. The Thermal event interrupts were the only interrupts that were uniform
+> for all CPUs. I think this is because all CPUs need to be cooled down
+> together since they are close by and there is no way of cooling down one
+> while keeping the others running.
+> 4. PCI MSIs are present for various devices like ethernet, sound card,
+> etc., but not for USB. Are the USB MSIs grouped under PCIe MSI and the
+> device driver then does the interpretation?
+>
+> -Rajat Rao
+>
+> On Fri, Sep 16, 2016 at 11:16 PM, RAJAT S RAO ee14b101 <
+> ee14b101@smail.iitm.ac.in> wrote:
+>
+>> When I ran cat /proc/interrupts
+>>
+>>
+>>
+>> On Thu, Sep 15, 2016 at 11:50 AM, chester <chetrebeiro@gmail.com> wrote:
+>>
+>>> You could print out the interrupts your computer received by the
+>>> following
+>>>
+>>> $ cat /proc/interrupts
+>>>
+>>> Some points
+>>> * This is a dynamic file, filled by the Linux kernel. If you execute the
+>>> above command
+>>> multiple times, the results will be different
+>>> (https://www.youtube.com/watch?v=ax0O-hdjhz4)
+>>>
+>>> * Each CPU in your system will receive interrupts independent of others
+>>>
+>>> * Look for the "Local timer interrupts", which is used by each CPU to
+>>> context switch
+>>>
+>>> * Note the IR-IO-APIC-edge interrupts.
+>>>       Interrupts can be either edge triggered or level triggered
+>>> *      Can you find out the difference between the two.*
+>>>
+>>> * You may find an i8042 interrupt in your system, this corresponds to
+>>> the PS/2 keyboard / mouse.
+>>>      If you still happen to use a PS/2 keyboard, then you would see a
+>>> high number of interrupts here
+>>>
+>>> * There are also something known as PCI-MSI-edge, which works a bit
+>>> differently compared to
+>>>      regular interrupts that we study.
+>>>     Instead of asserting a pin in the IO-APIC, devices which support
+>>> this will send a message (a packet)
+>>>     to the IO-APIC. The IO-APIC then converts this message to a CPU
+>>> interrupt.
+>>>
+>>>     USB works in a similar way. When you press a key in your USB
+>>> keyboard, it sends a message,
+>>>     which is known as MSI or Message Signalled Interrupt.
+>>>
+>>> * Also look out for Rescheduling interrupts, this is related to process
+>>> migration code
+>>>      which we discussed in this forum a few weeks ago.
+>>> (https://help.ubuntu.com/community/ReschedulingInterrupts)
+>>>
+>>> --
+>>> You received this message because you are subscribed to the Google
+>>> Groups "osiitm_2016" group.
+>>> To unsubscribe from this group and stop receiving emails from it, send
+>>> an email to osiitm_2016+unsubscribe@googlegroups.com.
+>>> To post to this group, send email to osiitm_2016@googlegroups.com.
+>>> To view this discussion on the web visit https://groups.google.com/d/ms
+>>> gid/osiitm_2016/8c0154bf-edb6-49dc-9a60-3afc0558d808%40googlegroups.com
+>>> <https://groups.google.com/d/msgid/osiitm_2016/8c0154bf-edb6-49dc-9a60-3afc0558d808%40googlegroups.com?utm_medium=email&utm_source=footer>
+>>> .
+>>> For more options, visit https://groups.google.com/d/optout.
+>>>
+>>
+>>
+>
+
+-- 
+You received this message because you are subscribed to the Google Groups "osiitm_2016" group.
+To unsubscribe from this group and stop receiving emails from it, send an email to osiitm_2016+unsubscribe@googlegroups.com.
+To post to this group, send email to osiitm_2016@googlegroups.com.
+To view this discussion on the web visit https://groups.google.com/d/msgid/osiitm_2016/CAJZJNTN8RTY4_C4xD3zJmRY88Krj4zt%2BjJSPrxAnQR2A7dmo_Q%40mail.gmail.com.
+For more options, visit https://groups.google.com/d/optout.
+
+

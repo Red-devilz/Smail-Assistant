@@ -1,0 +1,71 @@
+From:
+osiitm_2016@googlegroups.com
+
+Date:
+2-9-2016
+
+Body:
+Model name:            Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+CPU(s):                4
+Thread(s) per core:    2
+Core(s) per socket:    2
+Socket(s):             1
+
+=E2=80=8B=E2=80=8B
+>
+>
+> On Wednesday, August 10, 2016 at 12:11:47 PM UTC+5:30, chester wrote:
+>>
+>> Hi all,
+>>
+>> And welcome to the OS course.
+>>
+>> In your Ubuntu desktop / laptop find and report in this group ....
+>>
+>> the Intel/AMD processor number  (from cat /proc/cpuinfo)
+>> the number of sockets present
+>> the number of cores present
+>> the number of hardware threads present.
+>>
+>>
+>> Chester
+>>
+>>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "osiitm_2016" group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to osiitm_2016+unsubscribe@googlegroups.com.
+> To post to this group, send email to osiitm_2016@googlegroups.com.
+> To view this discussion on the web visit https://groups.google.com/d/
+> msgid/osiitm_2016/0004f530-bcae-43e4-a521-3be10ba21848%40googlegroups.com
+> <https://groups.google.com/d/msgid/osiitm_2016/0004f530-bcae-43e4-a521-3b=
+e10ba21848%40googlegroups.com?utm_medium=3Demail&utm_source=3Dfooter>
+> .
+>
+> For more options, visit https://groups.google.com/d/optout.
+>
+
+
+
+--=20
+Thanks and regards,
+
+Shahidh
+
+--=20
+You received this message because you are subscribed to a topic in the Goog=
+le Groups "osiitm_2016" group.
+To unsubscribe from this topic, visit https://groups.google.com/d/topic/osi=
+itm_2016/dD8D35JNfSI/unsubscribe.
+To unsubscribe from this group and all its topics, send an email to osiitm_=
+2016+unsubscribe@googlegroups.com.
+To post to this group, send email to osiitm_2016@googlegroups.com.
+To view this discussion on the web visit https://groups.google.com/d/msgid/=
+osiitm_2016/CAFu5dw5hDCprOha%2BxkSmzjXbhFCX%3Dv%2B9Ag27%3DVV5FpfZiGqF%2BA%4=
+0mail.gmail.com.
+For more options, visit https://groups.google.com/d/optout.
+
+

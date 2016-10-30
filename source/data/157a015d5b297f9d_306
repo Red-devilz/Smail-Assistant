@@ -1,0 +1,1097 @@
+From:
+Office Engineering Design <edoffice@iitm.ac.in>
+
+Date:
+7-10-2016
+
+Body:
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none"><!--P{margin-top:0;margin-b=
+ottom:0;} p
+	{margin-top:0;
+	margin-bottom:0}--></style>
+</head>
+<body dir=3D"ltr" style=3D"font-size:12pt;color:#000000;background-color:#F=
+FFFFF;font-family:Calibri,Arial,Helvetica,sans-serif;">
+<p><br>
+</p>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>HI</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val=3D"Cambria Math"/>
+   <m:brkBin m:val=3D"before"/>
+   <m:brkBinSub m:val=3D"&#45;-"/>
+   <m:smallFrac m:val=3D"off"/>
+   <m:dispDef/>
+   <m:lMargin m:val=3D"0"/>
+   <m:rMargin m:val=3D"0"/>
+   <m:defJc m:val=3D"centerGroup"/>
+   <m:wrapIndent m:val=3D"1440"/>
+   <m:intLim m:val=3D"subSup"/>
+   <m:naryLim m:val=3D"undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState=3D"false" DefUnhideWhenUsed=3D"true"
+  DefSemiHidden=3D"true" DefQFormat=3D"false" DefPriority=3D"99"
+  LatentStyleCount=3D"267">
+  <w:LsdException Locked=3D"false" Priority=3D"0" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Normal"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"heading 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 7"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 8"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 9"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 7"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 8"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 9"/>
+  <w:LsdException Locked=3D"false" Priority=3D"35" QFormat=3D"true" Name=3D=
+"caption"/>
+  <w:LsdException Locked=3D"false" Priority=3D"10" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Title"/>
+  <w:LsdException Locked=3D"false" Priority=3D"1" Name=3D"Default Paragraph=
+ Font"/>
+  <w:LsdException Locked=3D"false" Priority=3D"11" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Subtitle"/>
+  <w:LsdException Locked=3D"false" Priority=3D"22" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Strong"/>
+  <w:LsdException Locked=3D"false" Priority=3D"20" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Emphasis"/>
+  <w:LsdException Locked=3D"false" Priority=3D"59" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Table Grid"/>
+  <w:LsdException Locked=3D"false" UnhideWhenUsed=3D"false" Name=3D"Placeho=
+lder Text"/>
+  <w:LsdException Locked=3D"false" Priority=3D"1" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"No Spacing"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 1"/>
+  <w:LsdException Locked=3D"false" UnhideWhenUsed=3D"false" Name=3D"Revisio=
+n"/>
+  <w:LsdException Locked=3D"false" Priority=3D"34" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"List Paragraph"/>
+  <w:LsdException Locked=3D"false" Priority=3D"29" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Quote"/>
+  <w:LsdException Locked=3D"false" Priority=3D"30" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Intense Quote"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"19" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Subtle Emphasis"/>
+  <w:LsdException Locked=3D"false" Priority=3D"21" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Intense Emphasis"/>
+  <w:LsdException Locked=3D"false" Priority=3D"31" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Subtle Reference"/>
+  <w:LsdException Locked=3D"false" Priority=3D"32" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Intense Reference"/>
+  <w:LsdException Locked=3D"false" Priority=3D"33" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Book Title"/>
+  <w:LsdException Locked=3D"false" Priority=3D"37" Name=3D"Bibliography"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" QFormat=3D"true" Name=3D=
+"TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Century","serif";
+	mso-ascii-font-family:Century;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Century;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]-->
+<p class=3D"MsoNormal" style=3D"text-align:center;
+background:white;" align=3D"center">
+<span style=3D"color: rgb(114, 50, 173); font-size: 18pt;"><strong style=3D=
+"">G E N T L E &nbsp;R E M I N D E R!!</strong></span><br>
+</p>
+<p class=3D"MsoNormal" style=3D"text-align:center;
+background:white;" align=3D"center">
+<br>
+</p>
+<p class=3D"MsoNormal" style=3D"text-align:center;
+background:white;" align=3D"center">
+<br>
+<strong><span style=3D"font-size:18.0pt;font-family:&quot;Arial Unicode MS&=
+quot;,&quot;sans-serif&quot;;
+color:#CC0066;background:white;mso-font-kerning:0pt;mso-bidi-language:HI" l=
+ang=3D"HI"></span></strong></p>
+<p class=3D"MsoNormal" style=3D"text-align:center;
+background:white;" align=3D"center">
+<strong><span style=3D"font-size:18.0pt;font-family:&quot;Arial Unicode MS&=
+quot;,&quot;sans-serif&quot;;
+color:#CC0066;background:white;mso-font-kerning:0pt;mso-bidi-language:HI" l=
+ang=3D"HI">&#2309;&#2349;&#2367;&#2351;&#2366;&#2306;&#2340;&#2381;&#2352;&=
+#2367;&#2325;&#2368; &#2309;&#2349;&#2367;&#2325;&#2354;&#2381;&#2346; &#23=
+57;&#2367;&#2349;&#2366;&#2327;</span></strong><strong><span style=3D"font-=
+size:18.0pt;font-family:&quot;Arial Unicode MS&quot;,&quot;sans-serif&quot;=
+;
+color:#CC0066;background:white;mso-font-kerning:0pt;mso-bidi-language:HI">,
+<span lang=3D"HI">&#2349;&#2366;&#2352;&#2340;&#2368;&#2351; &#2346;&#2381;=
+&#2352;&#2380;&#2328;&#2379;&#2327;&#2367;&#2325;&#2368; &#2360;&#2306;&#23=
+60;&#2381;&#2341;&#2366;&#2344; &#2350;&#2342;&#2381;&#2352;&#2366;&#2360;<=
+/span>, <span lang=3D"HI">&#2330;&#2375;&#2344;&#2381;&#2344;&#2376;</span>=
+</span></strong><span style=3D"font-size:12.0pt;font-family:&quot;Mangal&qu=
+ot;,&quot;serif&quot;;mso-fareast-font-family:
+&quot;MS PGothic&quot;;color:#CC0066;background:white;mso-font-kerning:0pt;=
+mso-bidi-language:
+HI" lang=3D"HI">
+</span><span style=3D"font-size:12.0pt;font-family:&quot;Calibri&quot;,&quo=
+t;sans-serif&quot;;
+mso-fareast-font-family:&quot;MS PGothic&quot;;mso-bidi-font-family:&quot;M=
+S PGothic&quot;;
+color:black;background:white;mso-font-kerning:0pt;mso-bidi-language:HI"></s=
+pan></p>
+<p class=3D"MsoNormal" style=3D"text-align:center;
+background:white;" align=3D"center">
+<strong><span style=3D"font-size:16.0pt;font-family:&quot;Arial&quot;,&quot=
+;sans-serif&quot;;
+mso-fareast-font-family:&quot;MS PGothic&quot;;font-variant:small-caps;colo=
+r:#CC0066;
+background:white;mso-font-kerning:0pt;mso-ansi-language:DA;mso-bidi-languag=
+e:
+HI" lang=3D"DA">Department of
+</span></strong><strong><span style=3D"font-size:16.0pt;
+mso-bidi-font-size:11.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&qu=
+ot;;mso-fareast-font-family:
+&quot;MS PGothic&quot;;font-variant:small-caps;color:#CC0066;mso-font-kerni=
+ng:0pt;
+mso-ansi-language:DA;mso-bidi-language:HI" lang=3D"DA">Engineering</span></=
+strong><strong><span style=3D"font-size:16.0pt;font-family:&quot;Arial&quot=
+;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;MS PGothic&quot;;font-variant:small-caps;color:#CC0066;background:whi=
+te;mso-font-kerning:
+0pt;mso-ansi-language:DA;mso-bidi-language:HI" lang=3D"DA">
+</span></strong><strong><span style=3D"font-size:16.0pt;mso-bidi-font-size:=
+11.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;MS PGothic&quot;;font-variant:small-caps;colo=
+r:#CC0066;
+mso-font-kerning:0pt;mso-ansi-language:DA;mso-bidi-language:HI" lang=3D"DA"=
+>Design</span></strong><strong><span style=3D"font-size:16.0pt;font-family:=
+&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;MS PGothic&quot;;font-variant:small-caps;color:#CC0066;background:whi=
+te;mso-font-kerning:
+0pt;mso-ansi-language:DA;mso-bidi-language:HI" lang=3D"DA">,
+ I I T Madras</span></strong><span style=3D"font-size:12.0pt;font-family:&q=
+uot;Calibri&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;MS PGothic&quot;;mso-bidi-font-family:&quot;MS PGothic&quot;;color:bl=
+ack;background:white;
+mso-font-kerning:0pt;mso-bidi-language:HI"></span></p>
+<p class=3D"MsoNormal" style=3D"text-align:center;
+background:white;" align=3D"center">
+<span style=3D"font-size:12.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;
+mso-fareast-font-family:&quot;MS PGothic&quot;;mso-bidi-font-family:&quot;M=
+S PGothic&quot;;
+color:black;background:white;mso-font-kerning:0pt;mso-bidi-language:HI">&nb=
+sp;</span></p>
+<span style=3D"font-size:12.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;
+mso-fareast-font-family:&quot;MS PGothic&quot;;mso-bidi-font-family:&quot;M=
+S PGothic&quot;;
+color:black;background:white;mso-font-kerning:0pt;mso-bidi-language:HI"></s=
+pan>
+<p class=3D"MsoNormal" style=3D"text-align:center;
+background:white;" align=3D"center">
+<span style=3D"font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&qu=
+ot;serif&quot;;
+mso-fareast-font-family:&quot;MS PGothic&quot;;color:black;background:white=
+;mso-font-kerning:
+0pt;mso-bidi-language:HI"><br>
+</span><strong style=3D"font-size: 18pt;"><span style=3D"font-family: &quot=
+;Arial Unicode MS&quot;,&quot;sans-serif&quot;; color: rgb(112, 48, 160); b=
+ackground: white none repeat scroll 0% 0%;" lang=3D"HI">&#2360;&#2306;&#232=
+7;&#2379;&#2359;&#2381;&#2336;&#2368;</span></strong><strong style=3D"font-=
+size: 18pt;"><span style=3D"font-family: &quot;Mangal&quot;,&quot;serif&quo=
+t;; color: rgb(112, 48, 160); background: white none repeat scroll 0% 0%;" =
+lang=3D"HI">&nbsp;</span></strong><strong style=3D"font-size: 18pt;"><span =
+style=3D"font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(=
+112, 48, 160); background: white none repeat scroll 0% 0%;">/SEMINAR
+ II</span></strong><span style=3D"font-size:12.0pt;
+font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-fareast-font-fam=
+ily:&quot;MS PGothic&quot;;
+mso-bidi-font-family:&quot;MS PGothic&quot;;color:black;background:white;ms=
+o-font-kerning:
+0pt;mso-bidi-language:HI"></span></p>
+<p class=3D"MsoNormal" style=3D"text-align:center;
+background:white;" align=3D"center">
+<span style=3D"font-size:12.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;
+mso-fareast-font-family:&quot;MS PGothic&quot;;mso-bidi-font-family:&quot;M=
+S PGothic&quot;;
+color:black;background:white;mso-font-kerning:0pt;mso-bidi-language:HI">&nb=
+sp;</span></p>
+<div align=3D"center">
+<table class=3D"MsoNormalTable" style=3D"border-collapse: collapse; border:=
+ medium none;" border=3D"1" cellpadding=3D"0" cellspacing=3D"0" height=3D"3=
+72" width=3D"898">
+<tbody>
+<tr style=3D"mso-yfti-irow:0;mso-yfti-firstrow:yes;height:34.1pt">
+<td style=3D"width:115.3pt;border:solid #9F8AB9 1.0pt;background:
+  #E13F62;padding:0in 5.4pt 0in 5.4pt;height:34.1pt" width=3D"154">
+<p class=3D"MsoNormal" style=3D"text-align:left;" align=3D"left"><strong><s=
+pan style=3D"font-size:14.0pt;font-family:&quot;Arial Unicode MS&quot;,&quo=
+t;sans-serif&quot;;
+  color:white;background:#E13F62;mso-font-kerning:0pt;mso-bidi-language:HI"=
+ lang=3D"HI">&#2340;&#2366;&#2352;&#2368;&#2326;</span></strong><strong><sp=
+an style=3D"font-size:14.0pt;font-family:&quot;Mangal&quot;,&quot;serif&quo=
+t;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;color:white;background:#E13F62;mso-font-kerning:0p=
+t;mso-bidi-language:
+  HI" lang=3D"HI">/</span></strong><strong><span style=3D"font-size:14.0pt;=
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;MS PGothic&quot;;font-variant:small-caps;co=
+lor:white;
+  background:#E13F62;mso-font-kerning:0pt;mso-ansi-language:DA;mso-bidi-lan=
+guage:
+  HI" lang=3D"DA">Date</span></strong><span style=3D"font-size:12.0pt;font-=
+family:&quot;MS PGothic&quot;,&quot;sans-serif&quot;;
+  mso-bidi-font-family:&quot;MS PGothic&quot;;background:#E13F62;mso-font-k=
+erning:0pt;
+  mso-bidi-language:HI"></span></p>
+</td>
+<td style=3D"width:27.7pt;border:solid #9F8AB9 1.0pt;border-left:none;
+  background:#FCAAB8;padding:0in 5.4pt 0in 5.4pt;height:34.1pt" width=3D"37=
+">
+<p class=3D"MsoNormal" style=3D"text-align:center;" align=3D"center"><stron=
+g><span style=3D"font-size:14.0pt;font-family:&quot;Arial&quot;,&quot;sans-=
+serif&quot;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;color:#002060;background:#FCAAB8;mso-font-kerning:=
+0pt;
+  mso-bidi-language:HI">:</span></strong><span style=3D"font-size:12.0pt;fo=
+nt-family:
+  &quot;MS PGothic&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:&quot;=
+MS PGothic&quot;;background:#FCAAB8;
+  mso-font-kerning:0pt;mso-bidi-language:HI"></span></p>
+</td>
+<td style=3D"width:513.9pt;border:solid #9F8AB9 1.0pt;border-left:
+  none;background:#FCAAB8;padding:0in 5.4pt 0in 5.4pt;height:34.1pt" width=
+=3D"685">
+<p class=3D"MsoNormal" style=3D"text-align:left;" align=3D"left"><strong><s=
+pan style=3D"font-size:14.0pt;font-family:&quot;Arial&quot;,&quot;sans-seri=
+f&quot;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;color:#002060;background:#FCAAB8;mso-font-kerning:=
+0pt;
+  mso-bidi-language:HI">07.10.2016;</span></strong><strong><span style=3D"f=
+ont-size:12.0pt;
+  font-family:&quot;Mangal&quot;,&quot;serif&quot;;mso-fareast-font-family:=
+&quot;MS PGothic&quot;;font-variant:
+  small-caps;color:#002060;background:#FCAAB8;mso-font-kerning:0pt;mso-bidi=
+-language:
+  HI">&nbsp;</span></strong><strong><span style=3D"font-size:13.0pt;font-fa=
+mily:
+  &quot;Arial Unicode MS&quot;,&quot;sans-serif&quot;;font-variant:small-ca=
+ps;color:#002060;
+  background:#FCAAB8;mso-font-kerning:0pt;mso-bidi-language:HI" lang=3D"HI"=
+>&#2358;&#2369;&#2325;&#2381;&#2352;&#2357;&#2366;&#2352;</span></strong><s=
+trong><span style=3D"font-size:14.0pt;font-family:&quot;Arial&quot;,&quot;s=
+ans-serif&quot;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;color:#002060;background:#FCAAB8;mso-font-kerning:=
+0pt;
+  mso-bidi-language:HI">/Friday</span></strong><span style=3D"font-size:12.=
+0pt;
+  font-family:&quot;MS PGothic&quot;,&quot;sans-serif&quot;;mso-bidi-font-f=
+amily:&quot;MS PGothic&quot;;
+  background:#FCAAB8;mso-font-kerning:0pt;mso-bidi-language:HI"></span></p>
+</td>
+</tr>
+<tr style=3D"mso-yfti-irow:1;height:35.0pt">
+<td style=3D"width:115.3pt;border:solid #9F8AB9 1.0pt;border-top:
+  none;background:#E13F62;padding:0in 5.4pt 0in 5.4pt;height:35.0pt" width=
+=3D"154">
+<p class=3D"MsoNormal" style=3D"text-align:left;" align=3D"left"><strong><s=
+pan style=3D"font-size:14.0pt;font-family:&quot;Arial Unicode MS&quot;,&quo=
+t;sans-serif&quot;;
+  color:white;background:#E13F62;mso-font-kerning:0pt;mso-bidi-language:HI"=
+ lang=3D"HI">&#2360;&#2350;&#2351;</span></strong><strong><span style=3D"fo=
+nt-size:14.0pt;font-family:&quot;Mangal&quot;,&quot;serif&quot;;mso-fareast=
+-font-family:
+  &quot;MS PGothic&quot;;color:white;background:#E13F62;mso-font-kerning:0p=
+t;mso-bidi-language:
+  HI" lang=3D"HI">/</span></strong><strong><span style=3D"font-size:14.0pt;=
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;MS PGothic&quot;;font-variant:small-caps;co=
+lor:white;
+  background:#E13F62;mso-font-kerning:0pt;mso-ansi-language:DA;mso-bidi-lan=
+guage:
+  HI" lang=3D"DA">Time</span></strong><span style=3D"font-size:12.0pt;font-=
+family:&quot;MS PGothic&quot;,&quot;sans-serif&quot;;
+  mso-bidi-font-family:&quot;MS PGothic&quot;;background:#E13F62;mso-font-k=
+erning:0pt;
+  mso-bidi-language:HI"></span></p>
+</td>
+<td style=3D"width:27.7pt;border-top:none;border-left:none;border-bottom:
+  solid #9F8AB9 1.0pt;border-right:solid #9F8AB9 1.0pt;background:#E45070;
+  padding:0in 5.4pt 0in 5.4pt;height:35.0pt" width=3D"37">
+<p class=3D"MsoNormal" style=3D"text-align:center;" align=3D"center"><stron=
+g><span style=3D"font-size:14.0pt;font-family:&quot;Arial&quot;,&quot;sans-=
+serif&quot;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;color:#002060;background:#E45070;mso-font-kerning:=
+0pt;
+  mso-bidi-language:HI">:</span></strong><span style=3D"font-size:12.0pt;fo=
+nt-family:
+  &quot;MS PGothic&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:&quot;=
+MS PGothic&quot;;background:#E45070;
+  mso-font-kerning:0pt;mso-bidi-language:HI"></span></p>
+</td>
+<td style=3D"width:513.9pt;border-top:none;border-left:none;
+  border-bottom:solid #9F8AB9 1.0pt;border-right:solid #9F8AB9 1.0pt;
+  background:#E45070;padding:0in 5.4pt 0in 5.4pt;height:35.0pt" width=3D"68=
+5">
+<p class=3D"MsoNormal" style=3D"text-align:left;" align=3D"left"><strong><s=
+pan style=3D"font-size:14.0pt;font-family:&quot;Arial&quot;,&quot;sans-seri=
+f&quot;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;font-variant:small-caps;color:#002060;background:#=
+E45070;
+  mso-font-kerning:0pt;mso-ansi-language:DA;mso-bidi-language:HI" lang=3D"D=
+A">03:00
+ PM</span></strong><span style=3D"font-size:12.0pt;font-family:&quot;MS PGo=
+thic&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:
+  &quot;MS PGothic&quot;;background:#E45070;mso-font-kerning:0pt;mso-bidi-l=
+anguage:HI"></span></p>
+</td>
+</tr>
+<tr style=3D"mso-yfti-irow:2;height:35.0pt">
+<td style=3D"width:115.3pt;border:solid #9F8AB9 1.0pt;border-top:
+  none;background:#E13F62;padding:0in 5.4pt 0in 5.4pt;height:35.0pt" width=
+=3D"154">
+<p class=3D"MsoNormal" style=3D"text-align:left;" align=3D"left"><strong><s=
+pan style=3D"font-size:14.0pt;font-family:&quot;Arial Unicode MS&quot;,&quo=
+t;sans-serif&quot;;
+  color:white;background:#E13F62;mso-font-kerning:0pt;mso-bidi-language:HI"=
+ lang=3D"HI">&#2360;&#2381;&#2341;&#2366;&#2344;</span></strong><strong><sp=
+an style=3D"font-size:14.0pt;font-family:&quot;Mangal&quot;,&quot;serif&quo=
+t;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;color:white;background:#E13F62;mso-font-kerning:0p=
+t;mso-bidi-language:
+  HI" lang=3D"HI">/</span></strong><strong><span style=3D"font-size:14.0pt;=
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;MS PGothic&quot;;font-variant:small-caps;co=
+lor:white;
+  background:#E13F62;mso-font-kerning:0pt;mso-ansi-language:DA;mso-bidi-lan=
+guage:
+  HI" lang=3D"DA">Venue</span></strong><span style=3D"font-size:12.0pt;font=
+-family:&quot;MS PGothic&quot;,&quot;sans-serif&quot;;
+  mso-bidi-font-family:&quot;MS PGothic&quot;;background:#E13F62;mso-font-k=
+erning:0pt;
+  mso-bidi-language:HI"></span></p>
+</td>
+<td style=3D"width:27.7pt;border-top:none;border-left:none;border-bottom:
+  solid #9F8AB9 1.0pt;border-right:solid #9F8AB9 1.0pt;background:#FCAAB8;
+  padding:0in 5.4pt 0in 5.4pt;height:35.0pt" width=3D"37">
+<p class=3D"MsoNormal" style=3D"text-align:center;" align=3D"center"><stron=
+g><span style=3D"font-size:14.0pt;font-family:&quot;Arial&quot;,&quot;sans-=
+serif&quot;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;color:#002060;background:#FCAAB8;mso-font-kerning:=
+0pt;
+  mso-bidi-language:HI">:</span></strong><span style=3D"font-size:12.0pt;fo=
+nt-family:
+  &quot;MS PGothic&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:&quot;=
+MS PGothic&quot;;background:#FCAAB8;
+  mso-font-kerning:0pt;mso-bidi-language:HI"></span></p>
+</td>
+<td style=3D"width:513.9pt;border-top:none;border-left:none;
+  border-bottom:solid #9F8AB9 1.0pt;border-right:solid #9F8AB9 1.0pt;
+  background:#FCAAB8;padding:0in 5.4pt 0in 5.4pt;height:35.0pt" width=3D"68=
+5">
+<p class=3D"MsoNormal" style=3D"text-align:left;" align=3D"left"><strong><s=
+pan style=3D"font-size:14.0pt;font-family:&quot;Arial&quot;,&quot;sans-seri=
+f&quot;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;color:#002060;background:#FCAAB8;mso-font-kerning:=
+0pt;
+  mso-bidi-language:HI">ED103,&nbsp;
+</span></strong><strong><span style=3D"font-size:14.0pt;font-family:&quot;A=
+rial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;font-variant:small-caps;color:#002060;background:#=
+FCAAB8;
+  mso-font-kerning:0pt;mso-ansi-language:DA;mso-bidi-language:HI" lang=3D"D=
+A">Conference
+ Hall</span></strong><span style=3D"font-size:12.0pt;font-family:&quot;MS P=
+Gothic&quot;,&quot;sans-serif&quot;;
+  mso-bidi-font-family:&quot;MS PGothic&quot;;background:#FCAAB8;mso-font-k=
+erning:0pt;
+  mso-bidi-language:HI"></span></p>
+</td>
+</tr>
+<tr style=3D"mso-yfti-irow:3;height:35.0pt">
+<td style=3D"width:115.3pt;border:solid #9F8AB9 1.0pt;border-top:
+  none;background:#E13F62;padding:0in 5.4pt 0in 5.4pt;height:35.0pt" width=
+=3D"154">
+<p class=3D"MsoNormal" style=3D"text-align:left;" align=3D"left"><strong><s=
+pan style=3D"font-size:14.0pt;font-family:&quot;Arial Unicode MS&quot;,&quo=
+t;sans-serif&quot;;
+  color:white;background:#E13F62;mso-font-kerning:0pt;mso-bidi-language:HI"=
+ lang=3D"HI">&#2357;&#2325;&#2381;&#2340;&#2366;</span></strong><strong><sp=
+an style=3D"font-size:14.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif=
+&quot;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;color:white;background:#E13F62;mso-font-kerning:0p=
+t;mso-bidi-language:
+  HI">
+ /</span></strong><strong><span style=3D"font-size:14.0pt;font-family:&quot=
+;Arial&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;MS PGothic&quot;;font-variant:small-caps;co=
+lor:white;
+  background:#E13F62;mso-font-kerning:0pt;mso-ansi-language:DA;mso-bidi-lan=
+guage:
+  HI" lang=3D"DA">Speaker</span></strong><span style=3D"font-size:12.0pt;fo=
+nt-family:&quot;MS PGothic&quot;,&quot;sans-serif&quot;;
+  mso-bidi-font-family:&quot;MS PGothic&quot;;background:#E13F62;mso-font-k=
+erning:0pt;
+  mso-bidi-language:HI"></span></p>
+</td>
+<td style=3D"width:27.7pt;border-top:none;border-left:none;border-bottom:
+  solid #9F8AB9 1.0pt;border-right:solid #9F8AB9 1.0pt;background:#E45070;
+  padding:0in 5.4pt 0in 5.4pt;height:35.0pt" width=3D"37">
+<p class=3D"MsoNormal" style=3D"text-align:center;" align=3D"center"><stron=
+g><span style=3D"font-size:14.0pt;font-family:&quot;Arial&quot;,&quot;sans-=
+serif&quot;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;color:#002060;background:#E45070;mso-font-kerning:=
+0pt;
+  mso-bidi-language:HI">:</span></strong><span style=3D"font-size:12.0pt;fo=
+nt-family:
+  &quot;MS PGothic&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:&quot;=
+MS PGothic&quot;;background:#E45070;
+  mso-font-kerning:0pt;mso-bidi-language:HI"></span></p>
+</td>
+<td style=3D"width:513.9pt;border-top:none;border-left:none;
+  border-bottom:solid #9F8AB9 1.0pt;border-right:solid #9F8AB9 1.0pt;
+  background:#E45070;padding:0in 5.4pt 0in 5.4pt;height:35.0pt" width=3D"68=
+5">
+<p class=3D"MsoNormal" style=3D"text-align:left;" align=3D"left"><strong><s=
+pan style=3D"font-size:13.0pt;font-family:&quot;Arial Unicode MS&quot;,&quo=
+t;sans-serif&quot;;
+  font-variant:small-caps;color:#002060;background:#E45070;mso-font-kerning=
+:
+  0pt;mso-ansi-language:DA;mso-bidi-language:HI" lang=3D"HI">&#2325;&#2369;=
+&#2350;&#2366;&#2352;&#2368;.
+ &#2357;&#2366;&#2339;&#2368; &#2342;&#2366;&#2350;&#2379;&#2342;&#2352;&#2=
+344;</span></strong><strong><span style=3D"font-size:14.0pt;font-family:&qu=
+ot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;font-variant:small-caps;color:#002060;background:#=
+E45070;
+  mso-font-kerning:0pt;mso-ansi-language:DA;mso-bidi-language:HI" lang=3D"H=
+I">
+</span></strong><strong><span style=3D"font-size:14.0pt;font-family:&quot;A=
+rial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;font-variant:small-caps;color:#002060;background:#=
+E45070;
+  mso-font-kerning:0pt;mso-ansi-language:DA;mso-bidi-language:HI" lang=3D"D=
+A">/
+ Ms Vani Damodaran, P</span></strong><strong><span style=3D"font-size:14.0p=
+t;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;MS=
+ PGothic&quot;;color:#002060;
+  background:#E45070;mso-font-kerning:0pt;mso-ansi-language:DA;mso-bidi-lan=
+guage:
+  HI" lang=3D"DA">h<span style=3D"font-variant:small-caps">.D</span></span>=
+</strong><strong><span style=3D"font-size:12.0pt;font-family:&quot;Times Ne=
+w Roman&quot;,&quot;serif&quot;;
+  mso-fareast-font-family:&quot;MS PGothic&quot;;color:#002060;background:#=
+E45070;
+  mso-font-kerning:0pt;mso-ansi-language:DA;mso-bidi-language:HI" lang=3D"D=
+A">
+</span></strong><strong><span style=3D"font-size:14.0pt;font-family:&quot;A=
+rial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;font-variant:small-caps;color:#002060;background:#=
+E45070;
+  mso-font-kerning:0pt;mso-ansi-language:DA;mso-bidi-language:HI" lang=3D"D=
+A">Scholar
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; (Roll No.</span></strong><strong><span style=3D"fon=
+t-size:14.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;MS PGothic&quot;;color:#002060;background:#=
+E45070;
+  mso-font-kerning:0pt;mso-ansi-language:DA;mso-bidi-language:HI" lang=3D"D=
+A">
+</span></strong><strong><span style=3D"font-size:14.0pt;font-family:&quot;A=
+rial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;color:#002060;background:#E45070;mso-font-kerning:=
+0pt;
+  mso-bidi-language:HI">ED</span></strong><strong><span style=3D"font-size:=
+14.0pt;
+  font-family:&quot;Mangal&quot;,&quot;serif&quot;;mso-fareast-font-family:=
+&quot;MS PGothic&quot;;color:#002060;
+  background:#E45070;mso-font-kerning:0pt;mso-bidi-language:HI" lang=3D"HI"=
+>1</span></strong><strong><span style=3D"font-size:14.0pt;font-family:&quot=
+;Mangal&quot;,&quot;serif&quot;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;color:#002060;background:#E45070;mso-font-kerning:=
+0pt;
+  mso-bidi-language:HI">1</span></strong><strong><span style=3D"font-size:1=
+4.0pt;
+  font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-fam=
+ily:&quot;MS PGothic&quot;;
+  color:#002060;background:#E45070;mso-font-kerning:0pt;mso-bidi-language:H=
+I">D</span></strong><strong><span style=3D"font-size:14.0pt;font-family:&qu=
+ot;Mangal&quot;,&quot;serif&quot;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;color:#002060;background:#E45070;mso-font-kerning:=
+0pt;
+  mso-bidi-language:HI" lang=3D"HI">013)</span></strong><span style=3D"font=
+-size:12.0pt;
+  font-family:&quot;MS PGothic&quot;,&quot;sans-serif&quot;;mso-bidi-font-f=
+amily:&quot;MS PGothic&quot;;
+  background:#E45070;mso-font-kerning:0pt;mso-bidi-language:HI"></span></p>
+</td>
+</tr>
+<tr style=3D"mso-yfti-irow:4;mso-yfti-lastrow:yes;height:143.9pt">
+<td style=3D"width:115.3pt;border:solid #9F8AB9 1.0pt;border-top:
+  none;background:#E13F62;padding:0in 5.4pt 0in 5.4pt;height:143.9pt" width=
+=3D"154">
+<p class=3D"MsoNormal" style=3D"text-align:left;" align=3D"left"><strong><s=
+pan style=3D"font-size:14.0pt;font-family:&quot;Arial Unicode MS&quot;,&quo=
+t;sans-serif&quot;;
+  color:white;background:#E13F62;mso-font-kerning:0pt;mso-bidi-language:HI"=
+ lang=3D"HI">&#2358;&#2368;&#2352;&#2381;&#2359;&#2325;</span></strong><str=
+ong><span style=3D"font-size:14.0pt;font-family:&quot;Mangal&quot;,&quot;se=
+rif&quot;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;color:white;background:#E13F62;mso-font-kerning:0p=
+t;mso-bidi-language:
+  HI" lang=3D"HI">/</span></strong><strong><span style=3D"font-size:14.0pt;=
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;MS PGothic&quot;;font-variant:small-caps;co=
+lor:white;
+  background:#E13F62;mso-font-kerning:0pt;mso-ansi-language:DA;mso-bidi-lan=
+guage:
+  HI" lang=3D"DA">Title</span></strong><span style=3D"font-size:12.0pt;font=
+-family:&quot;MS PGothic&quot;,&quot;sans-serif&quot;;
+  mso-bidi-font-family:&quot;MS PGothic&quot;;background:#E13F62;mso-font-k=
+erning:0pt;
+  mso-bidi-language:HI"></span></p>
+</td>
+<td style=3D"width:27.7pt;border-top:none;border-left:none;border-bottom:
+  solid #9F8AB9 1.0pt;border-right:solid #9F8AB9 1.0pt;background:#FCAAB8;
+  padding:0in 5.4pt 0in 5.4pt;height:143.9pt" width=3D"37">
+<p class=3D"MsoNormal" style=3D"text-align:center;" align=3D"center"><stron=
+g><span style=3D"font-size:14.0pt;font-family:&quot;Arial&quot;,&quot;sans-=
+serif&quot;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;color:#002060;background:#FCAAB8;mso-font-kerning:=
+0pt;
+  mso-bidi-language:HI">:</span></strong><span style=3D"font-size:12.0pt;fo=
+nt-family:
+  &quot;MS PGothic&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:&quot;=
+MS PGothic&quot;;background:#FCAAB8;
+  mso-font-kerning:0pt;mso-bidi-language:HI"></span></p>
+</td>
+<td style=3D"width:513.9pt;border-top:none;border-left:none;
+  border-bottom:solid #9F8AB9 1.0pt;border-right:solid #9F8AB9 1.0pt;
+  background:#FCAAB8;padding:0in 5.4pt 0in 5.4pt;height:143.9pt" width=3D"6=
+85">
+<p class=3D"MsoNormal" style=3D"text-align:left;" align=3D"left"><strong><s=
+pan style=3D"font-size:13.0pt;font-family:&quot;Arial Unicode MS&quot;,&quo=
+t;sans-serif&quot;;
+  font-variant:small-caps;color:#002060;background:#FCAAB8;mso-font-kerning=
+:
+  0pt;mso-bidi-language:HI" lang=3D"HI">&#2311;&#2354;&#2375;&#2325;&#2381;=
+&#2335;&#2381;&#2352;&#2379;
+</span></strong><span dir=3D"RTL"></span><strong><span dir=3D"RTL" style=3D=
+"font-size:13.0pt;font-family:&quot;Arial Unicode MS&quot;,&quot;sans-serif=
+&quot;;
+  font-variant:small-caps;color:#002060;background:#FCAAB8;mso-font-kerning=
+:
+  0pt" lang=3D"AR-SA"><span dir=3D"RTL"></span>-</span></strong><strong><sp=
+an dir=3D"RTL" style=3D"font-size:13.0pt;font-family:&quot;Arial Unicode MS=
+&quot;,&quot;sans-serif&quot;;
+  font-variant:small-caps;color:#002060;background:#FCAAB8;mso-font-kerning=
+:
+  0pt;mso-bidi-language:HI" lang=3D"HI">&#2321;&#2346;&#2381;&#2335;&#2367;=
+&#2325;
+</span></strong><strong><span style=3D"font-size:13.0pt;font-family:&quot;A=
+rial Unicode MS&quot;,&quot;sans-serif&quot;;
+  font-variant:small-caps;color:#002060;background:#FCAAB8;mso-font-kerning=
+:
+  0pt;mso-bidi-language:HI" lang=3D"HI">&#2325;&#2375; &#2310;&#2343;&#2366=
+;&#2352; &#2313;&#2330;&#2381;&#2330; &#2327;&#2340;&#2367; &#2325;&#2368; =
+&#2335;&#2366;&#2311;&#2350;</span></strong><strong><span style=3D"font-siz=
+e:13.0pt;font-family:&quot;Arial Unicode MS&quot;,&quot;sans-serif&quot;;
+  font-variant:small-caps;color:#002060;background:#FCAAB8;mso-font-kerning=
+:
+  0pt;mso-bidi-language:HI">-<span lang=3D"HI">&#2337;&#2379;&#2350;&#2375;=
+&#2344;
+ &#2321;&#2346;&#2381;&#2335;&#2367;&#2325;&#2354; &#2325;&#2379;&#2361;&#2=
+375;&#2352;&#2375;&#2306;&#2360; &#2335;&#2379;&#2350;&#2379;&#2327;&#2381;=
+&#2352;&#2366;&#2347;&#2368; &#2340;&#2325;&#2344;&#2368;&#2325; &#2325;&#2=
+366; &#2313;&#2346;&#2351;&#2379;&#2327; &#2325;&#2375; &#2342;&#2381;&#235=
+7;&#2366;&#2352;&#2366; &#2325;&#2371;&#2340;&#2381;&#2352;&#2367;&#2350; &=
+#2352;&#2370;&#2346; &#2360;&#2375; &#2346;&#2381;&#2352;&#2375;&#2352;&#23=
+67;&#2340; &#2342;&#2366;&#2306;&#2340; &#2325;&#2375; &#2337;&#2375;&#2350=
+;&#2367;&#2344;&#2375;&#2352;&#2354;&#2368;&#2332;&#2366;&#2311;&#2360;&#23=
+44; &#2325;&#2368; &#2330;&#2367;&#2325;&#2367;&#2340;&#2381;&#2360;&#2366;=
+</span></span></strong></p>
+<p class=3D"MsoNormal" style=3D"text-align:left;" align=3D"left"><strong><s=
+pan style=3D"font-size:10.0pt;font-family:&quot;Arial Unicode MS&quot;,&quo=
+t;sans-serif&quot;;
+  font-variant:small-caps;color:#002060;background:#FCAAB8;mso-font-kerning=
+:
+  0pt;mso-bidi-language:HI">&nbsp;</span></strong></p>
+<p class=3D"MsoNormal" style=3D"text-align:left;" align=3D"left"><strong><s=
+pan style=3D"font-size:14.0pt;font-family:&quot;Arial&quot;,&quot;sans-seri=
+f&quot;;mso-fareast-font-family:
+  &quot;MS PGothic&quot;;font-variant:small-caps;color:#002060;background:#=
+FCAAB8;
+  mso-font-kerning:0pt;mso-ansi-language:DA;mso-bidi-language:HI" lang=3D"D=
+A">&quot;Development
+ of Electro-optic based High Speed Time Domain Optical Coherence Tomography=
+ Technique for Detection of Artificially Induced Dental Demineralisation &q=
+uot;</span></strong><span style=3D"font-size:12.0pt;font-family:&quot;MS PG=
+othic&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:
+  &quot;MS PGothic&quot;;background:#FCAAB8;mso-font-kerning:0pt;mso-bidi-l=
+anguage:HI"></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class=3D"MsoNormal" style=3D"text-align:center;
+background:white;" align=3D"center">
+<span style=3D"font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&qu=
+ot;serif&quot;;
+mso-fareast-font-family:&quot;MS PGothic&quot;;color:black;background:white=
+;mso-font-kerning:
+0pt;mso-bidi-language:HI">&nbsp;&nbsp;
+</span><span style=3D"font-size:12.0pt;
+font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-fareast-font-fam=
+ily:&quot;MS PGothic&quot;;
+mso-bidi-font-family:&quot;MS PGothic&quot;;color:black;background:white;ms=
+o-font-kerning:
+0pt;mso-bidi-language:HI"></span></p>
+<p class=3D"MsoNormal" style=3D"text-align:left;
+background:white;" align=3D"left"><span style=3D"font-size:12.0pt;font-fami=
+ly:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;MS PGothic&quot;;color:black;background:white=
+;mso-font-kerning:
+0pt;mso-bidi-language:HI">&nbsp;</span><span style=3D"font-size:12.0pt;
+font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-fareast-font-fam=
+ily:&quot;MS PGothic&quot;;
+mso-bidi-font-family:&quot;MS PGothic&quot;;color:black;background:white;ms=
+o-font-kerning:
+0pt;mso-bidi-language:HI"></span></p>
+<p class=3D"MsoNormal" style=3D"text-align:left;
+background:white;" align=3D"left"><strong><span style=3D"font-size:16.0pt;f=
+ont-family:&quot;Mangal&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;MS PGothic&quot;;font-variant:small-caps;colo=
+r:#7030A0;
+background:white;mso-font-kerning:0pt;mso-bidi-language:HI" lang=3D"HI">&#2=
+360;&#2366;&#2352;</span></strong><strong><span style=3D"font-size:16.0pt;f=
+ont-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family=
+:
+&quot;MS PGothic&quot;;font-variant:small-caps;color:#7030A0;background:whi=
+te;mso-font-kerning:
+0pt;mso-ansi-language:DA;mso-bidi-language:HI" lang=3D"DA">/Abstract:</span=
+></strong><span style=3D"font-size:12.0pt;font-family:&quot;Calibri&quot;,&=
+quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;MS PGothic&quot;;mso-bidi-font-family:&quot;MS PGothic&quot;;color:bl=
+ack;background:white;
+mso-font-kerning:0pt;mso-bidi-language:HI"></span></p>
+<p class=3D"MsoNormal" style=3D"text-align:left;
+background:white;" align=3D"left"><span style=3D"font-size:12.0pt;font-fami=
+ly:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;MS PGothic&quot;;mso-bidi-font-family:&quot;M=
+S PGothic&quot;;
+color:black;background:white;mso-font-kerning:0pt;mso-bidi-language:HI">&nb=
+sp;</span></p>
+<p class=3D"MsoNormal" style=3D"text-align:left;line-height:150%;background=
+:white;" align=3D"left">
+<strong><em><span style=3D"font-size:11.0pt;line-height:150%;font-family:&q=
+uot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;MS PGothic&quot;;color:#CC0066;background:whi=
+te;mso-font-kerning:
+0pt;mso-ansi-language:DA;mso-bidi-language:HI" lang=3D"DA">Dental imaging h=
+as gained
+ importance in recent times, due to the necessity and benefits of conservat=
+ive treatment methods. Dental caries is results in mineral loss leading to =
+the formation of voids and gaps which show up with high contrast in optical=
+ imaging. Identifying dental caries
+ at this early stage can help in arresting and reversing the damage through=
+ various treatment plans available, thereby preserving the natural tooth su=
+bstance. In this study a high-speed time-domain optical coherence technique=
+ based on a quadratic electro-optic
+ scanning technique using potassium tantalite niobate (KTa1-xNbxO3, KTN) cr=
+ystals is proposed and demonstrated. The proposed technique is used for bot=
+h axial and lateral scanning of samples to identify early dental caries and=
+ also study the progress of demineralisation.
+ Further, to improve the contrast of caries imaging in the subsurface regio=
+n, polarisation sensitive OCT (PSOCT) is being studied to eliminate the sur=
+face reflection from the subsurface caries information.
+</span></em></strong></p>
+<p class=3D"MsoNormal" style=3D"text-align:left;
+background:white;" align=3D"left"><strong><em><span style=3D"font-size:11.0=
+pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;MS PGothic&quot;;color:#CC0066;background:whi=
+te;mso-font-kerning:
+0pt;mso-ansi-language:DA;mso-bidi-language:HI" lang=3D"DA">&nbsp;</span></e=
+m></strong></p>
+<p class=3D"MsoNormal" style=3D"text-align:center;
+background:white;" align=3D"center">
+<strong><em><span style=3D"font-size:21.0pt;font-family:&quot;Arial Unicode=
+ MS&quot;,&quot;sans-serif&quot;;
+color:#7030A0;background:white;mso-font-kerning:0pt;mso-bidi-language:HI" l=
+ang=3D"HI">&#2360;&#2349;&#2368; &#2310;&#2350;&#2306;&#2340;&#2381;&#2352;=
+&#2367;&#2340; &#2361;&#2376;&#2306;</span></em></strong><strong><em><span =
+style=3D"font-size:28.0pt;
+font-family:&quot;Mangal&quot;,&quot;serif&quot;;mso-fareast-font-family:&q=
+uot;MS PGothic&quot;;color:#7030A0;
+background:white;mso-font-kerning:0pt;mso-bidi-language:HI" lang=3D"HI">
+</span></em></strong><strong><em><span style=3D"font-size:24.0pt;font-famil=
+y:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;MS PGothic&quot;;color:#7030A0;background:white;mso-font-kerning:0pt;=
+mso-bidi-language:
+HI">/ALL ARE WELCOME!!</span></em></strong></p>
+<p class=3D"MsoNormal" style=3D"text-align:center;
+background:white;" align=3D"center">
+<span style=3D"font-size:12.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;
+mso-fareast-font-family:&quot;MS PGothic&quot;;mso-bidi-font-family:&quot;M=
+S PGothic&quot;;
+color:black;background:white;mso-font-kerning:0pt;mso-bidi-language:HI">&nb=
+sp;</span></p>
+<p class=3D"MsoNormal" style=3D"text-align:left;
+background:white;" align=3D"left"><span style=3D"font-size:12.0pt;font-fami=
+ly:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;MS PGothic&quot;;color:black;background:white=
+;mso-font-kerning:
+0pt;mso-bidi-language:HI">&nbsp;</span><span style=3D"font-size:12.0pt;
+font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-fareast-font-fam=
+ily:&quot;MS PGothic&quot;;
+mso-bidi-font-family:&quot;MS PGothic&quot;;color:black;background:white;ms=
+o-font-kerning:
+0pt;mso-bidi-language:HI"></span></p>
+<p class=3D"MsoNormal" style=3D"text-align:left;
+background:white;" align=3D"left"><strong><span style=3D"font-size:12.0pt;f=
+ont-family:&quot;Arial Unicode MS&quot;,&quot;sans-serif&quot;;
+color:#CC0066;background:white;mso-font-kerning:0pt;mso-bidi-language:HI" l=
+ang=3D"HI">&#2344;&#2368;&#2354;&#2375;&#2358; &#2332;&#2416; &#2357;&#2360=
+;&#2366;</span></strong></p>
+<p class=3D"MsoNormal" style=3D"text-align:left;
+background:white;" align=3D"left"><strong><span style=3D"font-size:12.0pt;f=
+ont-family:&quot;Arial Unicode MS&quot;,&quot;sans-serif&quot;;
+color:#CC0066;background:white;mso-font-kerning:0pt;mso-bidi-language:HI" l=
+ang=3D"HI">&#2346;&#2381;&#2352;&#2366;&#2343;&#2381;&#2351;&#2366;&#2346;&=
+#2325;</span></strong><span style=3D"font-size:12.0pt;font-family:&quot;Cal=
+ibri&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;MS PGothic&quot;;mso-bidi-font-family:&quot;MS PGothic&quot;;color:bl=
+ack;background:white;
+mso-font-kerning:0pt;mso-bidi-language:HI"></span></p>
+<p class=3D"MsoNormal" style=3D"text-align:left;
+background:white;" align=3D"left"><strong><span style=3D"font-size:12.0pt;f=
+ont-family:&quot;Arial Unicode MS&quot;,&quot;sans-serif&quot;;
+color:#CC0066;background:white;mso-font-kerning:0pt;mso-bidi-language:HI" l=
+ang=3D"HI">&#2309;&#2349;&#2367;&#2351;&#2366;&#2306;&#2340;&#2381;&#2352;&=
+#2367;&#2325;&#2368;
+ &#2309;&#2349;&#2367;&#2325;&#2354;&#2381;&#2346; &#2357;&#2367;&#2349;&#2=
+366;&#2327;</span></strong><span style=3D"font-size:12.0pt;font-family:&quo=
+t;Calibri&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;MS PGothic&quot;;mso-bidi-font-family:&quot;M=
+S PGothic&quot;;
+color:black;background:white;mso-font-kerning:0pt;mso-bidi-language:HI"></s=
+pan></p>
+<p class=3D"MsoNormal" style=3D"text-align:left;
+background:white;" align=3D"left"><strong><span style=3D"font-size:12.0pt;f=
+ont-family:&quot;Arial Unicode MS&quot;,&quot;sans-serif&quot;;
+color:#CC0066;background:white;mso-font-kerning:0pt;mso-bidi-language:HI" l=
+ang=3D"HI">&#2310;&#2312;.&#2310;&#2312;.&#2335;&#2368;. &#2350;&#2342;&#23=
+81;&#2352;&#2366;&#2360;</span></strong><span style=3D"font-size:12.0pt;fon=
+t-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;MS PGothic&quot;;mso-bidi-font-family:&quot;M=
+S PGothic&quot;;
+color:black;background:white;mso-font-kerning:0pt;mso-bidi-language:HI"></s=
+pan></p>
+<p class=3D"MsoNormal" style=3D"text-align:left;
+background:white;" align=3D"left"><span style=3D"font-size: 12pt;"><span st=
+yle=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; color: r=
+gb(204, 0, 102); background: white none repeat scroll 0% 0%;">&nbsp;</span>=
+<span style=3D"font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; col=
+or: black; background: white none repeat scroll 0% 0%;"></span></span></p>
+<p class=3D"MsoNormal" style=3D"text-align:left;
+background:white;" align=3D"left"><strong style=3D"font-size: 12pt;"><span =
+style=3D"font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-varian=
+t: small-caps; color: rgb(204, 0, 102); background: white none repeat scrol=
+l 0% 0%;" lang=3D"DA">Nilesh
+ J. Vasa</span></strong></p>
+<p class=3D"MsoNormal" style=3D"text-align:left;
+background:white;" align=3D"left"><strong style=3D"font-size: 12pt;"><span =
+style=3D"font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-varian=
+t: small-caps; color: rgb(204, 0, 102); background: white none repeat scrol=
+l 0% 0%;" lang=3D"DA">Professor</span></strong></p>
+<p class=3D"MsoNormal" style=3D"text-align:left;
+background:white;" align=3D"left"><strong style=3D"font-size: 12pt;"><span =
+style=3D"font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-varian=
+t: small-caps; color: rgb(204, 0, 102); background: white none repeat scrol=
+l 0% 0%;" lang=3D"DA">Dept.
+ of Engg. Design</span></strong></p>
+<p class=3D"MsoNormal" style=3D"text-align:left;
+background:white;" align=3D"left"><strong style=3D"font-size: 12pt;"><span =
+style=3D"font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-varian=
+t: small-caps; color: rgb(204, 0, 102); background: white none repeat scrol=
+l 0% 0%;" lang=3D"DA">IIT
+ Madras.</span></strong></p>
+<p class=3D"MsoNormal" style=3D"text-align:left;
+background:white;" align=3D"left"><br>
+</p>
+<p class=3D"MsoNormal" style=3D"text-align:left;
+background:white;" align=3D"left"><br>
+<strong style=3D"font-size: 12pt;"><span style=3D"font-family: &quot;Arial&=
+quot;,&quot;sans-serif&quot;; font-variant: small-caps; color: rgb(204, 0, =
+102); background: white none repeat scroll 0% 0%;" lang=3D"DA"></span></str=
+ong></p>
+</body>
+</html>
+
+
+
+

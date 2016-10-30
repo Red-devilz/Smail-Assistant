@@ -1,0 +1,59 @@
+From:
+btech-bounces@smail.iitm.ac.in
+
+Date:
+20-4-2016
+
+Body:
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none"><!--P{margin-top:0;margin-b=
+ottom:0;} --></style>
+</head>
+<body dir=3D"ltr" style=3D"font-size:12pt;color:#000000;background-color:#F=
+FFFFF;font-family:Calibri,Arial,Helvetica,sans-serif;">
+<p>Hello,</p>
+<p><br>
+</p>
+<p>Here is an announcement of a research proposal seminar.</p>
+<p><br>
+</p>
+<p>Student: Jyothi Krishna V S (CS13D022)</p>
+<p>Date: May 4, 2016</p>
+<p>Time: 10:00</p>
+<p>Venue: BSB 361</p>
+<p><br>
+</p>
+<p><strong>Subject:</strong> Compiler Enhanced Scheduling for OpenMP for He=
+terogeneous Multiprocessors</p>
+<p><br>
+</p>
+<p><strong>Abstract</strong>:</p>
+<p>Scheduling in Asymmetric Multicore Processors(AMP), a special case of He=
+terogeneous Multiprocessors, is a widely studied topic. The scheduling tech=
+niques which are mostly<br>
+runtime do not usually consider parallel programming pattern used in parall=
+el programming frameworks like OpenMP. The current compilers for these para=
+llel programming plat-<br>
+forms are hardware oblivious which prevent any compile time optimization fo=
+r platforms like big.LITTLE and has to completely rely on runtime optimizat=
+ion. In this paper we propose a Hardware aware Compiler Enhanced Scheduling=
+ (CES) where common compiler transformations
+ are coupled with compiler added scheduling commands to take advan-<br>
+tage of the hardware asymmetry and improve the runtime efficiency. We imple=
+ment a compiler for OpenMP and demonstrate its efficiency in Samsung Exynos=
+ with big.LITTLE ar-<br>
+chitecture. On an average we see 18% reduction in runtime and 14% reduction=
+ in energy consumption in standard NPB and FSU benchmarks with CES across m=
+ultiple frequencies and core configurations in big.LITTLE.</p>
+<p><br>
+</p>
+<p>-rupesh.</p>
+<p><br>
+</p>
+</body>
+</html>
+
+

@@ -1,0 +1,125 @@
+From:
+"GSoC-general"
+ <gsoc-general-bounces+rahul13ramesh=gmail.com@python.org>
+
+Date:
+19-10-2016
+
+Body:
+Send GSoC-general mailing list submissions to
+	gsoc-general@python.org
+
+To subscribe or unsubscribe via the World Wide Web, visit
+	https://mail.python.org/mailman/listinfo/gsoc-general
+or, via email, send a message with subject or body 'help' to
+	gsoc-general-request@python.org
+
+You can reach the person managing the list at
+	gsoc-general-owner@python.org
+
+When replying, please edit your Subject line so it is more specific
+than "Re: Contents of GSoC-general digest..."
+
+
+Today's Topics:
+
+   1. Guidance_GSoC (deep tavker)
+   2. Re: Guidance_GSoC (Ankur Ankan)
+
+
+----------------------------------------------------------------------
+
+Message: 1
+Date: Wed, 19 Oct 2016 15:07:36 +0530
+From: deep tavker <tavkerdeep@gmail.com>
+To: gsoc-general@python.org
+Subject: [GSoC-general] Guidance_GSoC
+Message-ID:
+	<CAJvDWpGE2AB1ehVip0774wXjYn7nDxhp1y_icS0Jx5AkT9NvAA@mail.gmail.com>
+Content-Type: text/plain; charset="utf-8"
+
+Dear developers,
+
+It's been a while since I started preparing for GSoC and as guided by
+senior developers like you people, I started looking at organisations and I
+finally decided I wanted to so GSoC with python. I also narrowed it down to
+SciPy.
+
+I've been trying to fix the bugs from the issues page (Github) of SciPy but
+I am not being able to distinguish between a simple bug and a complex one.
+Some guidance on that front would really help. And in general, some advice
+on what kind of generic topics should one learn to get started/better at
+open source dev.
+
+Thank you,
+Deep
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.python.org/pipermail/gsoc-general/attachments/20161019/525b0a02/attachment-0001.html>
+
+------------------------------
+
+Message: 2
+Date: Wed, 19 Oct 2016 12:16:31 +0200
+From: Ankur Ankan <ankurankan@gmail.com>
+To: deep tavker <tavkerdeep@gmail.com>
+Cc: gsoc-general@python.org
+Subject: Re: [GSoC-general] Guidance_GSoC
+Message-ID:
+	<CANnmyOsxjMAm=+ksxo9Oy1-0PDrXge_ofDwgUrWQVVGU-qs2HA@mail.gmail.com>
+Content-Type: text/plain; charset="utf-8"
+
+Hi,
+
+You can try to filter the issues using labels. There are a few easy fix
+issues:
+https://github.com/scipy/scipy/issues?q=is%3Aopen+is%3Aissue+label%3Aeasy-fix
+.
+
+Cheers
+Ankur
+
+On Wed, Oct 19, 2016 at 11:37 AM, deep tavker <tavkerdeep@gmail.com> wrote:
+
+> Dear developers,
+>
+> It's been a while since I started preparing for GSoC and as guided by
+> senior developers like you people, I started looking at organisations and I
+> finally decided I wanted to so GSoC with python. I also narrowed it down to
+> SciPy.
+>
+> I've been trying to fix the bugs from the issues page (Github) of SciPy
+> but I am not being able to distinguish between a simple bug and a complex
+> one. Some guidance on that front would really help. And in general, some
+> advice on what kind of generic topics should one learn to get
+> started/better at open source dev.
+>
+> Thank you,
+> Deep
+>
+> _______________________________________________
+> GSoC-general mailing list
+> GSoC-general@python.org
+> https://mail.python.org/mailman/listinfo/gsoc-general
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.python.org/pipermail/gsoc-general/attachments/20161019/827eefbf/attachment-0001.html>
+
+------------------------------
+
+Subject: Digest Footer
+
+_______________________________________________
+GSoC-general mailing list
+GSoC-general@python.org
+https://mail.python.org/mailman/listinfo/gsoc-general
+
+
+------------------------------
+
+End of GSoC-general Digest, Vol 7, Issue 3
+******************************************
+
+

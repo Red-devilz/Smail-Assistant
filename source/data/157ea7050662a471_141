@@ -1,0 +1,69 @@
+From:
+"CS12D023 AMAN NOUGRAHIYA" <cs12d023@smail.iitm.ac.in>
+
+Date:
+22-10-2016
+
+Body:
+
+CS3310:JUL-NOV 2016 -> Forums -> Discussion forum for Assignment 5: Registe=
+r
+allocation -> Doubts and discussions on Assignment 5
+https://courses.iitm.ac.in/mod/forum/discuss.php?d=3D1326
+---------------------------------------------------------------------
+Re: Doubts and discussions on Assignment 5
+by CS12D023 AMAN NOUGRAHIYA - Saturday, 22 October 2016, 8:58 AM
+---------------------------------------------------------------------
+Dear All,
+The following query was asked by Gowri Shankar on a different thread. I am
+deleting the original post, and copying it verbatim over here.=20
+
+Efficiency=20of allocation
+by=C2=A0CS14B010 GOWRI SANKAR R [1]=C2=A0- Friday, 21 October 2016, 7:42 PM=
+=20
+
+In=20class we discussed about an approximation for determining the live
+interval for a temporary, where we said the the temporary is approximated
+to be live from the starting point of the first interval to the end point
+of the last interval.=C2=A0
+This may lead to some redundant interference.=20
+
+Also=20in the class sir told that the no of registers used will be checked
+and indeed the output requires us to print it.
+So my question is can we do this approximation? Are we expected to use only
+a pre-determined no of spilled args(this approximation may not satisfy the
+count) or is there any kind of threshold for it?=C2=A0=20
+
+Can=20you elaborate on how the check on no of registers will be done?=C2=A0=
+=20
+
+Thanks.=20
+
+I repeat my request: Please post all your doubts and discussions on the
+same thread (THIS thread). It is much easier that way to track all the
+posts, especially while we are not receiving any emails.
+Thanks.=20
+
+Warm=20regards,
+Aman (TA- CS3300)=20
+
+=C2=A0
+
+Links:
+------
+[1] https://courses.iitm.ac.in/user/view.php?id=3D9789&amp;course=3D4150
+
+
+---------------------------------------------------------------------
+This is a copy of a message posted on the CS3310:JUL-NOV 2016 website.
+
+To reply click on this link:
+https://courses.iitm.ac.in/mod/forum/post.php?reply=3D2874
+
+---------------------------------------------------------------------
+Change your forum digest preferences:
+https://courses.iitm.ac.in/mod/forum/index.php?id=3D4150
+
+
+
+

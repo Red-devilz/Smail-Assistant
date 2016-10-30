@@ -1,0 +1,37 @@
+From:
+"CS13D023 MANAS THAKUR" <cs13d023@smail.iitm.ac.in>
+
+Date:
+27-9-2016
+
+Body:
+
+CS3310:JUL-NOV 2016 -> Forums -> Discussion Forum for Assignment 3:
+Intermediate Code Generation -> Expressions
+https://courses.iitm.ac.in/mod/forum/discuss.php?d=3D1220
+---------------------------------------------------------------------
+Re: Expressions
+by CS13D023 MANAS THAKUR - Tuesday, 27 September 2016, 6:00 PM
+---------------------------------------------------------------------
+- No logical (I assume you mean AND and OR) expressions are there in
+miniIR.
+- Since logical expressions may be there in a miniJava program, you have to
+handle them to produce an equivalent miniIR program (hint: nested if).=20
+
+---------------------------------------------------------------------
+This=20is a copy of a message posted on the CS3310:JUL-NOV 2016 website.
+
+To reply click on this link:
+https://courses.iitm.ac.in/mod/forum/post.php?reply=3D2591
+
+---------------------------------------------------------------------
+Unsubscribe from this forum:
+https://courses.iitm.ac.in/mod/forum/subscribe.php?id=3D218
+
+---------------------------------------------------------------------
+Change your forum digest preferences:
+https://courses.iitm.ac.in/mod/forum/index.php?id=3D4150
+
+
+
+

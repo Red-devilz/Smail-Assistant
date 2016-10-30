@@ -1,0 +1,122 @@
+From:
+"GSoC-general"
+ <gsoc-general-bounces+rahul13ramesh=gmail.com@python.org>
+
+Date:
+9-10-2016
+
+Body:
+Send GSoC-general mailing list submissions to
+	gsoc-general@python.org
+
+To subscribe or unsubscribe via the World Wide Web, visit
+	https://mail.python.org/mailman/listinfo/gsoc-general
+or, via email, send a message with subject or body 'help' to
+	gsoc-general-request@python.org
+
+You can reach the person managing the list at
+	gsoc-general-owner@python.org
+
+When replying, please edit your Subject line so it is more specific
+than "Re: Contents of GSoC-general digest..."
+
+
+Today's Topics:
+
+   1. Starting contribution (vinit Parakh)
+   2. Re: Starting contribution (Terri Oda)
+
+
+----------------------------------------------------------------------
+
+Message: 1
+Date: Sun, 9 Oct 2016 09:03:52 +0530
+From: vinit Parakh <vinitparakh1@gmail.com>
+To: gsoc-general@python.org
+Subject: [GSoC-general] Starting contribution
+Message-ID:
+	<CA+zbzF229c7Z6+O=ttt6mbqVCT=uJHS69rE6bzWbf_sa6PU=9w@mail.gmail.com>
+Content-Type: text/plain; charset="utf-8"
+
+Hi,
+
+I am Vinit an undergraduate from India in Computer Science branch.
+I come to know about this organization through GSOC. I am looking
+forward to contributing in open source (python).
+I am familiar with CC, C++, Python, and bootstrap.
+I am stuck in situation of how to get started what setup and environment
+I need for Linux and where I can find the bug list.
+Kindly help me to move forward.
+Thanks,
+
+
+Best,
+Vinit
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.python.org/pipermail/gsoc-general/attachments/20161009/6b1179a8/attachment-0001.html>
+
+------------------------------
+
+Message: 2
+Date: Sat, 8 Oct 2016 22:54:23 -0700
+From: Terri Oda <terri@toybox.ca>
+To: vinit Parakh <vinitparakh1@gmail.com>, gsoc-general@python.org
+Subject: Re: [GSoC-general] Starting contribution
+Message-ID: <074df2d9-365e-2d41-8ff1-d385284e6a9f@toybox.ca>
+Content-Type: text/plain; charset=windows-1252; format=flowed
+
+On 2016-10-08 8:33 PM, vinit Parakh wrote:
+> Hi,
+>
+> I am Vinit an undergraduate from India in Computer Science branch.
+> I come to know about this organization through GSOC. I am looking
+> forward to contributing in open source (python).
+> I am familiar with CC, C++, Python, and bootstrap.
+> I am stuck in situation of how to get started what setup and environment
+> I need for Linux and where I can find the bug list.
+> Kindly help me to move forward.
+> Thanks,
+
+
+Hi Vinit!
+
+First off, you'll need to narrow down which sub-organization you'd like 
+to work with.  Python is an "umbrella organization" which hosts around 
+20 sub-organizations, each of which has their own bug tracker.  We don't 
+know yet who's participating, but you can take a look at all the orgs 
+that participated in 2016 and that's not a bad place to start:
+
+https://wiki.python.org/moin/SummerOfCode/2016
+
+Don't worry too much about whether the project you choose will be in or 
+not.  You're so early that you've got plenty of time to change your 
+mind, and *any* contributions will help your application and give you 
+useful experience for GSoC.
+
+And don't forget to keep an eye on the page for the upcoming year. 
+We'll start serious updates with information about projects and sub-orgs 
+in January and February 2017.
+
+https://wiki.python.org/moin/SummerOfCode/2017
+
+  Terri
+
+
+
+------------------------------
+
+Subject: Digest Footer
+
+_______________________________________________
+GSoC-general mailing list
+GSoC-general@python.org
+https://mail.python.org/mailman/listinfo/gsoc-general
+
+
+------------------------------
+
+End of GSoC-general Digest, Vol 7, Issue 1
+******************************************
+
+

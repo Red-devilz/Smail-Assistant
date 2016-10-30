@@ -1,0 +1,33 @@
+From:
+"CS14B028 SRINIDHI PRABHU" <cs14b028@smail.iitm.ac.in>
+
+Date:
+14-9-2016
+
+Body:
+
+CS5011:JUL-NOV 2016 -> Forums -> General Lecture related queries -> Linear
+regression coefficients
+https://courses.iitm.ac.in/mod/forum/discuss.php?d=3D1122
+---------------------------------------------------------------------
+Linear regression coefficients
+by CS14B028 SRINIDHI PRABHU - Wednesday, 14 September 2016, 8:31 PM
+---------------------------------------------------------------------
+Question 5 asks us to report the coefficients of the linear regression
+model. But, the data has around 120 dimensions. Do we need to report all
+the coefficients in the report? If yes, then should the coefficients be
+reported for each dataset or an average over all datasets?
+
+---------------------------------------------------------------------
+This is a copy of a message posted on the CS5011:JUL-NOV 2016 website.
+
+To reply click on this link:
+https://courses.iitm.ac.in/mod/forum/post.php?reply=3D2304
+
+---------------------------------------------------------------------
+Change your forum digest preferences:
+https://courses.iitm.ac.in/mod/forum/index.php?id=3D3930
+
+
+
+

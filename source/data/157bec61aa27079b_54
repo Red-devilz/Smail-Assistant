@@ -1,0 +1,102 @@
+From:
+"GSoC-general"
+ <gsoc-general-bounces+rahul13ramesh=gmail.com@python.org>
+
+Date:
+13-10-2016
+
+Body:
+Send GSoC-general mailing list submissions to
+	gsoc-general@python.org
+
+To subscribe or unsubscribe via the World Wide Web, visit
+	https://mail.python.org/mailman/listinfo/gsoc-general
+or, via email, send a message with subject or body 'help' to
+	gsoc-general-request@python.org
+
+You can reach the person managing the list at
+	gsoc-general-owner@python.org
+
+When replying, please edit your Subject line so it is more specific
+than "Re: Contents of GSoC-general digest..."
+
+
+Today's Topics:
+
+   1. I wish to contribute (Sahithi Kilaru)
+   2. Re: I wish to contribute (Terri Oda)
+
+
+----------------------------------------------------------------------
+
+Message: 1
+Date: Thu, 13 Oct 2016 06:15:46 +0000 (UTC)
+From: Sahithi Kilaru <sahithikilaru@yahoo.co.in>
+To: "gsoc-general@python.org" <gsoc-general@python.org>
+Subject: [GSoC-general] I wish to contribute
+Message-ID: <1523094602.1141240.1476339346206@mail.yahoo.com>
+Content-Type: text/plain; charset="utf-8"
+
+Dear mentors,
+I'm a software developer and I'm new around here. I wish to contribute to your codebase. Can someone help me get started?
+Thank you.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.python.org/pipermail/gsoc-general/attachments/20161013/d0fdfc97/attachment-0001.html>
+
+------------------------------
+
+Message: 2
+Date: Wed, 12 Oct 2016 23:45:57 -0700
+From: Terri Oda <terri@toybox.ca>
+To: Sahithi Kilaru <sahithikilaru@yahoo.co.in>,
+	"gsoc-general@python.org" <gsoc-general@python.org>
+Subject: Re: [GSoC-general] I wish to contribute
+Message-ID: <31c9f73e-b4ec-f359-21b7-a6c4ad240d53@toybox.ca>
+Content-Type: text/plain; charset=windows-1252; format=flowed
+
+On 2016-10-12 11:15 PM, Sahithi Kilaru via GSoC-general wrote:
+> I'm a software developer and I'm new around here. I wish to contribute
+> to your codebase. Can someone help me get started?
+
+So, Python as far as Google Summer of Code goes is a *lot* of different 
+code bases.  20+ in fact.  So you'll need to narrow down your question a 
+bit before anyone can even start to answer you!
+
+You can see who participated last year here:
+https://wiki.python.org/moin/SummerOfCode/2016
+
+But there's no guarantee that all those groups will participate again in 
+2017.  Many groups won't be making that decision for sure until January 
+or February of 2017 when they know which mentors will be available.  But 
+that's ok, any experience will help you be a better candidate for GSoC, 
+so if that's your goal it doesn't matter which group you choose first.
+
+
+If you're overwhelmed with the choices, you might want to read this to 
+help you get started:
+
+https://wiki.python.org/moin/SummerOfCode/FrequentlyAskedQuestions#How_do_I_choose_a_project_or_a_sub-org.3F
+
+Good luck!
+
+  Terri
+
+
+
+------------------------------
+
+Subject: Digest Footer
+
+_______________________________________________
+GSoC-general mailing list
+GSoC-general@python.org
+https://mail.python.org/mailman/listinfo/gsoc-general
+
+
+------------------------------
+
+End of GSoC-general Digest, Vol 7, Issue 2
+******************************************
+
+

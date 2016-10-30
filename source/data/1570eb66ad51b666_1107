@@ -1,0 +1,35 @@
+From:
+"CS12B060 SAHIL SHARMA" <cs12b060@smail.iitm.ac.in>
+
+Date:
+9-9-2016
+
+Body:
+
+CS5011:JUL-NOV 2016 -> Forums -> General Lecture related queries -> Tutoria=
+l 2
+Question3
+https://courses.iitm.ac.in/mod/forum/discuss.php?d=3D1077
+---------------------------------------------------------------------
+Re: Tutorial 2 Question3
+by CS12B060 SAHIL SHARMA - Friday, 9 September 2016, 4:46 PM
+---------------------------------------------------------------------
+What the question means is that before the data is made orthogonal, do we
+need to center the data? Hence the question is - should the centering have
+been done before we observed that the data is orthogonal. Of course if the
+data is orthogonal but not centered, we cannot center the data without
+losing the orthogonality, as you have observed.
+
+---------------------------------------------------------------------
+This is a copy of a message posted on the CS5011:JUL-NOV 2016 website.
+
+To reply click on this link:
+https://courses.iitm.ac.in/mod/forum/post.php?reply=3D2216
+
+---------------------------------------------------------------------
+Change your forum digest preferences:
+https://courses.iitm.ac.in/mod/forum/index.php?id=3D3930
+
+
+
+

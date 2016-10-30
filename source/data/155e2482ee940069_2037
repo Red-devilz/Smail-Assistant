@@ -1,0 +1,76 @@
+From:
+seminars-bounces@list.iitm.ac.in
+
+Date:
+12-7-2016
+
+Body:
+============================================================
+
+Dept. of Computer Science and Engineering
+Indian Institute of Technology Madras
+Seminar on July 13, 2016, 3-4 PM
+Location: BSB 361, Dept. of CSE
+
+============================================================
+
+Title: 
+
+The Bandwidth Enforcer (BwE): Towards service-efficient bandwidth
+utilization for WAN distributed computing
+
+Speaker: 
+
+Mr. Abhiram Ravi
+Software Engineer II, Platforms Networking, 
+Google Inc, 
+Google Headquarters, Mountain View, CA, USA
+http://abhiramravi.xyz/
+
+Abstract: 
+
+TCP-based bandwidth allocation to individual flows contending for
+bandwidth on bottleneck links has served the Internet well for
+decades. However, this model of bandwidth allocation assumes all flows
+are of equal priority and that all flows benefit equally from any
+incremental share of available bandwidth, which is not necessarily
+true for distributed computing running across a private WAN. In
+addition, WAN bandwidth is a constrained resource that is economically
+infeasible to substantially over provision. In order to efficiently
+utilize network resources within and across data centers, we present
+the Bandwidth Enforcer (BwE), a WAN bandwidth allocation mechanism
+that provides work-conserving bandwidth allocation, hierarchical
+fairness with flexible policy among competing services, and achievable
+Service Level Objective (SLO) targets that independently account for
+bandwidth, latency, and loss.
+
+Biography:
+
+Abhiram Ravi is a Software Engineer II, Platforms Networking, Google
+Inc, USA, and working out of its Headquarters at Mountain View, CA. He
+received his B. Tech (Hons) and M. Tech degrees in Computer Science
+and Engineering from IIT Madras.
+
+Host: Prof. Krishna Sivalingam, CSE Dept.
+
+============================================================
+--
+Best regards
+krishna
+
+Krishna Moorthy Sivalingam, Ph.D.
+Professor and Head, CSE Dept, IIT Madras, Chennai, India
+Email: skrishnam@iitm.ac.in, krishna.sivalingam@gmail.com
+====================================
+Note: 
+The information in the mail is meant only for the earmarked recipients
+and should not be shared or made public without the sender's permission.
+****
+_______________________________________________
+Seminars mailing list
+Seminars@list.iitm.ac.in
+http://mx.iitm.ac.in/mailman/listinfo/seminars
+
+
+
+

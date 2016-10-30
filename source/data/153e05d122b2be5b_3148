@@ -1,0 +1,378 @@
+From:
+btech-bounces@smail.iitm.ac.in
+
+Date:
+4-4-2016
+
+Body:
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none"><!-- p { margin-top: 0px; m=
+argin-bottom: 0px; } .GINGER_SOFTWARE_noMark { background: transparent; } .=
+GINGER_SOFTWARE_wrapper { overflow: hidden; margin: 0px; padding: 0px; bord=
+er: 0px solid transparent; } .GINGER_SOFTWARE_contour { margin: 0px; } .GIN=
+GER_SOFTWARE_richText { margin: 0px; padding-bottom: 3px; border-width: 0px=
+; border-color: transparent; display: block; color: transparent; overflow: =
+hidden; white-space: pre-wrap; } .GINGER_SOFTWARE_inputWrapper .GINGER_SOFT=
+WARE_richText { } .GINGER_SOFTWARE_canvas { } .GINGER_SOFTWARE_control .GIN=
+GER_SOFTWARE_correct, .GINGER_SOFTWARE_control .GINGER_SOFTWARE_SpellingCor=
+rect, .GINGER_SOFTWARE_control .GINGER_SOFTWARE_spelling, .GINGER_SOFTWARE_=
+control .GINGER_SOFTWARE_mark { } .GINGER_SOFTWARE_richText .GINGER_SOFTWAR=
+E_correct, .GINGER_SOFTWARE_richText .GINGER_SOFTWARE_SpellingCorrect, .GIN=
+GER_SOFTWARE_richText .GINGER_SOFTWARE_spelling, .GINGER_SOFTWARE_richText =
+.GINGER_SOFTWARE_mark { } .GINGER_SOFTWARE_richText .GINGER_SOFTWARE_markHi=
+ghlightLeft { left: -2px; top: 0px; bottom: 0px; width: 2px; } .GINGER_SOFT=
+WARE_richText .GINGER_SOFTWARE_markHighlightRight { right: -2px; top: 0px; =
+bottom: 0px; width: 2px; } .GINGER_SOFTWARE_richText .GINGER_SOFTWARE_markH=
+ighlightTop { left: 0px; right: 0px; top: -2px; height: 3px; } .GINGER_SOFT=
+WARE_richText .GINGER_SOFTWARE_markHighlightBottom { left: 0px; right: 0px;=
+ bottom: -2px; height: 3px; } .GINGER_SOFTWARE_wrapper { position: absolute=
+; overflow: hidden; margin: 0px; padding: 0px; border: 0px solid transparen=
+t; } .GINGER_SOFTWARE_contour { position: absolute; margin: 0px; } .GINGER_=
+SOFTWARE_richText { margin: 0px; padding-bottom: 3px; border-width: 0px; bo=
+rder-color: transparent; display: block; color: transparent; -webkit-text-f=
+ill-color: transparent; overflow: hidden; white-space: pre-wrap; } .GINGER_=
+SOFTWARE_inputWrapper .GINGER_SOFTWARE_richText { position: absolute; } .GI=
+NGER_SOFTWARE_canvas { display: none; background-repeat: no-repeat; } .GING=
+ER_SOFTWARE_control .GINGER_SOFTWARE_correct, .GINGER_SOFTWARE_control .GIN=
+GER_SOFTWARE_SpellingCorrect, .GINGER_SOFTWARE_control .GINGER_SOFTWARE_spe=
+lling, .GINGER_SOFTWARE_control .GINGER_SOFTWARE_mark { border-radius: 2px;=
+ } .GINGER_SOFTWARE_control .GINGER_SOFTWARE_correct, .GINGER_SOFTWARE_cont=
+rol .GINGER_SOFTWARE_SpellingCorrect, .GINGER_SOFTWARE_control .GINGER_SOFT=
+WARE_spelling, .GINGER_SOFTWARE_control .GINGER_SOFTWARE_mark { background-=
+image: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1=
+PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZ=
+G9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5U=
+Y3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkF=
+kb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgIC=
+AgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyL=
+XJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1w=
+PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmF=
+kb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veG=
+FwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9za=
+G9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjhFQ0Y2OENGMzE5OTEx=
+RTI4NjMxOTExNTUyMDhEMDMwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjhFQ0Y2OEQwMzE=
+5OTExRTI4NjMxOTExNTUyMDhEMDMwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3Rhbm=
+NlSUQ9InhtcC5paWQ6OEVDRjY4Q0QzMTk5MTFFMjg2MzE5MTE1NTIwOEQwMzAiIHN0UmVmOmRvY=
+3VtZW50SUQ9InhtcC5kaWQ6OEVDRjY4Q0UzMTk5MTFFMjg2MzE5MTE1NTIwOEQwMzAiLz4gPC9y=
+ZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InI=
+iPz5RRxRxAAAAD0lEQVR42mK48+w7QIABAAVbAroowN08AAAAAElFTkSuQmCC) !important; =
+} .GINGER_SOFTWARE_control .GINGER_SOFTWARE_correct.GINGER_SOFTWARE_synonym=
+, .GINGER_SOFTWARE_control .GINGER_SOFTWARE_SpellingCorrect.GINGER_SOFTWARE=
+_synonym, .GINGER_SOFTWARE_control .GINGER_SOFTWARE_spelling.GINGER_SOFTWAR=
+E_synonym, .GINGER_SOFTWARE_control .GINGER_SOFTWARE_mark.GINGER_SOFTWARE_s=
+ynonym { background-image: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUg=
+AAAAEAAAABCAIAAACQd1PeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAKT2lDQ1BQaG90b3Nob3AgS=
+UNDIHByb2ZpbGUAAHjanVNnVFPpFj333vRCS4iAlEtvUhUIIFJCi4AUkSYqIQkQSoghodkVUcER=
+RUUEG8igiAOOjoCMFVEsDIoK2AfkIaKOg6OIisr74Xuja9a89+bN/rXXPues852zzwfACAyWSDN=
+RNYAMqUIeEeCDx8TG4eQuQIEKJHAAEAizZCFz/SMBAPh+PDwrIsAHvgABeNMLCADATZvAMByH/w=
+/qQplcAYCEAcB0kThLCIAUAEB6jkKmAEBGAYCdmCZTAKAEAGDLY2LjAFAtAGAnf+bTAICd+Jl7A=
+QBblCEVAaCRACATZYhEAGg7AKzPVopFAFgwABRmS8Q5ANgtADBJV2ZIALC3AMDOEAuyAAgMADBR=
+iIUpAAR7AGDIIyN4AISZABRG8lc88SuuEOcqAAB4mbI8uSQ5RYFbCC1xB1dXLh4ozkkXKxQ2YQJ=
+hmkAuwnmZGTKBNA/g88wAAKCRFRHgg/P9eM4Ors7ONo62Dl8t6r8G/yJiYuP+5c+rcEAAAOF0ft=
+H+LC+zGoA7BoBt/qIl7gRoXgugdfeLZrIPQLUAoOnaV/Nw+H48PEWhkLnZ2eXk5NhKxEJbYcpXf=
+f5nwl/AV/1s+X48/Pf14L7iJIEyXYFHBPjgwsz0TKUcz5IJhGLc5o9H/LcL//wd0yLESWK5WCoU=
+41EScY5EmozzMqUiiUKSKcUl0v9k4t8s+wM+3zUAsGo+AXuRLahdYwP2SycQWHTA4vcAAPK7b8H=
+UKAgDgGiD4c93/+8//UegJQCAZkmScQAAXkQkLlTKsz/HCAAARKCBKrBBG/TBGCzABhzBBdzBC/=
+xgNoRCJMTCQhBCCmSAHHJgKayCQiiGzbAdKmAv1EAdNMBRaIaTcA4uwlW4Dj1wD/phCJ7BKLyBC=
+QRByAgTYSHaiAFiilgjjggXmYX4IcFIBBKLJCDJiBRRIkuRNUgxUopUIFVIHfI9cgI5h1xGupE7=
+yAAygvyGvEcxlIGyUT3UDLVDuag3GoRGogvQZHQxmo8WoJvQcrQaPYw2oefQq2gP2o8+Q8cwwOg=
+YBzPEbDAuxsNCsTgsCZNjy7EirAyrxhqwVqwDu4n1Y8+xdwQSgUXACTYEd0IgYR5BSFhMWE7YSK=
+ggHCQ0EdoJNwkDhFHCJyKTqEu0JroR+cQYYjIxh1hILCPWEo8TLxB7iEPENyQSiUMyJ7mQAkmxp=
+FTSEtJG0m5SI+ksqZs0SBojk8naZGuyBzmULCAryIXkneTD5DPkG+Qh8lsKnWJAcaT4U+IoUspq=
+ShnlEOU05QZlmDJBVaOaUt2ooVQRNY9aQq2htlKvUYeoEzR1mjnNgxZJS6WtopXTGmgXaPdpr+h=
+0uhHdlR5Ol9BX0svpR+iX6AP0dwwNhhWDx4hnKBmbGAcYZxl3GK+YTKYZ04sZx1QwNzHrmOeZD5=
+lvVVgqtip8FZHKCpVKlSaVGyovVKmqpqreqgtV81XLVI+pXlN9rkZVM1PjqQnUlqtVqp1Q61MbU=
+2epO6iHqmeob1Q/pH5Z/YkGWcNMw09DpFGgsV/jvMYgC2MZs3gsIWsNq4Z1gTXEJrHN2Xx2KruY=
+/R27iz2qqaE5QzNKM1ezUvOUZj8H45hx+Jx0TgnnKKeX836K3hTvKeIpG6Y0TLkxZVxrqpaXlli=
+rSKtRq0frvTau7aedpr1Fu1n7gQ5Bx0onXCdHZ4/OBZ3nU9lT3acKpxZNPTr1ri6qa6UbobtEd7=
+9up+6Ynr5egJ5Mb6feeb3n+hx9L/1U/W36p/VHDFgGswwkBtsMzhg8xTVxbzwdL8fb8VFDXcNAQ=
+6VhlWGX4YSRudE8o9VGjUYPjGnGXOMk423GbcajJgYmISZLTepN7ppSTbmmKaY7TDtMx83MzaLN=
+1pk1mz0x1zLnm+eb15vft2BaeFostqi2uGVJsuRaplnutrxuhVo5WaVYVVpds0atna0l1rutu6c=
+Rp7lOk06rntZnw7Dxtsm2qbcZsOXYBtuutm22fWFnYhdnt8Wuw+6TvZN9un2N/T0HDYfZDqsdWh=
+1+c7RyFDpWOt6azpzuP33F9JbpL2dYzxDP2DPjthPLKcRpnVOb00dnF2e5c4PziIuJS4LLLpc+L=
+psbxt3IveRKdPVxXeF60vWdm7Obwu2o26/uNu5p7ofcn8w0nymeWTNz0MPIQ+BR5dE/C5+VMGvf=
+rH5PQ0+BZ7XnIy9jL5FXrdewt6V3qvdh7xc+9j5yn+M+4zw33jLeWV/MN8C3yLfLT8Nvnl+F30N=
+/I/9k/3r/0QCngCUBZwOJgUGBWwL7+Hp8Ib+OPzrbZfay2e1BjKC5QRVBj4KtguXBrSFoyOyQrS=
+H355jOkc5pDoVQfujW0Adh5mGLw34MJ4WHhVeGP45wiFga0TGXNXfR3ENz30T6RJZE3ptnMU85r=
+y1KNSo+qi5qPNo3ujS6P8YuZlnM1VidWElsSxw5LiquNm5svt/87fOH4p3iC+N7F5gvyF1weaHO=
+wvSFpxapLhIsOpZATIhOOJTwQRAqqBaMJfITdyWOCnnCHcJnIi/RNtGI2ENcKh5O8kgqTXqS7JG=
+8NXkkxTOlLOW5hCepkLxMDUzdmzqeFpp2IG0yPTq9MYOSkZBxQqohTZO2Z+pn5mZ2y6xlhbL+xW=
+6Lty8elQfJa7OQrAVZLQq2QqboVFoo1yoHsmdlV2a/zYnKOZarnivN7cyzytuQN5zvn//tEsIS4=
+ZK2pYZLVy0dWOa9rGo5sjxxedsK4xUFK4ZWBqw8uIq2Km3VT6vtV5eufr0mek1rgV7ByoLBtQFr=
+6wtVCuWFfevc1+1dT1gvWd+1YfqGnRs+FYmKrhTbF5cVf9go3HjlG4dvyr+Z3JS0qavEuWTPZtJ=
+m6ebeLZ5bDpaql+aXDm4N2dq0Dd9WtO319kXbL5fNKNu7g7ZDuaO/PLi8ZafJzs07P1SkVPRU+l=
+Q27tLdtWHX+G7R7ht7vPY07NXbW7z3/T7JvttVAVVN1WbVZftJ+7P3P66Jqun4lvttXa1ObXHtx=
+wPSA/0HIw6217nU1R3SPVRSj9Yr60cOxx++/p3vdy0NNg1VjZzG4iNwRHnk6fcJ3/ceDTradox7=
+rOEH0x92HWcdL2pCmvKaRptTmvtbYlu6T8w+0dbq3nr8R9sfD5w0PFl5SvNUyWna6YLTk2fyz4y=
+dlZ19fi753GDborZ752PO32oPb++6EHTh0kX/i+c7vDvOXPK4dPKy2+UTV7hXmq86X23qdOo8/p=
+PTT8e7nLuarrlca7nuer21e2b36RueN87d9L158Rb/1tWeOT3dvfN6b/fF9/XfFt1+cif9zsu72=
+Xcn7q28T7xf9EDtQdlD3YfVP1v+3Njv3H9qwHeg89HcR/cGhYPP/pH1jw9DBY+Zj8uGDYbrnjg+=
+OTniP3L96fynQ89kzyaeF/6i/suuFxYvfvjV69fO0ZjRoZfyl5O/bXyl/erA6xmv28bCxh6+yXg=
+zMV70VvvtwXfcdx3vo98PT+R8IH8o/2j5sfVT0Kf7kxmTk/8EA5jz/GMzLdsAAAAgY0hSTQAAei=
+UAAICDAAD5/wAAgOkAAHUwAADqYAAAOpgAABdvkl/FRgAAABJJREFUeNpi+P9gEwAAAP//AwAFc=
+wKS3d7BnwAAAABJRU5ErkJggg=3D=3D) !important; } .GINGER_SOFTWARE_control .GI=
+NGER_SOFTWARE_correct.GINGER_SOFTWARE_noSuggestion, .GINGER_SOFTWARE_contro=
+l .GINGER_SOFTWARE_SpellingCorrect.GINGER_SOFTWARE_noSuggestion, .GINGER_SO=
+FTWARE_control .GINGER_SOFTWARE_spelling.GINGER_SOFTWARE_noSuggestion, .GIN=
+GER_SOFTWARE_control .GINGER_SOFTWARE_mark.GINGER_SOFTWARE_noSuggestion { b=
+ackground-image: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAB=
+CAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1=
+MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaU=
+h6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6e=
+G1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzoz=
+MjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk=
+5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG=
+1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0c=
+DovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9i=
+ZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmU=
+gUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjhFQ0Y2OE=
+NGMzE5OTExRTI4NjMxOTExNTUyMDhEMDMwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjhFQ=
+0Y2OEQwMzE5OTExRTI4NjMxOTExNTUyMDhEMDMwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVm=
+Omluc3RhbmNlSUQ9InhtcC5paWQ6OEVDRjY4Q0QzMTk5MTFFMjg2MzE5MTE1NTIwOEQwMzAiIHN=
+0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OEVDRjY4Q0UzMTk5MTFFMjg2MzE5MTE1NTIwOEQwMz=
+AiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tld=
+CBlbmQ9InIiPz5RRxRxAAAAD0lEQVR42mK48+w7QIABAAVbAroowN08AAAAAElFTkSuQmCC) !i=
+mportant; } .GINGER_SOFTWARE_richText .GINGER_SOFTWARE_correct, .GINGER_SOF=
+TWARE_richText .GINGER_SOFTWARE_SpellingCorrect, .GINGER_SOFTWARE_richText =
+.GINGER_SOFTWARE_spelling, .GINGER_SOFTWARE_richText .GINGER_SOFTWARE_mark =
+{ position: relative; background-image: none !important; } .GINGER_SOFTWARE=
+_richText .GINGER_SOFTWARE_markHighlightLeft { position: absolute; left: -2=
+px; top: 0px; bottom: 0px; width: 2px; } .GINGER_SOFTWARE_richText .GINGER_=
+SOFTWARE_markHighlightRight { position: absolute; right: -2px; top: 0px; bo=
+ttom: 0px; width: 2px; } .GINGER_SOFTWARE_richText .GINGER_SOFTWARE_markHig=
+hlightTop { position: absolute; left: 0px; right: 0px; top: -2px; height: 3=
+px; } .GINGER_SOFTWARE_richText .GINGER_SOFTWARE_markHighlightBottom { posi=
+tion: absolute; left: 0px; right: 0px; bottom: -2px; height: 3px; }--></sty=
+le>
+</head>
+<body dir=3D"ltr" style=3D"font-size:12pt;color:#000000;background-color:#F=
+FFFFF;font-family:Calibri,Arial,Helvetica,sans-serif;">
+<div dir=3D"ltr" style=3D"font-size:12pt; color:#000000; background-color:#=
+FFFFFF; font-family:Calibri,Arial,Helvetica,sans-serif">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr">
+<div>&#8203;&nbsp;</div>
+</div>
+<div><span style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-si=
+ze:16px; background-color:rgb(255,255,255)">Dear all,</span><br style=3D"fo=
+nt-family:Calibri,Arial,Helvetica,sans-serif; font-size:16px">
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:16p=
+x">
+<p><br>
+</p>
+<div style=3D"background-color:rgb(255,255,255)"><span style=3D"font-size:1=
+2pt">&nbsp; &nbsp;&nbsp;This week &nbsp;Mathematics&nbsp;colloquium &nbsp;w=
+ill be given b&#8203;y&nbsp;Prof. Agnieszka Wylomanska&#8203; (</span>Wrocl=
+aw University of Technology&#8203;,&nbsp;Poland)<br>
+</div>
+<div style=3D"background-color:rgb(255,255,255)"><span style=3D"font-family=
+:TimesNewRomanPS; font-size:14pt">Please find the details below</span></div=
+>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<sup></sup><br>
+</p>
+<div><span style=3D"font-size:16pt"><strong>Date/&nbsp;</strong></span><spa=
+n style=3D"font-size:16pt"><strong><span style=3D"font-size:16pt"><span cla=
+ss=3D"hps"><strong><span lang=3D"HI" style=3D"font-size:14pt; font-family:M=
+angal,serif">&#2340;&#2366;&#2352;&#2368;&#2326;</span></strong></span>:</s=
+pan></strong><strong>&nbsp;Thursday,
+ 7<sup><gs id=3D"de41da01-abc5-4f24-84fa-58fce1b1c384" ginger_software_uiph=
+raseguid=3D"4013440e-4c57-4b11-a8e6-4204c301e7c6" class=3D"GINGER_SOFTWARE_=
+mark"><gs id=3D"13975342-600b-44f7-9a5a-bab9b422f3a8" ginger_software_uiphr=
+aseguid=3D"1272b4bf-08f9-4fe0-a1a7-14d9c2d63e95" class=3D"GINGER_SOFTWARE_m=
+ark">th</gs></gs></sup><sup>&nbsp;
+</sup>April</strong><strong>, 2016</strong><br>
+</span></div>
+<div><span style=3D"font-size:16pt"><strong><br>
+</strong></span></div>
+<div><span style=3D"font-size:16pt"><strong>Time/&nbsp;</strong></span><spa=
+n style=3D"font-size:16pt"><strong><span style=3D"font-size:16pt"><span cla=
+ss=3D"hps"><strong><span lang=3D"HI" style=3D"font-size:14pt; font-family:M=
+angal,serif">&#2360;&#2350;&#2351;</span></strong></span>:</span></strong><=
+strong>&nbsp;3:00
+ p.m. <gs id=3D"0886e98d-3108-448a-b0a2-359f0836c3b7" ginger_software_uiphr=
+aseguid=3D"d2737c76-7a5f-4d41-ae90-3c9653ad282e" class=3D"GINGER_SOFTWARE_m=
+ark">
+<gs id=3D"5a38f5ee-4701-4dad-b4bb-17eb19679805" ginger_software_uiphrasegui=
+d=3D"3d43bcf4-6fe9-4dbd-afd4-726e25d2a617" class=3D"GINGER_SOFTWARE_mark">t=
+o</gs></gs> 4:00 p.m.</strong></span></div>
+<div><span style=3D"font-size:16pt"><strong><br>
+</strong></span></div>
+<div><span style=3D"font-size:16pt"><strong>Venue/&nbsp;</strong></span><sp=
+an style=3D"font-size:16pt"><strong><span style=3D"font-size:16pt"><span cl=
+ass=3D"hps"><strong><span lang=3D"HI" style=3D"font-size:14pt; font-family:=
+Mangal,serif">&#2360;&#2381;&#2341;&#2366;&#2344;</span></strong></span>:</=
+span></strong><strong>&nbsp;Madhava
+ Hall (HSB 357), 2&#8203;&#8203;<sup><gs id=3D"d8d610a9-c4f8-4afd-a3a4-ad41=
+57c71404" ginger_software_uiphraseguid=3D"26b00617-12f5-42e3-92bf-706e00129=
+7ef" class=3D"GINGER_SOFTWARE_mark"><gs id=3D"982543ac-55ec-496a-ac35-14129=
+8be9538" ginger_software_uiphraseguid=3D"24e0d244-6ccf-46a2-aac7-f0a887a188=
+0e" class=3D"GINGER_SOFTWARE_mark">nd</gs></gs></sup><sup></sup></strong><s=
+trong>&nbsp;Floor,&nbsp;</strong></span><strong style=3D"font-size:16pt">De=
+partment
+ of Mathematics.</strong></div>
+<div><strong style=3D"font-size:16pt"><br>
+</strong></div>
+<div><span style=3D"font-size:16pt"><strong>Speaker/&nbsp;</strong></span><=
+span style=3D"font-size:16pt"><strong><span style=3D"font-size:16pt"><span =
+class=3D"hps"><span lang=3D"HI" style=3D"font-size:14pt; font-family:Mangal=
+,serif">&#2357;&#2325;&#2381;&#2340;&#2366;</span></span><strong><span styl=
+e=3D"font-size:14pt; font-family:Arial,sans-serif"></span></strong><strong>=
+<span style=3D"font-size:14pt; font-family:Arial,sans-serif"></span></stron=
+g><strong><span style=3D"font-size:14pt; font-family:Arial,sans-serif"></sp=
+an></strong><strong><span style=3D"font-size:14pt; font-family:Arial,sans-s=
+erif"></span></strong><strong><span style=3D"font-size:14pt; font-family:Ar=
+ial,sans-serif"></span></strong><strong><span style=3D"font-size:14pt; font=
+-family:Arial,sans-serif"></span></strong><strong><span style=3D"font-size:=
+14pt; font-family:Arial,sans-serif"></span></strong><strong><span style=3D"=
+font-size:14pt; font-family:Arial,sans-serif"></span></strong><strong><span=
+ style=3D"font-size:14pt; font-family:Arial,sans-serif"></span></strong><st=
+rong><span style=3D"font-size:14pt; font-family:Arial,sans-serif"></span></=
+strong><strong><span style=3D"font-size:14pt; font-family:Arial,sans-serif"=
+></span></strong><strong><span style=3D"font-size:14pt; font-family:Arial,s=
+ans-serif"></span></strong><strong><span style=3D"font-size:14pt; font-fami=
+ly:Arial,sans-serif"></span></strong><strong><span style=3D"font-size:14pt;=
+ font-family:Arial,sans-serif"></span></strong><strong><span style=3D"font-=
+size:14pt; font-family:Arial,sans-serif"></span></strong><strong><span styl=
+e=3D"font-size:14pt; font-family:Arial,sans-serif"></span></strong><strong>=
+<span style=3D"font-size:14pt; font-family:Arial,sans-serif"></span></stron=
+g><strong><span style=3D"font-size:14pt; font-family:Arial,sans-serif">&nbs=
+p;</span></strong><gs id=3D"85884e43-f912-418a-be5b-8cd02ecbc979" ginger_so=
+ftware_uiphraseguid=3D"ba4ed7ac-b15c-483a-a7ff-1324443c3cfc" class=3D"GINGE=
+R_SOFTWARE_mark">:</gs></span></strong><strong>&nbsp;<span style=3D"color:r=
+gb(208,92,18)">Dr.&nbsp;</span><span style=3D"color:rgb(208,92,18)"><gs id=
+=3D"665b0ad0-4d6b-4a8d-ac87-6bda979ee1f4" ginger_software_uiphraseguid=3D"2=
+537d56a-d067-4bd0-90a7-25909394a361" class=3D"GINGER_SOFTWARE_mark"><gs id=
+=3D"77056baf-194e-4544-81e7-171ee44544d3" ginger_software_uiphraseguid=3D"0=
+88c2c22-36f6-4e65-9e45-91dfaf7e17f0" class=3D"GINGER_SOFTWARE_mark">hab</gs=
+></gs></span><span style=3D"color:rgb(208,92,18)"></span><span style=3D"col=
+or:rgb(208,92,18)">.&nbsp;</span><span style=3D"color:rgb(208,92,18)"><gs i=
+d=3D"2136fd18-6fe7-44eb-b3ad-e222995b9b07" ginger_software_uiphraseguid=3D"=
+436a93ac-32d2-4637-bd3d-e91af9df74d0" class=3D"GINGER_SOFTWARE_mark"><gs id=
+=3D"d9f442fa-0249-429a-af46-9182888cb3ed" ginger_software_uiphraseguid=3D"5=
+2b3a09f-d8d4-445f-824e-2709a7f03b23" class=3D"GINGER_SOFTWARE_mark">inz</gs=
+></gs></span><span style=3D"color:rgb(208,92,18)"></span><span style=3D"col=
+or:rgb(208,92,18)">.
+ Agnieszka Wylomanska&#8203;&#8203;</span></strong></span></div>
+<div><span style=3D"font-size:16pt"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (</strong></span><span=
+ style=3D"font-size:14pt">Faculty of Pure and Applied Mathematics,&nbsp;</s=
+pan></div>
+<div><span style=3D"font-size:14pt">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Hugo Stein=
+-<span style=3D"font-size:14pt"><gs id=3D"29c6ff17-068f-4f91-a019-a6bb837b1=
+576" ginger_software_uiphraseguid=3D"8001526d-e195-4d33-88da-0718c9cecf54" =
+class=3D"GINGER_SOFTWARE_mark"><gs id=3D"866d73bd-d1d2-4c63-9568-93dda52476=
+93" ginger_software_uiphraseguid=3D"a2501de1-4de0-4e73-863a-3314d8d2fa4b" c=
+lass=3D"GINGER_SOFTWARE_mark">haus</gs></gs></span>&nbsp;Center,
+ Wroclaw University of Technology&#8203;, Poland)</span><strong style=3D"fo=
+nt-size:16pt">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong></div=
+>
+<div><span style=3D"font-size:16pt"><strong><br>
+</strong></span></div>
+<div><span style=3D"font-size:16pt"><strong>Title/&nbsp;</strong><strong><s=
+pan class=3D"hps"><strong><span lang=3D"HI" style=3D"font-size:14pt; font-f=
+amily:Mangal,serif">&#2358;&#2368;&#2352;&#2381;&#2359;&#2325;</span></stro=
+ng></span></strong><strong><span style=3D"font-size:16pt">:&nbsp;</span></s=
+trong><span style=3D"color: rgb(208, 92, 18); font-size: 18pt;">Codifferenc=
+e
+ as a practical tool to measure interdependence&#8203;</span></span></div>
+<div><span style=3D"font-size:16pt"><span style=3D"color:rgb(208,92,18)"><b=
+r>
+</span></span></div>
+<div>
+<div><span style=3D"font-size:14pt">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<stron=
+g>Abstract:</strong>&nbsp;</span><span style=3D"font-size: 14pt;">Correlati=
+on and spectral analysis represent the standard tools to study
+</span><span style=3D"font-size: 14pt;"><gs id=3D"ea5f2ce0-c152-4bad-91e4-9=
+d76a66d7d5b" ginger_software_uiphraseguid=3D"e677902c-cd50-45be-a654-a05df6=
+6a362d" class=3D"GINGER_SOFTWARE_mark">interdependence</gs></span><span sty=
+le=3D"font-size: 14pt;"> in statistical data.
+ However, for the stochastic processes with heavy-tailed distributions such=
+ that the variance diverges, these tools are inadequate. The heavy-tailed p=
+rocesses are ubiquitous in nature and finance. We here discuss
+</span><span style=3D"font-size: 14pt;"><gs id=3D"71ade093-5d6d-4147-b210-b=
+af2c77ec017" ginger_software_uiphraseguid=3D"76c132a2-e0bb-4ca9-ab9b-31267e=
+24ef6e" class=3D"GINGER_SOFTWARE_mark">codifference</gs></span><span style=
+=3D"font-size: 14pt;"> as a convenient measure
+ to study statistical interdependence, and we aim to give a short introduct=
+ory review of its properties. By taking different known stochastic processe=
+s as generic examples, we present explicit formulas for their
+</span><span style=3D"font-size: 14pt;"><gs id=3D"ba3ced90-3e8e-4dcc-a309-f=
+5fd87e062b4" ginger_software_uiphraseguid=3D"e20ed8ad-8f6a-4d8d-b5da-16a54e=
+95dabf" class=3D"GINGER_SOFTWARE_mark">codifferences</gs></span><span style=
+=3D"font-size: 14pt;">. We show that for the
+ Gaussian processes </span><span style=3D"font-size: 14pt;"><gs id=3D"8e098=
+293-428e-4964-8873-a43d52922b30" ginger_software_uiphraseguid=3D"fa5824b5-f=
+99c-420d-9131-3fcf2e879c25" class=3D"GINGER_SOFTWARE_mark">codifference</gs=
+></span><span style=3D"font-size: 14pt;">
+ is equivalent to covariance. For processes with finite variance these two =
+measures behave similarly with time. For the processes with infinite varian=
+ce the
+</span><span style=3D"font-size: 14pt;"><gs id=3D"169e62c4-2aba-43aa-ba60-0=
+6a6ce1b391f" ginger_software_uiphraseguid=3D"7000b90c-85c1-451d-97e7-487534=
+e323c9" class=3D"GINGER_SOFTWARE_mark">covariance</gs></span><span style=3D=
+"font-size: 14pt;"> does not exist, however,
+ the </span><span style=3D"font-size: 14pt;"><gs id=3D"53b6abff-deb1-4392-b=
+3dc-dbfc57acf813" ginger_software_uiphraseguid=3D"7000b90c-85c1-451d-97e7-4=
+87534e323c9" class=3D"GINGER_SOFTWARE_mark">codifference</gs></span><span s=
+tyle=3D"font-size: 14pt;"> is relevant. We
+ demonstrate the practical importance of the </span><span style=3D"font-siz=
+e: 14pt;"><gs id=3D"875f1f70-caee-476c-8e0c-9981bc8ab714" ginger_software_u=
+iphraseguid=3D"221572e0-9e3c-469e-bc20-69bd403fc727" class=3D"GINGER_SOFTWA=
+RE_mark">codifference</gs></span><span style=3D"font-size: 14pt;">
+ by extracting this function from simulated as well as real data taken from=
+ </span>
+<span style=3D"font-size: 14pt;"><gs id=3D"df835c82-507b-474f-ad64-c3f76103=
+af1b" ginger_software_uiphraseguid=3D"221572e0-9e3c-469e-bc20-69bd403fc727"=
+ class=3D"GINGER_SOFTWARE_mark">turbulent plasma</gs></span><span style=3D"=
+font-size: 14pt;"> of Fusion device and financial
+ market. We conclude that the </span><span style=3D"font-size: 14pt;"><gs i=
+d=3D"1f6f8861-c806-49a0-9f2f-5cdf7f9c7181" ginger_software_uiphraseguid=3D"=
+f89dbaba-5fc3-4aef-bb0c-3d4d9667cb04" class=3D"GINGER_SOFTWARE_mark">codiff=
+erence</gs></span><span style=3D"font-size: 14pt;">
+ serves as a </span><span style=3D"font-size: 14pt;"><gs id=3D"89f480f2-855=
+2-4e1b-8614-14ceb5ba4a3d" ginger_software_uiphraseguid=3D"f89dbaba-5fc3-4ae=
+f-bb0c-3d4d9667cb04" class=3D"GINGER_SOFTWARE_mark">convenient practical</g=
+s></span><span style=3D"font-size: 14pt;">
+ tool to study </span><span style=3D"font-size: 14pt;"><gs id=3D"9fe93785-d=
+22b-4429-ab64-853c018cb84b" ginger_software_uiphraseguid=3D"f89dbaba-5fc3-4=
+aef-bb0c-3d4d9667cb04" class=3D"GINGER_SOFTWARE_mark">interdependence</gs><=
+/span><span style=3D"font-size: 14pt;"> for
+ stochastic processes with both infinite and finite variances as well&#8203=
+;</span></div>
+<div><span style=3D"font-size:14pt"><br>
+</span></div>
+<div><span style=3D"font-size:14pt">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&quot; Al=
+l are invited...&quot;</span></div>
+<div><span style=3D"font-size:14pt"><br>
+</span></div>
+<div><span style=3D"font-family:TimesNewRomanPS; font-size:18.6667px; backg=
+round-color:rgb(255,255,255)"><strong>Web:&nbsp;</strong></span><a href=3D"=
+https://mat.iitm.ac.in/seminar.html" target=3D"_blank" title=3D"https://mat=
+.iitm.ac.in/seminar.html=0A=
+Ctrl&#43;Click or tap to follow the link" style=3D"font-family:Calibri,Aria=
+l,Helvetica,sans-serif; font-size:16px; background-color:rgb(255,255,255)">=
+<strong>https://mat.iitm.ac.in/seminar.html</strong></a><span style=3D"font=
+-family:Calibri,Arial,Helvetica,sans-serif; font-size:16px; background-colo=
+r:rgb(255,255,255)">&#8203;</span><br>
+</div>
+<div><br>
+</div>
+<div>Regards,<br>
+</div>
+<div>Anoop&#8203;<br>
+</div>
+</div>
+</div>
+<p><br>
+</p>
+</div>
+</div>
+</body>
+</html>
+
+

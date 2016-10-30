@@ -1,0 +1,47 @@
+From:
+"CS14B033 AJAYKRISHNAN JAYAGOPAL" <cs14b033@smail.iitm.ac.in>
+
+Date:
+30-10-2016
+
+Body:
+
+CS3310:JUL-NOV 2016 -> Forums -> Discussion forum for Assignment 5: Registe=
+r
+allocation -> MAIN THREAD for doubts and discussions on Assignment 5
+https://courses.iitm.ac.in/mod/forum/discuss.php?d=3D1326
+---------------------------------------------------------------------
+Re: MAIN THREAD for doubts and discussions on Assignment 5
+by CS14B033 AJAYKRISHNAN JAYAGOPAL - Sunday, 30 October 2016, 12:39 PM
+---------------------------------------------------------------------
+My miniRA code generated for BinarySearch.microIR throws the following
+error:=20
+
+Illegal=20heap write value (0+4*21), must be 0-80 and divisible by 4.
+Please check near the following source code:=20
+=20HSTORE s6 0 s3 (line:610 col:23)=20
+
+What=20does this error mean and what can I do to rectify it?=20
+
+Also,=20there is no miniRA code available for BinarySearch over here
+:=C2=A0https://www.cse.iitm.ac.in/~krishna/cs3300/miniRA/=20
+
+My=20code works for all the other public test cases.=20
+
+Thanks,=20
+
+Ajay
+
+---------------------------------------------------------------------
+This is a copy of a message posted on the CS3310:JUL-NOV 2016 website.
+
+To reply click on this link:
+https://courses.iitm.ac.in/mod/forum/post.php?reply=3D2961
+
+---------------------------------------------------------------------
+Change your forum digest preferences:
+https://courses.iitm.ac.in/mod/forum/index.php?id=3D4150
+
+
+
+
