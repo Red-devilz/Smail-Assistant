@@ -1,3 +1,4 @@
+import sys
 import json
 
 from oauth2client import client
@@ -48,7 +49,6 @@ def get_message(service, user_id, msg_id):
     # Base 64 to ASCII
     msg_str = base64.urlsafe_b64decode(message['raw'].encode('ASCII'))
 
-
     mime_msg = email.message_from_bytes(msg_str)
 
     body = get_msg_body(mime_msg)
@@ -64,6 +64,7 @@ def get_message(service, user_id, msg_id):
     year = date[0]
 
     subject = mime_msg['Subject']
+    To = mime_msg['To']
     sender = mime_msg['Sender']
     if sender is None: sender = mime_msg['From']
 
@@ -74,15 +75,18 @@ def get_message(service, user_id, msg_id):
     msg['date'] = str(day)+"-"+str(month)+"-"+str(year)
     msg['from'] = sender
     msg['id'] = msg_id
+    msg['to'] = To
+    msg['subject'] = subject
 
     return msg
-
 
 def save(msg,cnt):
     filename = msg['id'] + "_" +str(cnt)
     f = open(data_path+filename,'w')
     f.write("From:\n"+msg['from']+"\n\n")
+    f.write("To:\n"+msg['to']+"\n\n")
     f.write("Date:\n"+msg['date']+"\n\n")
+    f.write("Subject:\n"+msg['subject']+"\n\n")
     f.write("Body:\n"+msg['body']+"\n\n")
     f.close()
 
@@ -109,6 +113,10 @@ def get_all_mail(gservice):
             if(msg!=None):
                 save(msg,tc)
                 print ("Message %d saved"%(tc))
+            
+            #  Get Only 10 messages for simplicity(This is for testing on 10 messages)
+            #  if(tc==10):
+                #  sys.exit(0);
         
         # Checking if there is an another batch of message in line            
         if 'nextPageToken' in msgs:
