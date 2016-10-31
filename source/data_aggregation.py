@@ -63,6 +63,7 @@ def get_message(service, user_id, msg_id):
     month = date[1]
     year = date[0]
 
+    threadid = message['threadId']
     subject = mime_msg['Subject']
     To = mime_msg['To']
     sender = mime_msg['Sender']
@@ -77,6 +78,7 @@ def get_message(service, user_id, msg_id):
     msg['id'] = msg_id
     msg['to'] = To
     msg['subject'] = subject
+    msg['threadid'] = threadid
 
     return msg
 
@@ -86,6 +88,7 @@ def save(msg,cnt):
     f.write("From:\n"+msg['from']+"\n\n")
     f.write("To:\n"+msg['to']+"\n\n")
     f.write("Date:\n"+msg['date']+"\n\n")
+    f.write("Thread ID:\n"+msg['threadid']+"\n\n")
     f.write("Subject:\n"+msg['subject']+"\n\n")
     f.write("Body:\n"+msg['body']+"\n\n")
     f.close()
@@ -114,8 +117,8 @@ def get_all_mail(gservice):
                 save(msg,tc)
                 print ("Message %d saved"%(tc))
             
-            #  Get Only 10 messages for simplicity(This is for testing on 10 messages)
-            #  if(tc==10):
+            #  Get Only 4 messages for simplicity(This is for testing on 10 messages)
+            #  if(tc==4):
                 #  sys.exit(0);
         
         # Checking if there is an another batch of message in line            
