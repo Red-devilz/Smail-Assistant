@@ -1,0 +1,59 @@
+From:
+"CS14B056 VISHWANATH G V" <cs14b056@smail.iitm.ac.in>
+
+To:
+"CS14B061 RAHUL RAMESH" <cs14b061@smail.iitm.ac.in>
+
+Date:
+24-10-2016
+
+Thread ID:
+157f6f02a36e709e
+
+Subject:
+CS3310:JUL-NOV 2016: Temporaries in functions
+
+Body:
+
+CS3310:JULNOV 2016  Forums  Discussion forum for Assignment 5: Registe
+r
+allocation  Temporaries in functions
+
+
+Temporaries in functions
+by CS14B056 VISHWANATH G V  Monday, 24 October 2016, 6:36 PM
+
+Sir,
+
+Youhave mentioned that the registers we will use for register allocation
+are global. A register replaces a temporary variable. Within a function,
+can I count all uses of a temporary (e.g., T1) as a local variable?
+
+E.g.,
+
+Function1 [2]
+
+E..MOVE T1 0 ...
+
+Function2[2]
+
+E..MOVE T1 T2 ...
+
+CanI treat T1 in Function1 as different from T1 in function2?
+
+Inother words, can I assume that register allocation can be done
+independently for each function?
+
+
+This is a copy of a message posted on the CS3310:JULNOV 2016 website.
+
+To reply click on this link:
+
+
+
+Change your forum digest preferences:
+
+
+
+
+

@@ -1,0 +1,78 @@
+From:
+"CS12D023 AMAN NOUGRAHIYA" <cs12d023@smail.iitm.ac.in>
+
+To:
+"CS14B061 RAHUL RAMESH" <cs14b061@smail.iitm.ac.in>
+
+Date:
+22-10-2016
+
+Thread ID:
+157ea7050662a471
+
+Subject:
+CS3310:JUL-NOV 2016: Re: Doubts and discussions on Assignment 5
+
+Body:
+
+CS3310:JULNOV 2016  Forums  Discussion forum for Assignment 5: Registe
+r
+allocation  Doubts and discussions on Assignment 5
+
+
+Re: Doubts and discussions on Assignment 5
+by CS12D023 AMAN NOUGRAHIYA  Saturday, 22 October 2016, 8:58 AM
+
+Dear All,
+The following query was asked by Gowri Shankar on a different thread. I am
+deleting the original post, and copying it verbatim over here.
+
+Efficiencyof allocation
+byC2A0CS14B010 GOWRI SANKAR R [1]C2A0 Friday, 21 October 2016, 7:42 PM
+
+
+Inclass we discussed about an approximation for determining the live
+interval for a temporary, where we said the the temporary is approximated
+to be live from the starting point of the first interval to the end point
+of the last interval.C2A0
+This may lead to some redundant interference.
+
+Alsoin the class sir told that the no of registers used will be checked
+and indeed the output requires us to print it.
+So my question is can we do this approximation? Are we expected to use only
+a predetermined no of spilled args(this approximation may not satisfy the
+count) or is there any kind of threshold for it?C2A0
+
+Canyou elaborate on how the check on no of registers will be done?C2A0
+
+
+Thanks.
+
+I repeat my request: Please post all your doubts and discussions on the
+same thread (THIS thread). It is much easier that way to track all the
+posts, especially while we are not receiving any emails.
+Thanks.
+
+Warmregards,
+Aman (TA CS3300)
+
+C2A0
+
+Links:
+
+[1] &amp;courseD4150
+
+
+
+This is a copy of a message posted on the CS3310:JULNOV 2016 website.
+
+To reply click on this link:
+
+
+
+Change your forum digest preferences:
+
+
+
+
+

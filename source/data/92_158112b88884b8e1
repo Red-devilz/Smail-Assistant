@@ -1,0 +1,50 @@
+From:
+"CS12D023 AMAN NOUGRAHIYA" <cs12d023@smail.iitm.ac.in>
+
+To:
+"CS14B061 RAHUL RAMESH" <cs14b061@smail.iitm.ac.in>
+
+Date:
+29-10-2016
+
+Thread ID:
+157ea7050662a471
+
+Subject:
+CS3310:JUL-NOV 2016: Re: Doubts and discussions on Assignment 5
+
+Body:
+
+CS3310:JULNOV 2016  Forums  Discussion forum for Assignment 5: Registe
+r
+allocation  MAIN THREAD for doubts and discussions on Assignment 5
+
+
+Re: Doubts and discussions on Assignment 5
+by CS12D023 AMAN NOUGRAHIYA  Saturday, 29 October 2016, 9:26 PM
+
+Dear Rahul,
+
+	 It is okay if you save/restore all the registers during function call
+s.
+ 	 It seems that the current interpreter does not handle the bitwise
+operators. Since none of the testcases use them, kindly ignore the output
+where bitwise operators are concerned.
+
+Thanks.
+Warm regards,
+Aman (TA  CS3300)
+
+
+This is a copy of a message posted on the CS3310:JULNOV 2016 website.
+
+To reply click on this link:
+
+
+
+Change your forum digest preferences:
+
+
+
+
+
