@@ -2,10 +2,27 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
 from oauth2client import client
+import httplib2
+
+from google_api.api import *
 
 
 def index(request):
-    return HttpResponse("Click <a href='/mails/login'>here</a> to  login.")
+    if 'cred' not in request.session:
+        return redirect('login')
+    credentials = client.OAuth2Credentials.from_json(request.session['cred'])
+    if credentials.access_token_expired:
+        return redirect('login')
+    # get emails
+    http_auth = credentials.authorize(httplib2.Http())
+    gmail_service = make_gmail_service(http_auth)
+    msgs = list_gmail_messages(gmail_service)
+    msgs = list_gmail_messages(gmail_service)  # get list of msgs
+    s = 'got %d messages<br>' % (msgs["resultSizeEstimate"])
+    for msg in msgs["messages"]:
+        msg = get_gmail_message(gmail_service, msg["id"])
+        s = s + ("message.snippet: %s<br/>" % (msg['snippet']))  # print msg.snippet
+    return HttpResponse(s)
 
 flow = client.flow_from_clientsecrets(
     'client_secret.json',
@@ -18,10 +35,6 @@ flow.params['access_type'] = 'offline'
 
 
 def login(request):
-    if 'cred' in request.session:
-        credentials = client.OAuth2Credentials.from_json(request.session['cred'])
-        return HttpResponse("session %s" % request.session['cred'])
-    print("oauth")
     auth_uri = flow.step1_get_authorize_url()  # init oauth
     return redirect(auth_uri)
 
