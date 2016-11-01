@@ -24,9 +24,10 @@ def tokenize_and_stem(text):
     # first tokenize by sentence, then by word to ensure that punctuation is caught as it's own token
     tokens = [word for sent in nltk.sent_tokenize(text) for word in nltk.word_tokenize(sent)]
     filtered_tokens = []
-    # filter out any tokens not containing letters (e.g., numeric tokens, raw punctuation)
 
+    # filter out any tokens not containing letters (e.g., numeric tokens, raw punctuation)
     for token in tokens:
+        #  Only include words which start with a letter and have alpha numeric characters. Max words size = 12
         if re.match('^[a-zA-Z][a-zA-Z0-9]*$', token) and len(token)<12 and (token not in stopwords):
             token = token.lower()
             filtered_tokens.append(token)
@@ -52,6 +53,10 @@ def vocab_find():
     print("The vocabulary size is " + str(len((totalvocab_stemmed))))
 
 def cluster_featurize():
+    """
+    Convert the data into a matrix form
+    Only words that occurs in between  max_df% and min_df% of documents are considered
+    """
 
     #define vectorizer parameters
     tfidf_vectorizer = TfidfVectorizer(max_df=0.8, max_features=200000,
@@ -68,6 +73,9 @@ def cluster_featurize():
 
 num_clusters = 10
 def kmeans_clustering(feat_vec, labels):
+    """
+    Cluster the data into x Clusters
+    """
     km = KMeans(n_clusters=num_clusters)
 
     km.fit(feat_vec)
@@ -77,7 +85,7 @@ def kmeans_clustering(feat_vec, labels):
 
 def print_cluster(mod_obj, labels):
     """
-    Find words representative of the cluster
+    Find words representative of the cluster after kmeans clustering
     """
 
     #sort cluster centers by proximity to centroid
