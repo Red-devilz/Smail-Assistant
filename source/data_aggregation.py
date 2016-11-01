@@ -1,3 +1,5 @@
+import re
+from bs4 import BeautifulSoup
 import sys
 import json
 
@@ -21,9 +23,27 @@ flow = client.flow_from_clientsecrets(
     redirect_uri='http://localhost:8000/oauth2callback')
 flow.params["access_type"] = "online"
 
+#  Path where data is to be stored
 data_path = "./data/"
 
+def visible(element):
+    """
+    Helper function for HTML, Checks if elements is a text element in HTML
+        Input  : 'element' is a string
+        Return : boolean answer indicating if html text element
+    """
+    if element.parent.name in ['style', 'script', '[document]', 'head', 'title']:
+        return False
+    elif re.match('<!--.*-->', str(element)):
+        return False
+    return True
+
 def get_msg_body(mime_msg):
+    """
+    Gets the body of the message in mime format
+    input  : mime string
+    return : string of the body
+    """
 
     messageMainType = mime_msg.get_content_maintype()
 
@@ -39,7 +59,73 @@ def get_msg_body(mime_msg):
     elif messageMainType == 'text':
             return mime_msg.get_payload()
 
+def convert_txt_html(txt):
+    """
+    Extracts Text from HTML 
+    """
+
+    soup = BeautifulSoup(txt, 'html.parser')
+    texts = soup.findAll(text=True)
+    visible_texts = list(filter(visible, texts))
+
+    final_txt = " ".join(visible_texts)
+    final_txt = str(final_txt.encode('ascii','ignore'))
+
+    final_txt = re.sub(r'\\n', "", final_txt)
+    final_txt = re.sub(r'\\r', "", final_txt)
+
+    return final_txt
+
+def parse_body(text):
+    """
+    Parse the body to get only a set of useful strings, removing unnecessary strings
+    input : 'body' of text as string
+    output : modified 'body' of text
+    """
+
+    #  if html then extract the text from it
+    ans = re.search('<[hH][tT][mM][lL]>' , text)
+    if ans:
+       text = convert_txt_html(text)
+
+    #  Remove =20, space characters
+    text = re.sub(r'=([0-9]*)', "", text)
+
+    #  remove URL's
+    text = re.sub(r'<http://[a-zA-Z0-9_\-/:.?]*>', "", text)
+    text = re.sub(r'http://[a-zA-Z0-9_\-/:.?]*', "", text)
+    text = re.sub(r'<https://[a-zA-Z0-9_\-/:.?]*>', "", text)
+    text = re.sub(r'https://[a-zA-Z0-9_\-/:.?]*', "", text)
+
+    #  Remove any <> html tags
+    text = re.sub(r'<^[><]*>', "", text)
+
+    #  Replace all carriage returns
+    text = re.sub(r'\r',"", text)
+
+    #  Remove > angle brackets from Threads
+    text = re.sub(r'>', "", text)
+
+    #  Remove bold text 
+    text = re.sub(r'\*', "", text)
+
+    #  Remove -- header lines
+    text = re.sub(r'-+', "", text)
+
+    # Remove text for facebook , google ,etc...
+    text = re.sub(r'| *Twitter', "", text)
+    text = re.sub(r'| *Google\+', "", text)
+    text = re.sub(r'| *Facebook', "", text)
+    text = re.sub(r'| *Youtube', "", text)
+
+
+    return text
+
 def get_message(service, user_id, msg_id):
+    """
+    Get the message with corresponding message ID
+    """
+
 
     if user_id is None: user_id ='me'
 
@@ -52,6 +138,8 @@ def get_message(service, user_id, msg_id):
     mime_msg = email.message_from_bytes(msg_str)
 
     body = get_msg_body(mime_msg)
+
+    body = parse_body(body)
 
     date = email.utils.parsedate(mime_msg['Date'])
 
@@ -83,7 +171,11 @@ def get_message(service, user_id, msg_id):
     return msg
 
 def save(msg,cnt):
-    filename = msg['id'] + "_" +str(cnt)
+    """
+    Save the msg into a file
+
+    """
+    filename = str(cnt) + "_" +msg['id']
     f = open(data_path+filename,'w')
     f.write("From:\n"+msg['from']+"\n\n")
     f.write("To:\n"+msg['to']+"\n\n")
@@ -93,8 +185,19 @@ def save(msg,cnt):
     f.write("Body:\n"+msg['body']+"\n\n")
     f.close()
 
+    print("-----------------------------------")
+    print(msg['subject'])
+    print(msg['to'])
+    print(msg['date'])
+    print(msg['from'])
+    print("-----------------------------------")
+    print(msg['body'])
+
 def get_all_mail(gservice):
-    
+    """
+    Process ALL-mail of a specific user(not inbox)
+    """
+
     page_token = None
     tc = 0 #Total number of messages
     

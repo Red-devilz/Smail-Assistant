@@ -12,3 +12,4 @@ rsa==3.4.2
 six==1.10.0
 uritemplate==3.0.0
 Werkzeug==0.11.11
+bs4==0.0.1
