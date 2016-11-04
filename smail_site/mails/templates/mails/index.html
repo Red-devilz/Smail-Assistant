@@ -1,0 +1,40 @@
+
+{% if mails_list %}
+	<head>
+		{% load static %}
+		<img src="{% static "mails/smail-logo.png" %}" style="width:119px;height:45px;">
+		<h1 style="font-family:Impact;font-size: 45px;color: red;">
+			Classify
+		</h1>
+		<link rel="stylesheet" type="text/css" href="{% static 'mails/style.css' %}" />
+	</head>
+	<body style="background-color:LightBlue;">
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="#">All</a>
+		  <a href="#">Important</a>
+		  <a href="#">Spam</a>
+		  <a href="#">Others</a>
+		</div>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Categories</span>
+		<h4>
+			{{ mails_list|first }}
+		</h4>
+	    <ul>
+	    {% for mail in mails_list|slice:"1:" %}
+	        <li>{{ mail }}</li>
+	    {% endfor %}
+	    </ul>
+		<script>
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		}
+		</script>
+    </body>
+{% else %}
+    <p>No mails are available.</p>
+{% endif %}

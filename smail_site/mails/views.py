@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
+from django.template import loader
 
 from oauth2client import client
 import httplib2
@@ -18,11 +19,17 @@ def index(request):
     gmail_service = make_gmail_service(http_auth)
     msgs = list_gmail_messages(gmail_service)
     msgs = list_gmail_messages(gmail_service)  # get list of msgs
-    s = 'got %d messages<br>' % (msgs["resultSizeEstimate"])
+    s = []
+    s.append('Displaying first %d messages' % (msgs["resultSizeEstimate"]))
     for msg in msgs["messages"]:
         msg = get_gmail_message(gmail_service, msg["id"])
-        s = s + ("message.snippet: %s<br/>" % (msg['snippet']))  # print msg.snippet
-    return HttpResponse(s)
+        s.append("message:\n %s" % (msg['snippet']))  # print msg.snippet
+    template = loader.get_template('mails/index.html')
+    context = {
+        'mails_list': s,
+    }
+
+    return HttpResponse(template.render(context, request))
 
 flow = client.flow_from_clientsecrets(
     'client_secret.json',
