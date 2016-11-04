@@ -28,6 +28,9 @@ def get_msg_body(mime_msg):
             return mime_msg.get_payload()
 
 def print_content(msg, num):
+    """
+    Prints the current message object
+    """
     print("===========================")
     print("Printing Message Number " + str(num))
     print("===========================\n")
@@ -58,6 +61,7 @@ def sample_print(id_l, body_l, label_l, thread_l):
         label_cur = label_l[i]
         thread_cur = thread_l[i]
 
+        #  Extract Detail of Mail object
         body = get_msg_body(mime_msg)
 
         date = email.utils.parsedate(mime_msg['Date'])
@@ -85,6 +89,7 @@ def sample_print(id_l, body_l, label_l, thread_l):
         msg['subject'] = subject
         msg['threadid'] = threadid
         
+        #  Prints the message in terminal
         print_content(msg, i)
 
 

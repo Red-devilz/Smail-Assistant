@@ -8,7 +8,7 @@ from api import *
 
 def get_message(service, user_id, msg_id):
     """
-    Get the message and return in MiMe format
+    Get the message and return in MiMe format along with thread ID
     """
 
     if user_id is None: user_id ='me'
