@@ -1,24 +1,47 @@
 ul {
-	    background: #3399ff;
-	    padding: 20px;
-	}
+    background: #3399ff;
+    padding: 20px;
+}
 
 ul li {
-	    background: #cce5ff;
-	    margin: 5px;
-	    margin-left: 35px;
-	}
-	img{
-		float : left;
-	}
-	img.displayed {
-	    margin-right: auto ;
-	    left: 50%;
-	}
-	img.center {
-	    display: block;
-	    margin: 0 auto;
-	}
+    background: #cce5ff;
+    margin: 5px;
+    magin-left: 35px;
+    list-style: none;
+}
+
+.content
+{
+ text-align: center;
+ margin: auto;
+}
+
+.inner
+{
+ display:inline-block;
+}
+
+a.mail:link, a:visited {
+    background-color: #cce5ff;
+    color: Black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a.mail:hover, a:active {
+    background-color: SkyBlue;
+}
+
+body.fade-in {
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fade-out {
+    opacity: 0.15;
+    transition: none;
+}
+
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -37,14 +60,14 @@ ul li {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #cdd7c1;
     display: block;
     transition: 0.3s
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+    color: #b3f7f9;
 }
 
 /* Position and style the close button (top right corner) */
