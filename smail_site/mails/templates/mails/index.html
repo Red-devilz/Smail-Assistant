@@ -1,12 +1,24 @@
 
 {% if mails_list %}
 	<head>
+		<title class = "mdl-layout__title">Smail-Classifier</title>
 		{% load static %}
-		<img src="{% static "mails/smail-logo.png" %}" style="width:119px;height:45px;">
-		<h1 style="font-family:Impact;font-size: 45px;color: red;">
-			Classify
-		</h1>
+	 	<div id = "label" style="margin: 0 840px;text-align:center;">
+			<img src="{% static "mails/smail-logo.png" %}" style="float: left; width:119px;height:45px;" />
+			<h1 style="font-family:Impact;font-size: 45px;color: red;">
+				Classify
+			</h1>
+		</div>
+		<script type="text/javascript">
+			var x = screen.width;
+			x = "0 " + (x/2).tostring();
+			document.getElementById("label").style.margin = x;
+		</script>
 		<link rel="stylesheet" type="text/css" href="{% static 'mails/style.css' %}" />
+		<link rel="stylesheet" href="{% static 'mails/font-awesome-4.7.0/css/font-awesome.min.css' %}" />
+		<link rel="stylesheet" href="{% static 'mails/mdl/material.min.css' %}" />
+		<script src="{% static 'mails/mdl/material.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 	</head>
 	<body style="background-color:LightBlue;">
 		<div id="mySidenav" class="sidenav">
@@ -16,22 +28,30 @@
 		  <a href="#">Spam</a>
 		  <a href="#">Others</a>
 		</div>
-		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Categories</span>
-		<h4>
-			{{ mails_list|first }}
-		</h4>
-	    <ul>
-	    {% for mail in mails_list|slice:"1:" %}
-	        <li>{{ mail }}</li>
-	    {% endfor %}
-	    </ul>
+		<div id = "main">
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Categories</span>
+			<h4>
+				{{ mails_list|first }}
+			</h4>
+		    <ul class="demo-list-control mdl-list">
+		    {% for mail in mails_list|slice:"1:" %}
+		        <li><a href = "#" class = "mail">{{ mail }}</a></li>
+		    {% endfor %}
+		    </ul>
+	    </div>
 		<script>
 		function openNav() {
-		    document.getElementById("mySidenav").style.width = "250px";
+			document.getElementById("mySidenav").style.width = "250px";
+    		document.getElementById("main").style.marginLeft = "250px";
+    		document.body.style.backgroundColor = "SteelBlue";
+    		document.getElementById("main").style.opacity = "0.3";
 		}
 
 		function closeNav() {
-		    document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("mySidenav").style.width = "0";
+    		document.getElementById("main").style.marginLeft= "0";
+    		document.body.style.backgroundColor = "LightBlue";
+    		document.getElementById("main").style.opacity = "1";
 		}
 		</script>
     </body>
