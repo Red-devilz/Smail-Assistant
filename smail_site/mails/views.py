@@ -23,7 +23,7 @@ def index(request):
     s.append('Displaying first %d messages' % (msgs["resultSizeEstimate"]))
     for msg in msgs["messages"]:
         msg = get_gmail_message(gmail_service, msg["id"])
-        s.append("message:\n %s" % (msg['snippet']))  # print msg.snippet
+        s.append("Message:\n %s" %(msg['snippet']))  # print msg.snippet
     template = loader.get_template('mails/index.html')
     context = {
         'mails_list': s,
