@@ -4,7 +4,7 @@ smail_site - model website
 
 To run the server:
   
-  cd smail_site
+  	cd smail_site
   
 	python3 manage.py runserver
 
