@@ -6,6 +6,7 @@ from oauth2client import client
 import httplib2
 
 from google_api.api import *
+from classifier_sample.minified_classifier import get_mails
 
 
 def index(request):
@@ -17,16 +18,17 @@ def index(request):
     # get emails
     http_auth = credentials.authorize(httplib2.Http())
     gmail_service = make_gmail_service(http_auth)
-    msgs = list_gmail_messages(gmail_service)
-    msgs = list_gmail_messages(gmail_service)  # get list of msgs
-    s = []
-    s.append('Displaying first %d messages' % (msgs["resultSizeEstimate"]))
-    for msg in msgs["messages"]:
-        msg = get_gmail_message(gmail_service, msg["id"])
-        s.append("Message:\n %s" %(msg['snippet']))  # print msg.snippet
+    mails = get_mails(gmail_service)
+    # msgs = list_gmail_messages(gmail_service)
+    # msgs = list_gmail_messages(gmail_service)  # get list of msgs
+    # s = []
+    # s.append('Displaying first %d messages' % (msgs["resultSizeEstimate"]))
+    # for msg in msgs["messages"]:
+    #     msg = get_gmail_message(gmail_service, msg["id"])
+    #     s.append("Message:\n %s" %(msg['snippet']))  # print msg.snippet
     template = loader.get_template('mails/index.html')
     context = {
-        'mails_list': s,
+        'mails_list': mails[3],
     }
 
     return HttpResponse(template.render(context, request))
