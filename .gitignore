@@ -2,3 +2,4 @@
 **/venv
 **/.tags*
 source/*
+**/__pycache__
