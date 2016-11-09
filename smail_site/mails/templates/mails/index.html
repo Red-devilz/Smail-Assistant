@@ -3,10 +3,9 @@
 	<head>
 		<title class = "mdl-layout__title">Smail-Classifier</title>
 		{% load static %}
-	 	<div id = "label" style="margin: 0 840px;text-align:center;">
-			<img src="{% static "mails/smail-logo.png" %}" style="float: left; width:119px;height:45px;" />
+	 	<div id = "label" align="center">
 			<h1 style="font-family:Impact;font-size: 45px;color: red;">
-				Classify
+				<img src="{% static "mails/smail-logo.png" %}" align ="center" style="width:119px;height:45px;margin-right:6px;margin-top: -7px;" />Classify
 			</h1>
 		</div>
 		<script type="text/javascript">
@@ -20,7 +19,7 @@
 		<script src="{% static 'mails/mdl/material.min.js"></script>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 	</head>
-	<body style="background-color:LightBlue;">
+	<body style="background-color:#e9ebee;">
 		<div id="mySidenav" class="sidenav">
 		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		  <a href="#">All</a>
@@ -43,14 +42,14 @@
 		function openNav() {
 			document.getElementById("mySidenav").style.width = "250px";
     		document.getElementById("main").style.marginLeft = "250px";
-    		document.body.style.backgroundColor = "SteelBlue";
+    		document.body.style.backgroundColor = "#365899";
     		document.getElementById("main").style.opacity = "0.3";
 		}
 
 		function closeNav() {
 			document.getElementById("mySidenav").style.width = "0";
     		document.getElementById("main").style.marginLeft= "0";
-    		document.body.style.backgroundColor = "LightBlue";
+    		document.body.style.backgroundColor = "#e9ebee";
     		document.getElementById("main").style.opacity = "1";
 		}
 		</script>
