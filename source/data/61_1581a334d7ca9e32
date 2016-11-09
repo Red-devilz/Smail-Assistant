@@ -1,0 +1,19 @@
+From:
+osiitm_2016@googlegroups.com
+
+To:
+Srinidhi Prabhu <srinidhiprabhu96@gmail.com>, osiitm_2016
+	<osiitm_2016@googlegroups.com>
+
+Date:
+31-10-2016
+
+Thread ID:
+158133423ae5f16e
+
+Subject:
+Re: Guard pages in JOS
+
+Body:
+b'     Hi Srinidhi,    JOS support for multiprocessors is limited to 8. ie. it can support atmost 8 processors.  Each processor is allocated its own kernel stack (of 4KB), which is immediately followed bya4KB guard page.    See memory layout in inc/memlayout.h  and the initialization of the kstacks in mem_init_mp (kern/pmap.c).    If you go by the initialization in the above mentioned function, it should have  been ...    #define KSTKSIZE   (PGSIZE) &n;bsp;  // size of a kernel stack #define KSTKGAP  (PGSIZE) &nbsp;  // size of a kernel stack guard    and not    #define KSTKSIZE (8PGSIZE)  &nbsp; // size of a kernel stack #define KSTKGAP  (8PGSIZE)  &nbs;p; // size of a kernel stack guard    Chester          From:  osiitm_2016@googlegroups.com <osiitm_2016@googlegroups.com on behalf of Srinidhi Prabhu <srinidhiprabhu96@gmail.com  Sent:  Sunday, October 30, 2016 6:58 AM  To:  osiitm_2016  Subject:  Guard pages in JOS      Dear Sir,  In JOS, we had to map the kernel stacks in such a way that they are not contiguous but should have a guard page between them( so that it faults when the kernel stack overflows). I noticed that the size of the guard page(KSTKGAP) was defined to be 8PGSIZE. Wouldn\'t it be sufficient if we just have PGSIZE because the purpose of this page is just to detect an overflow?  Regards, Srinidhi     You received this message because you are subscribed to the Google Groups &quot;osiitm_2016" group. To unsubscribe from this group and stop receiving emails from it, send an email to osiitm_2016+unsubscribe@googlegroups.com . To post to this group, send email to  osiitm_2016@googlegroups.com . To view this discussion on the web visit  %40googlegroups.com . For more options, visit   .     osiitm_+unsubscribe@googlegroups.com osiitm_2016@googlegroups.com %40iitm.ac.in '
+

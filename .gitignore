@@ -3,3 +3,4 @@
 **/.tags*
 source/*
 **/__pycache__
+/source/data/*

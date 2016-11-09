@@ -28,7 +28,7 @@ def index(request):
     #     s.append("Message:\n %s" %(msg['snippet']))  # print msg.snippet
     template = loader.get_template('mails/index.html')
     context = {
-        'mails_list': mails[3],
+        'mails_list': mails[0],
     }
 
     return HttpResponse(template.render(context, request))

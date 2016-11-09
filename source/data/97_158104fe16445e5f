@@ -1,0 +1,61 @@
+From:
+"CS14B061 RAHUL RAMESH" <cs14b061@smail.iitm.ac.in>
+
+To:
+"CS14B061 RAHUL RAMESH" <cs14b061@smail.iitm.ac.in>
+
+Date:
+29-10-2016
+
+Thread ID:
+157ea7050662a471
+
+Subject:
+CS3310:JUL-NOV 2016: Re: Doubts and discussions on Assignment 5
+
+Body:
+
+CS3310:JULNOV 2016  Forums  Discussion forum for Assignment 5: Registe
+r
+allocation  MAIN THREAD for doubts and discussions on Assignment 5
+
+
+Re: Doubts and discussions on Assignment 5
+by CS14B061 RAHUL RAMESH  Saturday, 29 October 2016, 4:47 PM
+
+I had a couple of questions regarding the assignment
+
+1)During function calls, we are expected to save to s0s7 and t0t9
+registers(appropriately in the callee or caller). Can we save all the
+registers whenever a function call occurs or are we expected to save an
+optimal subset of registers(like done in the public test cases)?
+
+2)I executed this very simple piece of code using the miniRA interpreter
+E
+MAIN [0][0][0]
+MOVE s0 1
+MOVE s2 0
+MOVE s1 BITOR s0 s2
+PRINT s1
+END
+// Number of vars after packing D 0; Number of Spilled vars D 0I howeve
+r
+get the output of the above code to be 666.C2A0Shouldn't the output be 1
+ for
+the above code? The bitxor and the bitand commands also yield 666 when
+executed like above. Am I understanding these operators incorrectly, or is
+something incorrect with the above code? Thanks
+
+
+This is a copy of a message posted on the CS3310:JULNOV 2016 website.
+
+To reply click on this link:
+
+
+
+Change your forum digest preferences:
+
+
+
+
+
