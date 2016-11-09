@@ -296,9 +296,9 @@ def get_all_mail(gservice, max_mails):
                                        min_df=0.05, stop_words='english',
                                        use_idf=True, tokenizer=tokenize_and_stem, ngram_range=(1, 3))
     tfidf_matrix = tfidf_vectorizer.fit_transform(all_text)
-    print("The shape of the matrix is" + str(tfidf_matrix.shape))
+    # print("The shape of the matrix is" + str(tfidf_matrix.shape))
     terms = tfidf_vectorizer.get_feature_names()
-    print("size of smaller vocabulary is" + str(len(terms)))
+    # print("size of smaller vocabulary is" + str(len(terms)))
 
     # kmeans
     km = KMeans(n_clusters=10)
@@ -321,7 +321,7 @@ def get_all_mail(gservice, max_mails):
 
     for j in range(len(all_mails)):
         mesg_dict[all_mails[j]] = all_messages[j]
-    print(mesg_dict)
+    # print(mesg_dict)
 
     print ('------Processed %d messages in total--------' % (tc))
     return (data, mesg_dict)

@@ -5,8 +5,8 @@ from django.template import loader
 from oauth2client import client
 import httplib2
 
-from google_api.api import *
-from classifier_sample.minified_classifier import get_mails
+from classifier.api import *
+from classifier.minified_classifier import get_mails
 from classifier.main import get_all_mail
 import json
 
@@ -28,7 +28,6 @@ def index(request):
     # for msg in msgs["messages"]:
     #     msg = get_gmail_message(gmail_service, msg["id"])
     #     s.append("Message:\n %s" %(msg['snippet']))  # print msg.snippet
-    json.dump(mails, open("mails.json", "w"))
     template = loader.get_template('mails/index.html')
     context = {
         'mails_list': list(mails[1].keys()),
