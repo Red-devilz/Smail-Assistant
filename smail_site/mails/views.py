@@ -7,7 +7,7 @@ import httplib2
 
 from classifier.api import *
 from classifier.minified_classifier import get_mails
-from classifier.main import get_all_mail
+from classifier.main import get_all_mail, get_html_message
 import json
 
 
@@ -20,7 +20,7 @@ def index(request):
     # get emails
     http_auth = credentials.authorize(httplib2.Http())
     gmail_service = make_gmail_service(http_auth)
-    mails = get_all_mail(gmail_service, 20)
+    label_dict, mail_dict = get_all_mail(gmail_service, 20)
     # msgs = list_gmail_messages(gmail_service)
     # msgs = list_gmail_messages(gmail_service)  # get list of msgs
     # s = []
@@ -29,8 +29,9 @@ def index(request):
     #     msg = get_gmail_message(gmail_service, msg["id"])
     #     s.append("Message:\n %s" %(msg['snippet']))  # print msg.snippet
     template = loader.get_template('mails/index.html')
+    json.dump([label_dict, mail_dict], open("mails.json", "w"))
     context = {
-        'mails_list': list(mails[1].keys()),
+        'mails_list': list([get_html_message(msg["raw"]["raw"]) for msg in mail_dict.values()]),
     }
 
     return HttpResponse(template.render(context, request))

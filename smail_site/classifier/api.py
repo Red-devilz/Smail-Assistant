@@ -20,7 +20,7 @@ def get_user_info(service=None, http_auth=None):
     return service.userinfo().get().execute()
 
 
-def list_gmail_messages(service, user_info=None, pageToken=None):
+def list_gmail_messages(service, user_info=None, pageToken=None, maxResults=None):
     """
         Returns messages object with
             messages: list of messages
@@ -32,7 +32,7 @@ def list_gmail_messages(service, user_info=None, pageToken=None):
         args['userId'] = user_info['id']
     if pageToken is not None:
         args['pageToken'] = pageToken
-    return service.users().messages().list(**args).execute()
+    return service.users().messages().list(maxResults=maxResults, **args).execute()
 
 
 def get_gmail_message(service, msgId, user_info=None):

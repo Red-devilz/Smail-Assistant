@@ -37,7 +37,6 @@ stopwords = nltk.corpus.stopwords.words('english')
 
 # load nltk's SnowballStemmer as variabled 'stemmer'
 stemmer = SnowballStemmer("english")
-all_messages = []
 
 
 def visible(element):
@@ -67,6 +66,7 @@ def get_msg_body(mime_msg):
     # and append it to the body
     if messageMainType == 'multipart':
         for part in mime_msg.get_payload():
+            print("multipart ", part.get_content_type())
             if part.get_content_maintype() == 'text':
                 return part.get_payload()
         return ""
@@ -141,14 +141,16 @@ def parse_body(text):
 def get_message(service, user_id, msg_id):
     """
     Get the message with corresponding message ID
+    Returns (raw message, processed message)
     """
 
     if user_id is None:
         user_id = 'me'
 
     # Getting the specific message in raw format using the message id
-    message = service.users().messages().get(userId=user_id, id=msg_id, format='raw').execute()
-    all_messages.append(message)
+    raw_message = service.users().messages().get(userId=user_id, id=msg_id, format='raw').execute()
+    message = raw_message
+
     # Base 64 to ASCII
     msg_str = base64.urlsafe_b64decode(message['raw'].encode('ASCII'))
 
@@ -186,7 +188,7 @@ def get_message(service, user_id, msg_id):
     msg['subject'] = subject
     msg['threadid'] = threadid
 
-    return msg
+    return raw_message, msg
 
 
 def save(msg, cnt):
@@ -247,7 +249,8 @@ def get_all_mail(gservice, max_mails):
     totalvocab_stemmed = set()
     while True:
 
-        msgs = list_gmail_messages(gservice, pageToken=page_token)  # get list of msgs
+        msgs = list_gmail_messages(gservice, pageToken=page_token,
+                                   maxResults=max_mails - tc)  # get list of msgs
 
         c = msgs["resultSizeEstimate"]
 
@@ -257,11 +260,16 @@ def get_all_mail(gservice, max_mails):
         # Processing each message and saving
         # necessary data points in a file named
         # with unique ID of the message
+        message_dict = {}
         for msg in msgs["messages"]:
             tc += 1
-            msg = get_message(gservice, None, msg['id'])
+            raw, msg = get_message(gservice, None, msg['id'])
             if(msg != None):
                 all_mails.append(msg['id'])
+                message_dict[msg['id']] = {
+                    "raw": raw,
+                    "processed": msg
+                }
                 message_str = ""
                 if(msg['id']):
                     message_str += msg['id'] + "\n"
@@ -309,7 +317,6 @@ def get_all_mail(gservice, max_mails):
 
     data = {}
     msg_labels = km.labels_
-    mesg_dict = {}
     for i in range(msg_labels.shape[0]):
 
         key = str(msg_labels[i])
@@ -319,9 +326,32 @@ def get_all_mail(gservice, max_mails):
         else:
             data[key] = [all_mails[i]]
 
-    for j in range(len(all_mails)):
-        mesg_dict[all_mails[j]] = all_messages[j]
-    # print(mesg_dict)
-
     print ('------Processed %d messages in total--------' % (tc))
-    return (data, mesg_dict)
+    return (data, message_dict)
+
+
+def quoted_printable_decoder(raw_string):
+    escmap = {
+        b'=3D': b'=',
+        b'=12': b'',
+        b'=25': b'%',
+        b'=20': b' ',
+        b'=1e': b'',
+    }
+    for orig in escmap:
+        raw_string = raw_string.replace(orig, escmap[orig])
+    return raw_string
+
+
+def get_html_message(raw_msg):
+    msg_str = base64.urlsafe_b64decode(raw_msg.encode('ASCII'))
+    mime_msg = email.message_from_bytes(msg_str)
+
+    if mime_msg.get_content_maintype() == 'text':
+        return mime_msg.get_payload(decode=True)
+    if mime_msg.is_multipart():
+        for part in mime_msg.get_payload():
+            if part.get_content_type() == 'text/html':
+                return part.get_payload(decode=True)
+    print("bad mime type", mime_msg.get_content_type())
+    return ""
