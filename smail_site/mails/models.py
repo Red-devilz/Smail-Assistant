@@ -11,3 +11,9 @@ class GoogleUser(models.Model):
 
     def __str__(self):
         return "email: %s, google_id: %s" % (self.email, self.google_id)
+
+class Mails(models.Model):
+	user = models.ForeignKey(GoogleUser, on_delete = models.CASCADE)
+	msg_id = models.CharField(max_length=100)
+	message = models.CharField(max_length=10000)
+	category = models.CharField(max_length=10, default='-1')
