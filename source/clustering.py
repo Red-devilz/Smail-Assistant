@@ -64,8 +64,8 @@ def cluster_featurize():
     """
 
     #define vectorizer parameters
-    tfidf_vectorizer = TfidfVectorizer(max_df=0.8, max_features=200000,
-                                     min_df=0.05, stop_words='english',
+    tfidf_vectorizer = TfidfVectorizer(max_df=0.9, max_features=200000,
+                                     min_df=0.02, stop_words='english',
                                      use_idf=True, tokenizer=tokenize_and_stem, ngram_range=(1,3))
 
     tfidf_matrix = tfidf_vectorizer.fit_transform(all_text) 
@@ -76,7 +76,7 @@ def cluster_featurize():
     return (tfidf_matrix,terms)
 
 
-num_clusters = 10
+num_clusters = 12
 def kmeans_clustering(feat_vec, labels):
     """
     Cluster the data into x Clusters
@@ -117,8 +117,24 @@ def print_cluster(mod_obj, labels):
     with open('sample_data.json', 'w') as f:
         json.dump(data, f)
 
+def lda_preproc():
+    path = './data/'
+    totalvocab_stemmed = []
+    for infile in glob.glob( os.path.join(path, '*') ):
+        i = open(infile).read()
+        msg_id  = os.path.splitext(os.path.basename(infile))[0].split('_')[1]
+        all_mails.append(msg_id)
+        all_text.append(i)
+        allwords_stemmed = tokenize_and_stem(i) 
+        totalvocab_stemmed.append(allwords_stemmed) #extend the 'totalvocab_stemmed' list
+        texts = totalvocab_stemmed
+        dictionary = corpora.Dictionary(texts)
+        dictionary.filter_extremes(no_below=1, no_above=0.8)
+        corpus = [dictionary.doc2bow(text) for text in texts]
+    lda = models.LdaModel(corpus, num_topics=5, id2word=dictionary, update_every=5, passes=3) 
 
-vocab_find()
-mat_vec,words = cluster_featurize()
-km_obj = kmeans_clustering(mat_vec,words)
-print_cluster(km_obj, words)
+
+#  vocab_find()
+#  mat_vec,words = cluster_featurize()
+#  km_obj = kmeans_clustering(mat_vec,words)
+#  print_cluster(km_obj, words)
