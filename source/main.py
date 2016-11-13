@@ -20,7 +20,7 @@ import os
 import glob
 from nltk.stem.snowball import SnowballStemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
-
+import pickle
 
 app = Flask(__name__)
 
@@ -227,6 +227,26 @@ def tokenize_and_stem(text):
     stems = [stemmer.stem(t) for t in filtered_tokens]
     return stems    
 
+def kmeans_clustering(feat_vec, num_clusters):
+    """
+    Cluster the data into x Clusters
+    """
+
+    model_name = "kmeans_model"
+    
+    try:
+    	km = pickle.load(open(model_name, 'rb'))
+    except OSError:
+    	km = KMeans(n_clusters=num_clusters)
+    	km.fit(feat_vec)
+    	pickle.dump(km, open(model_name, 'wb'))
+
+    return(km)
+
+def predict_cluster(model,mail):
+	
+	return model.predict(mail)	
+
 def get_all_mail(gservice,max_mails):
     """
     Process ALL-mail of a specific user(not inbox)
@@ -293,8 +313,7 @@ def get_all_mail(gservice,max_mails):
     print("size of smaller vocabulary is" + str(len(terms)))
     
     #kmeans 
-    km = KMeans(n_clusters=10)
-    km.fit(tfidf_matrix)
+    km = kmeans_clustering(tfidf_matrix,10)
 
     #Constructing dictionary
     order_centroids = km.cluster_centers_.argsort()[:, ::-1] 
@@ -312,10 +331,15 @@ def get_all_mail(gservice,max_mails):
             data[key] = [all_mails[i]]
     
     for j in range(len(all_mails)):
-        mesg_dict[all_mails[j]] = all_messages[j]       
-    print(mesg_dict)        
+        mesg_dict[all_mails[j]] = all_messages[j]
+
+    for i in range(10):
+        print("\nCluster %d words:" % i)
+        for ind in order_centroids[i, :10]: #replace 6 with n words per cluster
+            print(' %s' % terms[ind], end=',')               
 
     print ('------Processed %d messages in total--------'%(tc))
+
     return (data,mesg_dict)
 
 
