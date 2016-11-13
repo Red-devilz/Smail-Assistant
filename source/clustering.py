@@ -8,6 +8,7 @@ import os
 import glob
 from nltk.stem.snowball import SnowballStemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
+import json
 
 
 
@@ -36,6 +37,8 @@ def tokenize_and_stem(text):
     return stems
 
 all_text = []
+all_mails = []
+
 def vocab_find():
     """ 
     Find the vocabulary of the set
@@ -46,6 +49,8 @@ def vocab_find():
 
     for infile in glob.glob( os.path.join(path, '*') ):
         i = open(infile).read()
+        msg_id  = os.path.splitext(os.path.basename(infile))[0].split('_')[1]
+        all_mails.append(msg_id)
         all_text.append(i)
         allwords_stemmed = tokenize_and_stem(i) 
         totalvocab_stemmed.update(allwords_stemmed) #extend the 'totalvocab_stemmed' list
@@ -89,13 +94,28 @@ def print_cluster(mod_obj, labels):
     """
 
     #sort cluster centers by proximity to centroid
+
     order_centroids = mod_obj.cluster_centers_.argsort()[:, ::-1] 
+
+    data = {}
+    msg_labels = mod_obj.labels_
+
+    for i in range(msg_labels.shape[0]):
+
+        key = str(msg_labels[i])
+
+        if key in data:
+            data[key].append(all_mails[i])
+        else:
+            data[key] = [all_mails[i]]
 
     for i in range(num_clusters):
         print("\nCluster %d words:" % i)
-        
         for ind in order_centroids[i, :10]: #replace 6 with n words per cluster
             print(' %s' % labels[ind], end=',')
+
+    with open('sample_data.json', 'w') as f:
+        json.dump(data, f)
 
 
 vocab_find()
