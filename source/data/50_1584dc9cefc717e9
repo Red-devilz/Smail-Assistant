@@ -1,0 +1,48 @@
+From:
+"KRISHNA NANDIVADA V (CS)" <nvk@iitm.ac.in>
+
+To:
+"CS14B061 RAHUL RAMESH" <cs14b061@smail.iitm.ac.in>
+
+Date:
+10-11-2016
+
+Thread ID:
+1584dc9cefc717e9
+
+Subject:
+CS3310:JUL-NOV 2016: Re: Interpreter for testing
+
+Body:
+
+CS3310:JULNOV 2016  Forums  Discussion Forum for Assignment 6: Code
+Generation  Interpreter for testing
+
+
+Re: Interpreter for testing
+by KRISHNA NANDIVADA V (CS)  Thursday, 10 November 2016, 3:22 PM
+
+I guess the only difference is the return instruction: j $ra Vs jr $ra.
+
+Consideringthat we used mars interpreter in the "inlab"  let us say w
+e
+will use Mars. But in case you are using spim  no problem. Inform the TA
+after the evaluation, and the things will be take care.
+
+C2A0
+
+Krishna.
+
+
+Thisis a copy of a message posted on the CS3310:JULNOV 2016 website.
+
+To reply click on this link:
+
+
+
+Change your forum digest preferences:
+
+
+
+
+

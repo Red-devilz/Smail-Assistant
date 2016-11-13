@@ -1,0 +1,48 @@
+From:
+"ME14B148 ASHUTOSH KUMAR JHA" <me14b148@smail.iitm.ac.in>
+
+To:
+"CS14B061 RAHUL RAMESH" <cs14b061@smail.iitm.ac.in>
+
+Date:
+20-9-2016
+
+Thread ID:
+1572bf2ea790f3e1
+
+Subject:
+CS5011:JUL-NOV 2016: Re: Q10: Naive Bayes Classifier
+
+Body:
+
+CS5011:JULNOV 2016  Forums  General Lecture related queries  Q10: Na
+ive
+Bayes Classifier
+
+
+Re: Q10: Naive Bayes Classifier
+by ME14B148 ASHUTOSH KUMAR JHA  Tuesday, 20 September 2016, 7:18 AM
+
+Do you mean to say that we must do Beta Prior with Multinomial and
+Dirichlet Prior with Multinomial?
+Because that would be hard to solve.
+
+BetaPrior with Bernouli and Dirichlet Prior with Multinomial are much mu
+ch
+simpler because they are conjugate priors.
+
+Pleaselook into it again
+
+
+This is a copy of a message posted on the CS5011:JULNOV 2016 website.
+
+To reply click on this link:
+
+
+
+Change your forum digest preferences:
+
+
+
+
+

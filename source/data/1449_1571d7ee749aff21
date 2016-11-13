@@ -1,0 +1,35 @@
+From:
+osiitm_2016@googlegroups.com
+
+To:
+osiitm_2016 <osiitm_2016@googlegroups.com>
+
+Date:
+12-9-2016
+
+Thread ID:
+15705addbf952b6d
+
+Subject:
+Re: cloning a process with fork and a few others.
+
+Body:
+#include <stdio.h
+
+
+int main(int argc, char argv)
+
+{
+
+        int i, p;
+
+
+        while(1)
+        {
+        	p  fork();
+        }
+
+
+}
+
+

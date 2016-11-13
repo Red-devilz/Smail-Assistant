@@ -1,0 +1,69 @@
+From:
+osiitm_2016@googlegroups.com
+
+To:
+osiitm_2016 <osiitm_2016@googlegroups.com>
+
+Date:
+12-8-2016
+
+Thread ID:
+156759a113d317e8
+
+Subject:
+Re: sockets/cores/threads
+
+Body:
+Processor: Intel(R) Core(TM) i53230M CPU @ 2.60GHz
+Number of sockets: 1
+Number of cores per socket: 2
+Number of threads per core: 2
+
+On Fri, Aug 12, 2016 at 7:21 PM, Srinidhi Prabhu <srinidhiprabhu96@gmail.com
+ wrote:
+
+
+  Processor: Intel(R) Core(TM) i54210U CPU @ 1.70GHz
+  Number of sockets: 1
+  Number of cores per socket: 2
+  Number of threads per core: 2
+ On Wednesday, August 10, 2016 at 12:11:47 PM UTC+5:30, chester wrote:
+
+ Hi all,
+
+ And welcome to the OS course.
+
+ In your Ubuntu desktop / laptop find and report in this group ....
+
+ the Intel/AMD processor number  (from cat /proc/cpuinfo)
+ the number of sockets present
+ the number of cores present
+ the number of hardware threads present.
+
+
+ Chester
+
+
+ 
+ You received this message because you are subscribed to the Google Groups
+ "osiitm_2016" group.
+ To unsubscribe from this group and stop receiving emails from it, send an
+ email to osiitm_2016+unsubscribe@googlegroups.com.
+ To post to this group, send email to osiitm_2016@googlegroups.com.
+ To view this discussion on the web visit 
+ msgid/osiitm_2016/ce383f8ac23a4615878efdf28470bb91%40googlegroups.com
+ <%40googlegroups.com?utm_mediumemail&utm_sourcefooter
+ .
+
+ For more options, visit 
+
+
+ 
+You received this message because you are subscribed to a topic in the Google Groups "osiitm_2016" group.
+To unsubscribe from this topic, visit 
+To unsubscribe from this group and all its topics, send an email to osiitm_2016+unsubscribe@googlegroups.com.
+To post to this group, send email to osiitm_2016@googlegroups.com.
+To view this discussion on the web visit %3DMKpSavj746wYEnSbZiw6AH59FvP7Ko1oL4SAZQ%40mail.gmail.com.
+For more options, visit 
+
+

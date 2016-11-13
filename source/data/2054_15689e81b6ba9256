@@ -1,0 +1,59 @@
+From:
+osiitm_2016@googlegroups.com
+
+To:
+osiitm_2016 <osiitm_2016@googlegroups.com>
+
+Date:
+14-8-2016
+
+Thread ID:
+15689a94449ae922
+
+Subject:
+Re: system calls in your Ubuntu OS
+
+Body:
+Linux 3.19.059generic has 406 system calls.
+
+My few commonly used/favourite system calls are:
+kill,chmod,uname,reboot,mkdir
+
+On Thu, Aug 11, 2016 at 10:20 AM, chester <chetrebeiro@gmail.com wrote:
+
+ In the Linux kernel source code, all system call implementations (the
+ function invoked by the trap handler) start with sys_
+
+ All kernel functions along with their virtual address in the currently
+ executing kernel can be printed out
+ by
+ $ cat /proc/kallsyms
+
+  Can you find out the number of system calls that your Linux kernel
+ supports. (Use tools like sed or grep)
+  Search in the list for your favourite system calls.
+
+ Chester
+
+ 
+ You received this message because you are subscribed to the Google Groups
+ "osiitm_2016" group.
+ To unsubscribe from this group and stop receiving emails from it, send an
+ email to osiitm_2016+unsubscribe@googlegroups.com.
+ To post to this group, send email to osiitm_2016@googlegroups.com.
+ To view this discussion on the web visit 
+ msgid/osiitm_2016/d8b7a356dded4e82905bcddfeaa1ac4c%40googlegroups.com
+ <%40googlegroups.com?utm_mediumemail&utm_sourcefooter
+ .
+ For more options, visit 
+
+
+ 
+You received this message because you are subscribed to a topic in the Google Groups "osiitm_2016" group.
+To unsubscribe from this topic, visit 
+To unsubscribe from this group and all its topics, send an email to osiitm_2016+unsubscribe@googlegroups.com.
+To post to this group, send email to osiitm_2016@googlegroups.com.
+To view this discussion on the web visit %2BheWtHqzq51i5t%3D1h9cZSu4S3A%40mail.gmail.com.
+For more options, visit 
+
+

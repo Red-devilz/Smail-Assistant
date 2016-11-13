@@ -1,0 +1,50 @@
+From:
+"CS12B060 SAHIL SHARMA" <cs12b060@smail.iitm.ac.in>
+
+To:
+"CS14B061 RAHUL RAMESH" <cs14b061@smail.iitm.ac.in>
+
+Date:
+16-9-2016
+
+Thread ID:
+15733ba0bd957b75
+
+Subject:
+CS5011:JUL-NOV 2016: Re: Question 2 PA
+
+Body:
+
+CS5011:JULNOV 2016  Forums  General Lecture related queries  Questio
+n 2
+PA
+
+
+Re: Question 2 PA
+by CS12B060 SAHIL SHARMA  Friday, 16 September 2016, 9:27 PM
+
+This is a classification problem. For classification problems, input data x
+comes with a label. For binary classification problems the label is either
+0 or 1. Your model also assigns to each data point a predicted_label which
+is either 0 or 1. The 4 terms accuracy, precision, recall and Fmeasure are
+all measures of how well the model prediction and ground truth agree with
+each other. You can check the following wiki links to understand how to
+calculate these measures.
+
+
+
+
+
+
+This is a copy of a message posted on the CS5011:JULNOV 2016 website.
+
+To reply click on this link:
+
+
+
+Change your forum digest preferences:
+
+
+
+
+

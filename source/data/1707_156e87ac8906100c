@@ -1,0 +1,19 @@
+From:
+osiitm_2016@googlegroups.com
+
+To:
+Rajat Rao <ee14b101@smail.iitm.ac.in>, "osiitm_2016@googlegroups.com"
+	<osiitm_2016@googlegroups.com>
+
+Date:
+2-9-2016
+
+Thread ID:
+156e87ac8906100c
+
+Subject:
+Fwd: Virtual memory on real OSes
+
+Body:
+b'       Good question Rajat.    In earlier versions of Linux there was a limit to the amount of memory a user space program could have. Similar to what we see in xv6.    Since pentium pro however there is a paging mode called PAE which allows more than 4gb to be addressed.      Recent linux kernels use pae to support huge user processes ... in the order of 2^48 bytes...      Chester     Sent from Samsung Mobile      Original message   From: Rajat Rao   Date:2016/09/02 12:37 AM (GMT+05:30)   To: Chester Rebeiro   Subject: Virtual memory on real OSes       Dear Sir,    xv6 suffers from the flaw that only 2GB of RAM can be used. Is this also true for OSes like Windows/Linux running on 32 bit machines?  If not, how is their virtual memory scheme different that solves this problem?        Best Regards,  Rajat Rao   Mobile: +919789094996 p  EMail: rajatrao96@gmail.com          osiitm_+unsubscribe@googlegroups.com osiitm_2016@googlegroups.com %40email.android.com '
+

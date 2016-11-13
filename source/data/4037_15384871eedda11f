@@ -1,0 +1,60 @@
+From:
+btech-bounces@smail.iitm.ac.in
+
+To:
+students <students@smail.iitm.ac.in>
+
+Date:
+17-3-2016
+
+Thread ID:
+15384871eedda11f
+
+Subject:
+New firewall testing
+
+Body:
+On Tuesday (15th March) we had tried a transition of all the hostels
+to our new firewall  this had been in testing in CC for about a week
+and was functioning fine, and had also been tested in one of the
+hostels without trouble. However, once the entire load came onto it,
+we found that it performed very poorly and left most of the hostel
+zone without a connection that night. I would like to apologise on
+behalf of computer centre for the inconvenience.
+
+We have reverted to the netaccess mode until the end of quizzes. In
+the meantime, the vendors have indicated possible solutions to the
+problems with the new firewall and we expect that once corrected the
+situation should not arise again. After quizzes, we will once again
+test the new firewall, more gradually this time. This has to be done
+since the netaccess firewall is showing some strain and is not a
+longterm solution.
+
+As some of you have pointed out, there seem to be some issues with the
+"logout/keepalive" window that need to be sorted out for this to work
+ we are currently looking at all alternatives and will try these out
+as well. There will be a small period of disruption after quizzes
+until the new techniques stabilize, I request your cooperation and
+understanding in this. Unfortunately, the problems arise only when the
+complete hostel load goes onto the firewall, which is why our week of
+testing in CC and other departments did not show any of the issues
+that we faced under full load.
+
+Thank you for your cooperation.
+
+
+Nitin Chandrachoodan
+Associate Professor
+Department of Electrical Engineering
+IIT Madras
+~nitin/
+_______________________________________________
+Students mailing list
+Students@smail.iitm.ac.in
+
+_______________________________________________
+Btech mailing list
+Btech@smail.iitm.ac.in
+
+
+

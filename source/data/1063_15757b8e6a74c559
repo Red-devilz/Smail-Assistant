@@ -1,0 +1,67 @@
+From:
+"CS13D023 MANAS THAKUR" <cs13d023@smail.iitm.ac.in>
+
+To:
+"CS14B061 RAHUL RAMESH" <cs14b061@smail.iitm.ac.in>
+
+Date:
+23-9-2016
+
+Thread ID:
+15757b8e6a74c559
+
+Subject:
+CS3310:JUL-NOV 2016: Mooshak available for Assignment 3
+
+Body:
+
+CS3310:JULNOV 2016  Forums  Discussion Forum for Assignment 3:
+Intermediate Code Generation  Mooshak available for Assignment 3
+
+
+Mooshak available for Assignment 3
+by CS13D023 MANAS THAKUR  Friday, 23 September 2016, 9:14 PM
+
+Dear students,
+
+Mooshakhas been set up for Assignment 3. Please use it for testing your
+code. Note the following:
+
+1.Since marks on Mooshak can only be integers, each public testcase
+carries 6 marks (6X8D48) and each private testcase carries 1 mark
+(1X32D32). This totals to 80; however, we will distribute the marks in th
+e
+final evaluation such that it adds up to 100 (50+50).
+
+2.Please follow the following submission structure for Mooshak:
+
+	 Put all the source files (along with P3.java) in a directory named as
+your rollnumber (in CAPS).
+ 	 tar czf ROLLNUM.tar ROLLNUM (note that the file is gzipped+tarred, but
+the name only has .tar as the extension).
+
+3. For any Mooshakspecific doubts/queries, please refer to the discussions
+for the previous assignment before posting the same.
+
+Allthe best!
+
+Regards,
+Manas
+
+
+Thisis a copy of a message posted on the CS3310:JULNOV 2016 website.
+
+To reply click on this link:
+
+
+
+Unsubscribe from this forum:
+
+
+
+Change your forum digest preferences:
+
+
+
+
+

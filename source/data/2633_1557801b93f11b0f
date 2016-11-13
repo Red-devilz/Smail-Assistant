@@ -1,0 +1,111 @@
+From:
+btech-bounces@smail.iitm.ac.in
+
+To:
+"students@smail.iitm.ac.in" <students@smail.iitm.ac.in>
+
+Date:
+22-6-2016
+
+Thread ID:
+15572cc38d5ea469
+
+Subject:
+Re: Reason for new Firewall Implementation - reg
+
+Body:
+I would like to add a couple of small clarifications here:
+
+1. When trying to connect to the net, you may see a page with a
+certificate error. This is happening because you tried to access a
+HTTPS site, and this is getting redirected to the login page, and the
+browser thinks someone is trying to hijack the connection.
+
+Please try going to  as the first site you visit
+ do not use Google as they default to HTTPS and this will cause the
+error. Make sure to type in the full URL including the  
+otherwise the browser will by default try to access an HTTPS site and
+you will get this error.
+
+2. Connection closing after 5 minutes: once you log in, you will see a
+window that says "Keep this window open". Please do keep that window
+open  if you close it and you do not browse, then the connection will
+be closed after 5 minutes. But if you are continuously browsing or
+clicking on new links, you will be generating network traffic and this
+will keep the connection open even if you close that window. To avoid
+confusion, don't close it. If you find your connection dropping even
+with this, please send me a screenshot of your browser  this should
+not happen.
+
+3. Mobile browsers do not currently support the Keepalive page  we
+have heard reports that the Opera browser allows you to keep the page
+open in the background, but at present we don't have a good solution
+for this. Again, as long as you are continuously browsing, there wont
+be a problem, but if you go idle for some time it will disconnect.
+
+4. Why is the timeout 5 minutes instead of 1 hour: the idea of the
+timeout is to prevent misuse if you leave a workstation without
+logging out  it will automatically log you out after a few minutes of
+inactivity. Increasing this to 1 hour opens the possibility of someone
+else coming along and misusing your account on public machines.
+Unfortunately we dont have a way to set different timeout for public
+and private machines. The Keepalive window should be enough to retain
+the connection  if it does not work then we need to know what is
+happening.
+
+We appreciate the fact that this has caused quite a bit of disruption
+to many of you over the past few weeks, and regret this. We are trying
+to settle on a specific mode of operation as soon as possible to avoid
+dragging this out for long. If you have any suggestions or specific
+instances of problems that persist after you have tried all the
+techniques above, please let us know.
+
+Thank you,
+
+
+
+Nitin Chandrachoodan
+Associate Professor
+Department of Electrical Engineering
+IIT Madras
+~nitin/
+
+
+On Mon, Jun 20, 2016 at 5:33 PM, Selvaraju V <selva@iitm.ac.in wrote:
+ ?Dear All,
+
+
+ Based on the request of Students Secretory, I am sending this announce.
+
+
+ We are receiving lot of Legal Complaints from our Internet Service Provider about misusing of Internet from our Campus. They are asking us to take immediate action otherwise, they will stop their service to us.
+
+
+ Based on the analysis, we have identified the world best brand of UTM Firewall and implemented in our Campus Network. They have done lot of implementations across the world and many universities are using their Firewall.
+
+
+ It gives best support for wired Network connectivity and for WiFi devices, it has some issues. We are working on that and as soon as it ready, we will announce.
+
+
+ We are providing wired connectivity only to the Hostel Zone.
+
+
+ Thanks & Regards,
+
+
+ V.Selvaraju, B.E.,M.E.,
+ Assistant Systems Engineer,
+ Computer Centre,
+ IIT Madras, Chennai  600 036.
+
+ Challenges are what makes life interesting and overcoming them is what makes life meaningful.
+_______________________________________________
+Students mailing list
+Students@smail.iitm.ac.in
+
+_______________________________________________
+Btech mailing list
+Btech@smail.iitm.ac.in
+
+
+

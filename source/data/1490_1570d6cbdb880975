@@ -1,0 +1,60 @@
+From:
+"EE13D015 KRISHNA CHAITANYA KOSARAJU" <ee13d015@smail.iitm.ac.in>
+
+To:
+"CS14B061 RAHUL RAMESH" <cs14b061@smail.iitm.ac.in>
+
+Date:
+9-9-2016
+
+Thread ID:
+1570d6cbdb880975
+
+Subject:
+CS5011:JUL-NOV 2016: Tutorial 2 Question3
+
+Body:
+
+CS5011:JULNOV 2016  Forums  General Lecture related queries  Tutoria
+l 2
+Question3
+
+
+Tutorial 2 Question3
+by EE13D015 KRISHNA CHAITANYA KOSARAJU  Friday, 9 September 2016, 10:28 AM
+
+Q3. One way of recovering multivariate regression coefficients using
+univariate regression is to use orthogonalization. If the dimensions were
+orthogonal to begin with, can we independently regress the dependent
+variable on each of the dimensions and recover the same coefficients as
+multivariate regression? Should we center the data before doing this?
+Explain your answer.
+
+C2A0
+
+Forthe last part. The given answer is yes.
+
+C2A0
+
+Shouldwe center the data before doing this? Explain your answer.
+
+Butif we center the data, the vector's may no longer be orthogonal.
+Therefore we cannot independently regress the dependent variable.C2A0
+
+
+AttachmentT2Q3.pdf:
+
+2Q3.pdf
+
+This is a copy of a message posted on the CS5011:JULNOV 2016 website.
+
+To reply click on this link:
+
+
+
+Change your forum digest preferences:
+
+
+
+
+

@@ -1,0 +1,37 @@
+From:
+osiitm_2016@googlegroups.com
+
+To:
+osiitm_2016 <osiitm_2016@googlegroups.com>
+
+Date:
+11-9-2016
+
+Thread ID:
+15705addbf952b6d
+
+Subject:
+Re: cloning a process with fork and a few others.
+
+Body:
+#include <stdio.h
+
+int main(int argc, char argv)
+{
+        int i, p;
+		int p1,p2, p3,p4;
+
+		p1  fork(); p  wait();
+		p2  fork(); p  wait();
+		p3  fork(); p  wait();
+		p4  fork(); p  wait();
+
+		printf("Cur process  %d     Parent  %d      Fork return Values    ", getpid(), getppid());
+		printf("%d %d %d %d \n", p1,p2,p3,p4);
+
+		return 0;
+
+}
+
+
+

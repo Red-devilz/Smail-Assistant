@@ -126,7 +126,6 @@ def get_message(service, user_id, msg_id):
     Get the message with corresponding message ID
     """
 
-
     if user_id is None: user_id ='me'
 
     # Getting the specific message in raw format using the message id
@@ -177,12 +176,18 @@ def save(msg,cnt):
     """
     filename = str(cnt) + "_" +msg['id']
     f = open(data_path+filename,'w')
-    f.write("From:\n"+msg['from']+"\n\n")
-    f.write("To:\n"+msg['to']+"\n\n")
-    f.write("Date:\n"+msg['date']+"\n\n")
-    f.write("Thread ID:\n"+msg['threadid']+"\n\n")
-    f.write("Subject:\n"+msg['subject']+"\n\n")
-    f.write("Body:\n"+msg['body']+"\n\n")
+    if(msg['from']!=None):
+        f.write("From:\n"+msg['from']+"\n\n")
+    if(msg['to']!=None):
+        f.write("To:\n"+msg['to']+"\n\n")
+    if(msg['date']!=None):
+        f.write("Date:\n"+msg['date']+"\n\n")
+    if(msg['threadid']!=None):
+        f.write("Thread ID:\n"+msg['threadid']+"\n\n")
+    if(msg['subject']!=None):
+        f.write("Subject:\n"+msg['subject']+"\n\n")
+    if(msg['body']!=None):
+        f.write("Body:\n"+msg['body']+"\n\n")
     f.close()
 
     print("-----------------------------------")
@@ -199,9 +204,12 @@ def get_all_mail(gservice):
     """
 
     page_token = None
-    tc = 0 #Total number of messages
+    tc = 1600 #Total number of messages
+
+    batch = 0
     
     while True:
+        batch = batch + 1
 
         msgs = list_gmail_messages(gservice,pageToken=page_token)  # get list of msgs
         
@@ -213,12 +221,13 @@ def get_all_mail(gservice):
         # Processing each message and saving 
         # necessary data points in a file named 
         # with unique ID of the message
-        for msg in msgs["messages"]:
-            tc+=1
-            msg = get_message(gservice,None,msg['id'])
-            if(msg!=None):
-                save(msg,tc)
-                print ("Message %d saved"%(tc))
+        if(batch>=16):
+            for msg in msgs["messages"]:
+                tc+=1
+                msg = get_message(gservice,None,msg['id'])
+                if(msg!=None):
+                    save(msg,tc)
+                    print ("Message %d saved"%(tc))
             
             #  Get Only 4 messages for simplicity(This is for testing on 10 messages)
             #  if(tc==4):

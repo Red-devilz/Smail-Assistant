@@ -1,0 +1,18 @@
+From:
+btech-bounces@smail.iitm.ac.in
+
+To:
+"seminars@list.iitm.ac.in" <seminars@list.iitm.ac.in>
+
+Date:
+15-6-2016
+
+Thread ID:
+1555cea410970dd0
+
+Subject:
+[Seminars] MS Seminar of Annam Naresh
+
+Body:
+b'      Department of Computer Science and Engineering  Indian Institute of Technology Madras    M.S. Seminar </p </p Title: Studies on GraphBased SemiSupervised Learning and Selection of Unlabeled Examples for Inductive Learning   Name of Scholar: Annam Naresh strong  Date: Friday , 24th June, 2016  Time: 3:00 pm to 4:00 pm  Venue: BSB 361  </p Abstract </p Graphbased methods for semisupervised learning (SSL) have been shown to be promising for using small amount of labeled data and large amount of unlabeled data to perform pattern classification tasks. As graphbased SSL method is transductive, it can predict class labels only for examples in the unlabeled dataset and not for the test examples. In an existing approach, an induction formula is derived using the labeled examples and the unlabeled examples along with their class labels obtained using a graph inference technique. The induction formula that has the same form as that of the Parzen window based classifier is used to predict the class label for a test example. As the graph inference technique is not guaranteed to give the correct labels for all the unlabeled examples, the use of all the unlabeled examples and their class labels in the induction formula affects the classification performance for the test data. In this work, we address the issues in selection of a subset of unlabeled examples that are supposed to be confidently labeled by the graph inference technique. Only these examples are used in the inductive learning. We consider the support vector machine based classifier for the inductive learning using the selected subset of unlabeled examples along with the labeled examples.    In this work, the following graph inference techniques are considered: Label Propagation, Label Spreading, Label Propagation with Quadratic Criterion, Markov Random Walk, and Bag of Paths. Different criteria based on the class posterior probabilities and the entropy of the class posterior distribution have been proposed for selection of a subset of confidently labeled examples in the unlabeled dataset. Thresholdbased and rankbased strategies are considered for subset selection. The experimental studies have been carried out on the semisupervised benchmark datasets and image datasets. The results of studies demonstrate the effectiveness of the inductive learning using a subset of the unlabeled dataset.     </p All are welcome   regards, Chandra Sekhar     Dr.C.Chandra Sekhar  Professor  Department of Computer Science and Engineering  Indian Institute of Technology Madras  Chennai600036, India  Phone: +91 44 22574363'
+

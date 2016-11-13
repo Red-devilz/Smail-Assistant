@@ -1,0 +1,44 @@
+From:
+"MM12B045 NAIK ANKITA RAJARAM" <mm12b045@smail.iitm.ac.in>
+
+To:
+"CS14B061 RAHUL RAMESH" <cs14b061@smail.iitm.ac.in>
+
+Date:
+19-9-2016
+
+Thread ID:
+1574303e20bf0a36
+
+Subject:
+CS5011:JUL-NOV 2016: Programming Assignment 1 Question 9
+
+Body:
+
+CS5011:JULNOV 2016  Forums  General Lecture related queries  Program
+ming
+Assignment 1 Question 9
+
+
+Programming Assignment 1 Question 9
+by MM12B045 NAIK ANKITA RAJARAM  Monday, 19 September 2016, 8:15 PM
+
+1) What does "For every channel divide it into 32 bins" exact mean? Is it
+dividing the 256 X 256 data frame ( i.e. for 1 channel) into 32 rectangles
+and then finding the frequency of each rectangle?2) Can we use an inbuilt
+package to carry out the L1regularized Logistic Regression or is it
+necessary to use the code provided by Boyds Group
+
+
+This is a copy of a message posted on the CS5011:JULNOV 2016 website.
+
+To reply click on this link:
+
+
+
+Change your forum digest preferences:
+
+
+
+
+

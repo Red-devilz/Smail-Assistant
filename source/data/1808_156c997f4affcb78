@@ -1,0 +1,18 @@
+From:
+osiitm_2016@googlegroups.com
+
+To:
+Rajat Rao <ee14b101@smail.iitm.ac.in>
+
+Date:
+27-8-2016
+
+Thread ID:
+156c997f4affcb78
+
+Subject:
+RE: Virtual Memory Limit
+
+Body:
+b'       Hi Rajat    This is how I understand they get 64tb.    It comes more from the seg. unit than paging unit.    there are 13 seg registers..  each seg has 32 bit offset  and can be from gdt or ldt..  thus total space is2^(32+13+2)D64tb.        if you connect this to what we did in class  we actually have 4 segments ... kernel code and data  and user code and data. so speaking in the same language we are actually working with 16gb of virtual memory space.    However the addressable space is just 4gb ie 2^32. ie. all the 16gb get mapped to the same 4gb of addressable space. This is what we are working with and splitting into kernel space and user space.    Chester       Sent from Samsung Mobile      Original message   From: Rajat Rao   Date:2016/08/26 11:46 PM (GMT+05:30)   To: Chester Rebeiro   Subject: Virtual Memory Limit       Dear Sir,    Attached are pages 37, 38 from Computer Organization by William Stallings (8th Edition). The tables show 16 bit processors supporting 64TB of virtual memory. Could you please explain exactly what limits the virtual memory supported?      Best Regards,  Rajat Rao   Mobile: +919789094996 p  EMail: rajatrao96@gmail.com          osiitm_+unsubscribe@googlegroups.com osiitm_2016@googlegroups.com %40email.android.com '
+

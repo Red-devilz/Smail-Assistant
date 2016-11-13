@@ -1,0 +1,18 @@
+From:
+osiitm_2016@googlegroups.com
+
+To:
+Rajat Rao <ee14b101@smail.iitm.ac.in>
+
+Date:
+15-10-2016
+
+Thread ID:
+157c63173837a3ef
+
+Subject:
+Re: Purpose of switchuvm
+
+Body:
+b"     Hi Rajat,     switchuvm() doesn't seem to have a role to play here.   It is used if  (1)we are wanting to do a context switch   (2) there has been a change in the ss or stack pointer,   (3)pgdir changes     None of these seem to be happening here.     Perhaps, this is a reminisce of an older version of xv6,   where growproc created a whole new page table.   ~sbansal/os/previous_years/2011/xv6_html/proc_8csource.html      Chester     From:  Rajat Rao <ee14b10@smail.iitm.ac.in  Sent:  Friday, October 14, 2016 11:21 PM  To:  Chester Rebeiro  Subject:  Purpose of switchuvm       Dear Sir,    The switchuvm() function is used to populate the TSS and load cr3 with the pagedir of the process. This is done during a context switch. However, switchuvm() is also called in growproc. Why is this?  As I understand, this is the sequence of steps   1. User proc calls xv6 equivalent of malloc  2. malloc calls sbrk  3. sbrk calls growproc to allocate memory  Since there is no context switching involved, and the pagedir remains the same, why is switchuvm() called?      Best Regards,  Rajat Rao   Mobile: +919789094996 p  EMail: rajatrao96@gmail.com           osiitm_+unsubscribe@googlegroups.com osiitm_2016@googlegroups.com %40iitm.ac.in "
+

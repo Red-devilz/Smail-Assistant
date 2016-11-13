@@ -1,0 +1,70 @@
+From:
+"Secretary, International and Alumni Relations" <sec_iar@smail.iitm.ac.in>
+
+To:
+STUDENT mailing list <students@smail.iitm.ac.in>
+
+Date:
+6-10-2016
+
+Thread ID:
+15796ad4e18101af
+
+Subject:
+Analytics Club | Introduction to R - Part 2
+
+Body:
+Hello guys,
+
+Hope you found the first session interesting !! If you have any doubts
+please note it down. We will clear it before the start of the next session.
+The next session will be the continuation of the previous one. We will be
+covering:
+
+  Control Statements
+  Plots
+  Reading data
+  Exercise
+
+Date : 06/10/2016
+Venue : MSB 243
+Time : 8:30 PM  10:30 PM
+
+We will be working out everything in R. If you don't have R, use the
+following links to download and install R
+ and Rstudio
+.
+
+Install the following packages in R or R Studio by typing the following
+commands:
+
+install.packages("swirl")
+install.packages("MASS")
+install.packages("ISLR")
+
+Come with your laptops charged !!
+
+PS: To join the Analytics Club mailing list and receive updates about club
+activities, please fill this form  
+(if
+you haven't done so already).
+
+Cheers,
+
+J Vaishnavi
+Analytics Club Head
+IIT Madras
+
+Contact : 9597051738
+
+Thanks and Regards,
+Poojan Patel
+Secretary, International and Alumni Relations, IIT Madras
+4th Year Dual Degree | Dept. of Civil Engineering
+Saraswathi Hostel, Indian Institute of Technology Madras
+(M) 9884180125 | (O) 9444396170
+E2BFeedback/suggestions for I&AR Team? Let us know
+!E2B
+
+
+
