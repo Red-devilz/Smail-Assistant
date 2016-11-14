@@ -328,7 +328,7 @@ def get_all_mail(gservice, max_mails):
             data[key] = [all_mails[i]]
 
     print ('------Processed %d messages in total--------' % (tc))
-    # print (data.keys())
+    # print 
     return (data, message_dict)
 
 
@@ -360,8 +360,8 @@ def get_html_message(raw_msg):
 
 def get_mails_from_db(email):
     user = GoogleUser.objects.get(email = email)
-    return [mail.message for mail in Mails.objects.filter(user = user)]
+    return [mail for mail in Mails.objects.filter(user = user)]
 
 def get_mails_by_class(email, class_id):
     user = GoogleUser.objects.get(email = email)
-    return [mail.message for mail in Mails.objects.filter(user = user, category = class_id)]
+    return [mail for mail in Mails.objects.filter(user = user, category = class_id)]

@@ -17,3 +17,6 @@ class Mails(models.Model):
 	msg_id = models.CharField(max_length=100)
 	message = models.CharField(max_length=10000)
 	category = models.CharField(max_length=10, default='-1')
+	sender = models.CharField(max_length=100, default='')
+	subject = models.CharField(max_length=250, default='')
+	snippet = models.CharField(max_length=1000, default='')

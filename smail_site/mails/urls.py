@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^login$', views.login, name="login"),
     url(r'^logout$', views.logout, name="logout"),
     url(r'^oauth2callback$', views.oauth2callback, name="oauth2callback"),
+    url(r'^msg/(?P<msg_id>[a-z0-9]+)/$', views.display, name='display'),
 ]

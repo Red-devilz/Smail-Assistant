@@ -34,7 +34,7 @@ def index(request):
     template = loader.get_template('mails/index.html')
     # json.dump([label_dict, mail_dict], open("mails.json", "w"))
     context = {
-        'mails_list': list([get_html_message(msg) for msg in all_mails]),
+        'mails_list': list([dict({'from':msg.sender, 'subject':msg.subject, 'snippet':msg.snippet, 'msg_id':msg.msg_id}) for msg in all_mails if msg.sender != '']),
     }
 
     return HttpResponse(template.render(context, request))
@@ -70,8 +70,18 @@ def oauth2callback(request):
     label_dict, mail_dict = get_all_mail(gmail_service, 20)
     for category in label_dict.keys():
         for key in label_dict[category]:
-            new_mail = Mails(user=cur_user, msg_id=key, message=mail_dict[key]['raw']['raw'], category=category)
-            new_mail.save()
+            check_mail = Mails.objects.filter(user=cur_user, msg_id=key)
+            if(len(check_mail) > 0):
+                old_mail = Mails.objects.get(user=cur_user, msg_id=key)
+                old_mail.message = mail_dict[key]['raw']['raw']
+                old_mail.category = category
+                old_mail.snippet = mail_dict[key]['raw']['snippet']
+                old_mail.sender = mail_dict[key]['processed']['from']
+                old_mail.subject = mail_dict[key]['processed']['subject']
+                old_mail.save()
+            else:
+                new_mail = Mails(user=cur_user, msg_id=key, message=mail_dict[key]['raw']['raw'], category=category, snippet = mail_dict[key]['raw']['snippet'], sender = mail_dict[key]['processed']['from'], subject = mail_dict[key]['processed']['subject'])
+                new_mail.save()
     request.session['cred'] = credentials.to_json()
     return redirect('index')
 
@@ -89,8 +99,22 @@ def classify(request, category_id):
     cur_mails = get_mails_by_class(credentials.id_token['email'],category_id)
     template = loader.get_template('mails/categories.html')
     context = {
-        'mails_list': list([get_html_message(msg) for msg in cur_mails]),
+        'mails_list': list([dict({'from':msg.sender, 'subject':msg.subject, 'snippet':msg.snippet, 'msg_id':msg.msg_id}) for msg in cur_mails if msg.sender != '']),
         'category': category_id,
+    }
+
+    return HttpResponse(template.render(context, request))
+
+def display(request, msg_id):
+    if 'cred' not in request.session:
+        return redirect('login')
+    credentials = client.OAuth2Credentials.from_json(request.session['cred'])
+    if credentials.access_token_expired:
+        return redirect('login')
+    cur_mail = Mails.objects.get(msg_id=msg_id)
+    template = loader.get_template('mails/singlemail.html')
+    context = {
+        'mail' : get_html_message(cur_mail.message),
     }
 
     return HttpResponse(template.render(context, request))

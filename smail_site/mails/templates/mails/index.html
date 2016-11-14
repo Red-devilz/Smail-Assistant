@@ -22,7 +22,7 @@
 	<body style="background-color:#e9ebee;">
 		<div id="mySidenav" class="sidenav">
 		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		  <a href="#">All</a>
+		  <a href="/">All</a>
 		  <a href="#">Important</a>
 		  <a href="#">Spam</a>
 		  <a href="0">Category 0</a>
@@ -37,14 +37,19 @@
 		  <a href="9">Category 9</a>
 		  <a href="#">Others</a>
 		</div>
-		<div id = "main">
+		<div id = "main" align = "left">
 			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Categories</span>
 			<h4>
-				{{ mails_list|first|safe }}
+				All Mails
 			</h4>
 		    <ul class="demo-list-control mdl-list">
-		    {% for mail in mails_list|slice:"1:" %}
-		        <li><a href = "#" class = "mail">{{ mail | safe }}</a></li>
+		    {% for mail in mails_list|slice:"0:" %}
+		        <li>
+		        	<script type="text/javascript">
+		        		var cur_msg = '{{ mail.msg_id }}';
+		        		document.write('<a href="/msg/' + cur_msg + '" class="mail"><b>{{ mail.from }} :</b> {{ mail.subject }}</a>');
+		        	</script>
+		        </li>
 		    {% endfor %}
 		    </ul>
 	    </div>
@@ -62,6 +67,7 @@
     		document.body.style.backgroundColor = "#e9ebee";
     		document.getElementById("main").style.opacity = "1";
 		}
+
 		</script>
     </body>
 {% else %}
