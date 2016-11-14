@@ -24,10 +24,10 @@ ul li {
   box-shadow: 0 9px #999;
 }
 
-.button:hover {background-color: ##ffffff}
+.button:hover {background-color: #26a69a}
 
 .button:active {
-  background-color: ##26a69a;
+  background-color: #26a69a;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
