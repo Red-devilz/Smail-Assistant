@@ -43,7 +43,8 @@ flow = client.flow_from_clientsecrets(
     'client_secret.json',
     scope=[
         'https://www.googleapis.com/auth/gmail.readonly',
-        'https://www.googleapis.com/auth/userinfo.email'
+        'https://www.googleapis.com/auth/userinfo.email',
+        'https://www.googleapis.com/auth/calendar'
     ],
     redirect_uri='http://localhost:8000/mails/oauth2callback')
 flow.params['access_type'] = 'offline'
@@ -60,11 +61,11 @@ def oauth2callback(request):
     credentials = flow.step2_exchange(auth_code)
     print('cred', credentials)
     cur_email = credentials.id_token['email']
-    users = GoogleUser.objects.filter(email = cur_email)
+    users = GoogleUser.objects.filter(email=cur_email)
     if(len(users) == 0):
-        new_user = GoogleUser(email=cur_email,google_id=cur_email.split('@')[0])
+        new_user = GoogleUser(email=cur_email, google_id=cur_email.split('@')[0])
         new_user.save()
-    cur_user = GoogleUser.objects.get(email = cur_email)
+    cur_user = GoogleUser.objects.get(email=cur_email)
     http_auth = credentials.authorize(httplib2.Http())
     gmail_service = make_gmail_service(http_auth)
     label_dict, mail_dict = get_all_mail(gmail_service, 20)
@@ -90,13 +91,14 @@ def logout(request):
     del request.session['cred']
     return redirect('index')
 
+
 def classify(request, category_id):
     if 'cred' not in request.session:
         return redirect('login')
     credentials = client.OAuth2Credentials.from_json(request.session['cred'])
     if credentials.access_token_expired:
         return redirect('login')
-    cur_mails = get_mails_by_class(credentials.id_token['email'],category_id)
+    cur_mails = get_mails_by_class(credentials.id_token['email'], category_id)
     template = loader.get_template('mails/categories.html')
     context = {
         'mails_list': list([dict({'from':msg.sender, 'subject':msg.subject, 'snippet':msg.snippet, 'msg_id':msg.msg_id}) for msg in cur_mails if msg.sender != '']),
@@ -118,3 +120,15 @@ def display(request, msg_id):
     }
 
     return HttpResponse(template.render(context, request))
+
+def addCal(request):
+    credentials = client.OAuth2Credentials.from_json(request.session['cred'])
+    cal_service = make_calender_service(http_auth=credentials.authorize(httplib2.Http()))
+    # events = list_calendar_events(cal_service)
+    data = {
+        "name": "Endsem",
+        "start": "2016-11-15T09:30:00+05:30",
+        "end": "2016-11-15T12:30:00+05:30"
+    }
+    events = create_calendar_event(cal_service, data)
+    return HttpResponse(str(events))

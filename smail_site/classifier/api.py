@@ -11,6 +11,37 @@ def make_user_service(http_auth):
     return build('oauth2', 'v1', http=http_auth)
 
 
+def make_calender_service(http_auth):
+    return build('calendar', 'v3', http=http_auth)
+
+
+def list_calendar_events(service):
+    """ Returns events from primary calender. """
+    return service.events().list(calendarId="primary").execute()
+
+
+def create_calendar_event(service, data):
+    """
+    Creates a event in primary calendar.
+    Data must be a dict with start, end, name.
+    Date format: 2016-11-13T10:30:00+05:30
+    """
+    body = {
+        "creator": {
+            "self": False,
+            "displayName": "Smail Classifer"
+        },
+        "summary": data["name"],
+        "start": {
+            "dateTime": data["start"]
+        },
+        "end": {
+            "dateTime": data["end"]
+        }
+    }
+    return service.events().insert(calendarId="primary", body=body, sendNotifications=True).execute()
+
+
 def get_user_info(service=None, http_auth=None):
     """
         Returns user info object with name,id,email,picture etc.
