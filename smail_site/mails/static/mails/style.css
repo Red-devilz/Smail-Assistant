@@ -9,7 +9,28 @@ ul li {
     magin-left: 35px;
     list-style: none;
 }
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #e0f2f1;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
 
+.button:hover {background-color: ##ffffff}
+
+.button:active {
+  background-color: ##26a69a;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 .content
 {
  text-align: center;
@@ -89,4 +110,13 @@ body.fade-out {
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+.square-card.mdl-card {
+         color: AliceBlue;
+      }
+
+.card{
+    width:200px;
+    height:500px;
 }
