@@ -12,6 +12,15 @@
 			x = "0 " + (x/2).tostring();
 			document.getElementById("label").style.margin = x;
 		</script>
+		<script>
+		function goBack() {
+		    window.history.back();
+		}
+		</script>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="{% static 'mails/style.css' %}" />
 		<link rel="stylesheet" href="{% static 'mails/font-awesome-4.7.0/css/font-awesome.min.css' %}" />
 		<link rel="stylesheet" href="{% static 'mails/mdl/material.min.css' %}" />
@@ -22,22 +31,26 @@
 		<div id="mySidenav" class="sidenav">
 		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		  <a href="/">All</a>
-		  <a href="#">Important</a>
-		  <a href="#">Spam</a>
-		  <a href="/0">Category 0</a>
-		  <a href="/1">Category 1</a>
-		  <a href="/2">Category 2</a>
-		  <a href="/3">Category 3</a>
-		  <a href="/4">Category 4</a>
-		  <a href="/5">Category 5</a>
-		  <a href="/6">Category 6</a>
-		  <a href="/7">Category 7</a>
-		  <a href="/8">Category 8</a>
-		  <a href="/9">Category 9</a>
-		  <a href="#">Others</a>
+		  <!-- <a href="#">Important</a> -->
+		  <!-- <a href="#">Spam</a> -->
+		  <a href="/0">Category 0 ({{ categoryCount.cat0 }})</a>
+		  <a href="/1">Category 1 ({{ categoryCount.cat1 }})</a>
+		  <a href="/2">Category 2 ({{ categoryCount.cat2 }})</a>
+		  <a href="/3">Category 3 ({{ categoryCount.cat3 }})</a>
+		  <a href="/4">Category 4 ({{ categoryCount.cat4 }})</a>
+		  <a href="/5">Category 5 ({{ categoryCount.cat5 }})</a>
+		  <a href="/6">Category 6 ({{ categoryCount.cat6 }})</a>
+		  <a href="/7">Category 7 ({{ categoryCount.cat7 }})</a>
+		  <a href="/8">Category 8 ({{ categoryCount.cat8 }})</a>
+		  <a href="/9">Category 9 ({{ categoryCount.cat9 }})</a>
+		  <!-- <a href="#">Others</a> -->
 		</div>
 		<div id = "main" align="center">
 			<div align="left"><span style="font-size:30px;cursor:pointer" onclick="openNav()" align="left">&#9776; Categories</span></div>
+			<div align=right style="margin-bottom:15px">
+				<a href="#" class="btn btn-info btn-lg" id="backbutton" onclick="goBack()">
+					<span class="glyphicon glyphicon-chevron-left"></span> Back
+        		</a></div>
 		    <ul class="demo-list-control mdl-list">
 		        <li>
 		        	{{ mail | safe }}

@@ -12,6 +12,7 @@ import json
 
 from mails.models import GoogleUser, Mails
 
+categoryCount = {}
 
 def index(request):
     if 'cred' not in request.session:
@@ -35,6 +36,7 @@ def index(request):
     # json.dump([label_dict, mail_dict], open("mails.json", "w"))
     context = {
         'mails_list': list([dict({'from':msg.sender, 'subject':msg.subject, 'snippet':msg.snippet, 'msg_id':msg.msg_id}) for msg in all_mails if msg.sender != '']),
+        'categoryCount': categoryCount,
     }
 
     return HttpResponse(template.render(context, request))
@@ -69,6 +71,8 @@ def oauth2callback(request):
     http_auth = credentials.authorize(httplib2.Http())
     gmail_service = make_gmail_service(http_auth)
     label_dict, mail_dict = get_all_mail(gmail_service, 20)
+    for x in label_dict.keys():
+        categoryCount['cat'+x] = len(label_dict[x])
     for category in label_dict.keys():
         for key in label_dict[category]:
             check_mail = Mails.objects.filter(user=cur_user, msg_id=key)
@@ -103,6 +107,7 @@ def classify(request, category_id):
     context = {
         'mails_list': list([dict({'from':msg.sender, 'subject':msg.subject, 'snippet':msg.snippet, 'msg_id':msg.msg_id}) for msg in cur_mails if msg.sender != '']),
         'category': category_id,
+        'categoryCount': categoryCount,
     }
 
     return HttpResponse(template.render(context, request))
@@ -117,6 +122,7 @@ def display(request, msg_id):
     template = loader.get_template('mails/singlemail.html')
     context = {
         'mail' : get_html_message(cur_mail.message),
+        'categoryCount': categoryCount,
     }
 
     return HttpResponse(template.render(context, request))
