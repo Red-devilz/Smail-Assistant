@@ -40,14 +40,14 @@
 		  <!-- <a href="#">Others</a> -->
 		</div>
 		<div id = "main" align = "left">
-			<center><h3>Welcome to Smail Classify! Please click on one of the below categories to view the mails belonging to the category. </h3></center>
-			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Categories</span>
+			<center><h3><i>Welcome to Smail Classify! Please click on one of the below categories to view the mails belonging to the category.</i> </h3></center>
+			<span style="font-size:30px;cursor:pointer;color:teal" onclick="openNav()">&#9776; Categories</span>
 		    <ul class="demo-list-control mdl-list">
 		    {% for mail in mails_list|slice:"0:" %}
 		   	
 		    {% endfor %}
 		    </ul>
-		    <table style = "padding:50px;margin:50px" cellspacing="20">
+		    <table style = "align:center;" cellspacing="20">
 		    	<tr><td>
 		    		<script>var i = (localStorage.getItem("mailsNo");</script>
 		    		<button class="button" onclick="window.location.href='/0'" >
@@ -58,14 +58,10 @@
 					  <div class="mdl-card__title" align="center">
 					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat0 }} </h2>
 					  </div>
-					  <div class="mdl-card__supporting-text">
-					    Total : 
-					     {{ categoryCount.cat0 }}
-					     Mails
-					  </div>
 					  <div class="mdl-card__actions mdl-card--border">
 					    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-					      2 Unread
+					    {{ categoryCount.cat0 }}
+					     Mails
 					    </a>
 					  </div>
 					  <div class="mdl-card__menu">
@@ -82,13 +78,10 @@
 					  <div class="mdl-card__title" align="center">
 					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat1 }} </h2>
 					  </div>
-					  <div class="mdl-card__supporting-text">
-					    Total : {{ categoryCount.cat1 }}  
-					    Mails
-					  </div>
 					  <div class="mdl-card__actions mdl-card--border">
 					    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-					      2 Unread
+					     {{ categoryCount.cat1 }}  
+					    Mails
 					    </a>
 					  </div>
 					  <div class="mdl-card__menu">
@@ -105,12 +98,9 @@
 					  <div class="mdl-card__title" align="center">
 					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat2 }} </h2>
 					  </div>
-					  <div class="mdl-card__supporting-text">
-					    Total : {{ categoryCount.cat2 }} Mails
-					  </div>
 					  <div class="mdl-card__actions mdl-card--border">
 					    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-					      2 Unread
+					      {{ categoryCount.cat2 }} Mails
 					    </a>
 					  </div>
 					  <div class="mdl-card__menu">
@@ -127,12 +117,9 @@
 					  <div class="mdl-card__title" align="center">
 					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat3 }} </h2>
 					  </div>
-					  <div class="mdl-card__supporting-text">
-					    Total : {{ categoryCount.cat3 }} Mails
-					  </div>
 					  <div class="mdl-card__actions mdl-card--border">
 					    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-					      2 Unread
+					      {{ categoryCount.cat3 }} Mails
 					    </a>
 					  </div>
 					  <div class="mdl-card__menu">
@@ -151,12 +138,9 @@
 					  <div class="mdl-card__title" align="center">
 					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat4 }} </h2>
 					  </div>
-					  <div class="mdl-card__supporting-text">
-					    Total : {{ categoryCount.cat4 }} Mails
-					  </div>
 					  <div class="mdl-card__actions mdl-card--border">
 					    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-					      2 Unread
+					      {{ categoryCount.cat4 }} Mails
 					    </a>
 					  </div>
 					  <div class="mdl-card__menu">
@@ -173,12 +157,9 @@
 					  <div class="mdl-card__title" align="center">
 					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat5 }} </h2>
 					  </div>
-					  <div class="mdl-card__supporting-text">
-					    Total : {{ categoryCount.cat5 }} Mails
-					  </div>
 					  <div class="mdl-card__actions mdl-card--border">
 					    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-					      2 Unread
+					      {{ categoryCount.cat5 }} Mails
 					    </a>
 					  </div>
 					  <div class="mdl-card__menu">
@@ -195,12 +176,9 @@
 					  <div class="mdl-card__title" align="center">
 					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat6 }} </h2>
 					  </div>
-					  <div class="mdl-card__supporting-text">
-					    Total : {{ categoryCount.cat6 }} Mails
-					  </div>
 					  <div class="mdl-card__actions mdl-card--border">
 					    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-					      2 Unread
+					     {{ categoryCount.cat6 }} Mails
 					    </a>
 					  </div>
 					  <div class="mdl-card__menu">
@@ -217,12 +195,9 @@
 					  <div class="mdl-card__title" align="center">
 					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat7 }} </h2>
 					  </div>
-					  <div class="mdl-card__supporting-text">
-					    Total : {{ categoryCount.cat7 }} Mails
-					  </div>
 					  <div class="mdl-card__actions mdl-card--border">
 					    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-					      2 Unread
+					      {{ categoryCount.cat7 }} Mails
 					    </a>
 					  </div>
 					  <div class="mdl-card__menu">
@@ -241,12 +216,9 @@
 					  <div class="mdl-card__title" align="center">
 					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat8 }} </h2>
 					  </div>
-					  <div class="mdl-card__supporting-text">
-					    Total : {{ categoryCount.cat8 }} Mails
-					  </div>
 					  <div class="mdl-card__actions mdl-card--border">
 					    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-					      2 Unread
+					      {{ categoryCount.cat8 }} Mails
 					    </a>
 					  </div>
 					  <div class="mdl-card__menu">
@@ -263,12 +235,9 @@
 					  <div class="mdl-card__title" align="center">
 					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat9 }} </h2>
 					  </div>
-					  <div class="mdl-card__supporting-text">
-					    Total : {{ categoryCount.cat9 }} Mails
-					  </div>
 					  <div class="mdl-card__actions mdl-card--border">
 					    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-					      2 Unread
+					      {{ categoryCount.cat9 }} Mails
 					    </a>
 					  </div>
 					  <div class="mdl-card__menu">
@@ -285,12 +254,9 @@
 					  <div class="mdl-card__title" align="center">
 					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat10 }} </h2>
 					  </div>
-					  <div class="mdl-card__supporting-text">
-					    Total : {{ categoryCount.cat10 }} Mails
-					  </div>
 					  <div class="mdl-card__actions mdl-card--border">
 					    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-					      2 Unread
+					      {{ categoryCount.cat10 }} Mails
 					    </a>
 					  </div>
 					  <div class="mdl-card__menu">
@@ -307,12 +273,9 @@
 					  <div class="mdl-card__title" align="center">
 					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat11 }} </h2>
 					  </div>
-					  <div class="mdl-card__supporting-text">
-					    Total : {{ categoryCount.cat11 }} Mails
-					  </div>
 					  <div class="mdl-card__actions mdl-card--border">
 					    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-					      2 Unread
+					      {{ categoryCount.cat11 }} Mails
 					    </a>
 					  </div>
 					  <div class="mdl-card__menu">
@@ -328,7 +291,7 @@
 		function openNav() {
 			document.getElementById("mySidenav").style.width = "300px";
     		document.getElementById("main").style.marginLeft = "300px";
-    		document.body.style.backgroundColor = "#365899";
+    		document.body.style.backgroundColor = "#008b8b";
     		document.getElementById("main").style.opacity = "0.3";
 		}
 
