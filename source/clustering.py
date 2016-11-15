@@ -141,7 +141,7 @@ def lda_preproc():
     lda = models.LdaModel(corpus, num_topics=5, id2word=dictionary, update_every=5, passes=3) 
 
 
-vocab_find()
+#  vocab_find()
 mat_vec,words = cluster_featurize()
-km_obj = kmeans_clustering(mat_vec,words)
-print_cluster(km_obj, words)
+#  km_obj = kmeans_clustering(mat_vec,words)
+#  print_cluster(km_obj, words)
