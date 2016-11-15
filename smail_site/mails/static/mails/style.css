@@ -1,5 +1,5 @@
 ul {
-    background: #3b5998;
+    background: teal;
     padding: 20px;
 }
 
@@ -20,7 +20,7 @@ ul li {
   color: #fff;
   background-color: #e0f2f1;
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 9px #999;
 }
 
