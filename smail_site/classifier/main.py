@@ -165,7 +165,7 @@ def get_message(service, user_id, msg_id):
     date = email.utils.parsedate(mime_msg['Date'])
 
     #  Return None if Hangouts message
-    if(date == None):
+    if date is None:
         return None
 
     day = date[2]
@@ -217,10 +217,14 @@ def save(msg, cnt):
     print(msg['body'])
 
 
-def predict_class(gservice,msg):
+def predict_class(gservice, msg):
 
     km = pickle.load(open('./classifier/kmeans_model', 'rb'))
-    tfidf_vectorizer = pickle.load(open('./classifier/transform','rb'))
+    all_text = pickle.load(open('./classifier/transform', 'rb'))
+    tfidf_vectorizer = TfidfVectorizer(max_df=0.8, max_features=200000,
+                                       min_df=0.05, stop_words='english',
+                                       use_idf=True, tokenizer=tokenize_and_stem, ngram_range=(1, 3))
+    tfidf_matrix = tfidf_vectorizer.fit_transform(all_text)
 
     raw, msg = get_message(gservice, None, msg['id'])
 
@@ -242,30 +246,31 @@ def predict_class(gservice,msg):
     tfidf = tfidf_vectorizer.transform(message_str)
     return km.predict(tfidf)
 
+
 def get_all_mail(gservice, max_mails):
     """
     Process ALL-mail of a specific user(not inbox)
     """
 
     def tokenize_and_stem(text):
-	    """
-	    Stem every word and return the unique stemmed tokens for text
-	    """
-	    # first tokenize by sentence, then by word to ensure that punctuation is
-	    # caught as it's own token
-	    tokens = [word for sent in nltk.sent_tokenize(text) for word in nltk.word_tokenize(sent)]
-	    filtered_tokens = []
+        """
+        Stem every word and return the unique stemmed tokens for text
+        """
+        # first tokenize by sentence, then by word to ensure that punctuation is
+        # caught as it's own token
+        tokens = [word for sent in nltk.sent_tokenize(text) for word in nltk.word_tokenize(sent)]
+        filtered_tokens = []
 
-	    # filter out any tokens not containing letters (e.g., numeric tokens, raw punctuation)
-	    for token in tokens:
-	        # Only include words which start with a letter and have alpha numeric
-	        # characters. Max words size = 12
-	        if re.match('^[a-zA-Z][a-zA-Z0-9]*$', token) and len(token) < 12 and (token not in stopwords):
-	            token = token.lower()
-	            filtered_tokens.append(token)
+        # filter out any tokens not containing letters (e.g., numeric tokens, raw punctuation)
+        for token in tokens:
+                # Only include words which start with a letter and have alpha numeric
+                # characters. Max words size = 12
+            if re.match('^[a-zA-Z][a-zA-Z0-9]*$', token) and len(token) < 12 and (token not in stopwords):
+                token = token.lower()
+                filtered_tokens.append(token)
 
-	    stems = [stemmer.stem(t) for t in filtered_tokens]
-	    return stems
+        stems = [stemmer.stem(t) for t in filtered_tokens]
+        return stems
 
     page_token = None
     tc = 0  # Total number of messages
@@ -290,7 +295,7 @@ def get_all_mail(gservice, max_mails):
         for msg in msgs["messages"]:
             tc += 1
             raw, msg = get_message(gservice, None, msg['id'])
-            if(msg != None):
+            if msg is not None:
                 all_mails.append(msg['id'])
                 message_dict[msg['id']] = {
                     "raw": raw,
@@ -310,7 +315,7 @@ def get_all_mail(gservice, max_mails):
                 if(msg['body']):
                     message_str += "Body:\n" + msg['body'] + "\n\n"
 
-                # predict_class(gservice,msg)
+                # predict_class(gservice, msg)
 
                 all_text.append(message_str)
                 allwords_stemmed = tokenize_and_stem(message_str)
@@ -334,7 +339,9 @@ def get_all_mail(gservice, max_mails):
                                        use_idf=True, tokenizer=tokenize_and_stem, ngram_range=(1, 3))
     tfidf_matrix = tfidf_vectorizer.fit_transform(all_text)
 
-    # pickle.dump(tfidf_vectorizer, open('./classifier/transform', 'wb'))
+    # If Training
+    # old: pickle.dump(tfidf_vectorizer, open('./classifier/transform', 'wb'))
+    # pickle.dump(all_text, open('./classifier/transform', 'wb'))
 
     # print("The shape of the matrix is" + str(tfidf_matrix.shape))
     terms = tfidf_vectorizer.get_feature_names()
@@ -344,28 +351,24 @@ def get_all_mail(gservice, max_mails):
     km = KMeans(n_clusters=12)
     km.fit(tfidf_matrix)
 
-    #=================
-    #  Note pickle file is in /kmeans_obs 
+    #  Note pickle file is in /kmeans_obs
     #  move it to a convinient location
     #  Kmeans has 12 clusters and 11 categories
 
-    #=========
     #  --- replace above lines with
     # km = pickle.load(open('kmeans_model', 'rb'))
 
     # msg_labels = km.fit(tfidf_matrix)
-    #=========
 
     # Constructing dictionary
     order_centroids = km.cluster_centers_.argsort()[:, ::-1]
 
     data = {}
     msg_labels = km.labels_
-    #==========
+
     #  Change above to
     # msg_labels = km.fit(tfidf_matrix)
 
-    #==========
     for i in range(msg_labels.shape[0]):
 
         key = str(msg_labels[i])
@@ -376,7 +379,7 @@ def get_all_mail(gservice, max_mails):
             data[key] = [all_mails[i]]
 
     print ('------Processed %d messages in total--------' % (tc))
-    # print 
+    # print
     print (data.keys())
     return (data, message_dict)
 
@@ -407,10 +410,12 @@ def get_html_message(raw_msg):
     print("bad mime type", mime_msg.get_content_type())
     return ""
 
+
 def get_mails_from_db(email):
-    user = GoogleUser.objects.get(email = email)
-    return [mail for mail in Mails.objects.filter(user = user)]
+    user = GoogleUser.objects.get(email=email)
+    return [mail for mail in Mails.objects.filter(user=user)]
+
 
 def get_mails_by_class(email, class_id):
-    user = GoogleUser.objects.get(email = email)
-    return [mail for mail in Mails.objects.filter(user = user, category = class_id)]
+    user = GoogleUser.objects.get(email=email)
+    return [mail for mail in Mails.objects.filter(user=user, category=class_id)]
