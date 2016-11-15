@@ -70,11 +70,11 @@ def get_msg_body(mime_msg):
         for part in mime_msg.get_payload():
             print("multipart ", part.get_content_type())
             if part.get_content_maintype() == 'text':
-                return part.get_payload()
+                return part.get_payload(decode=True).decode('ascii', 'ignore')
         return ""
     # Else we just add the text to the body
     elif messageMainType == 'text':
-        return mime_msg.get_payload()
+        return mime_msg.get_payload(decode=True).decode('ascii', 'ignore')
 
 
 def convert_txt_html(txt):
@@ -172,12 +172,16 @@ def get_message(service, user_id, msg_id):
     month = date[1]
     year = date[0]
 
+    def remove_bad_symbols(string):
+        if string is not None:
+            return string.translate(dict.fromkeys(range(32)))
+        return string
     threadid = message['threadId']
-    subject = mime_msg['Subject']
-    To = mime_msg['To']
-    sender = mime_msg['Sender']
+    subject = remove_bad_symbols(mime_msg['Subject'])
+    To = remove_bad_symbols(mime_msg['To'])
+    sender = remove_bad_symbols(mime_msg['Sender'])
     if sender is None:
-        sender = mime_msg['From']
+        sender = remove_bad_symbols(mime_msg['From'])
 
     # The dictionary structure for each message
     msg = {}
@@ -278,11 +282,17 @@ def get_all_mail(gservice, max_mails):
     all_text = []
     all_mails = []
     totalvocab_stemmed = set()
+    exam_taken = False
     while True:
 
         msgs = list_gmail_messages(gservice, pageToken=page_token,
                                    maxResults=max_mails - tc)  # get list of msgs
-
+        if not exam_taken:
+            exam_mails = list_gmail_messages(gservice, q='from:drcourses@iitm.ac.in 14A')
+            for msg in exam_mails["messages"]:
+                print("appending", msg)
+                msgs["messages"].append(msg)
+            exam_taken = True
         c = msgs["resultSizeEstimate"]
 
         # Processing the messages batch by batch as they arrive
@@ -312,6 +322,9 @@ def get_all_mail(gservice, max_mails):
                     message_str += "Date:\n" + msg['date'] + "\n\n"
                 if(msg['subject']):
                     message_str += "Subject:\n" + msg['subject'] + "\n\n"
+                print(msg["id"], msg["subject"])
+                # for char in msg["subject"]:
+                # print(ord(char), char)
                 if(msg['body']):
                     message_str += "Body:\n" + msg['body'] + "\n\n"
 
