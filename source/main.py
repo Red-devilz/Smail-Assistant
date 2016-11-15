@@ -244,7 +244,6 @@ def kmeans_clustering(feat_vec, num_clusters):
     return(km)
 
 def predict_cluster(model,mail):
-	
 	return model.predict(mail)	
 
 def get_all_mail(gservice,max_mails):

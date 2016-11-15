@@ -9,6 +9,7 @@ import glob
 from nltk.stem.snowball import SnowballStemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
 import json
+import pickle
 
 
 
@@ -81,9 +82,12 @@ def kmeans_clustering(feat_vec, labels):
     """
     Cluster the data into x Clusters
     """
+
+    model_name = "kmeans_model"
     km = KMeans(n_clusters=num_clusters)
 
     km.fit(feat_vec)
+    pickle.dump(km, open(model_name, 'wb'))
     clusters = km.labels_.tolist()
 
     return(km)
@@ -134,7 +138,7 @@ def lda_preproc():
     lda = models.LdaModel(corpus, num_topics=5, id2word=dictionary, update_every=5, passes=3) 
 
 
-#  vocab_find()
-#  mat_vec,words = cluster_featurize()
-#  km_obj = kmeans_clustering(mat_vec,words)
-#  print_cluster(km_obj, words)
+vocab_find()
+mat_vec,words = cluster_featurize()
+km_obj = kmeans_clustering(mat_vec,words)
+print_cluster(km_obj, words)
