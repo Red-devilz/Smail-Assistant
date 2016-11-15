@@ -35,4 +35,3 @@ Todo
 * **GUI** work regarding mail display, labels display, using To,From and subject info.
 
 
-

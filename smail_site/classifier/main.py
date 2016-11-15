@@ -2,6 +2,7 @@ import re
 from bs4 import BeautifulSoup
 import sys
 import json
+import pickle
 
 from oauth2client import client
 import httplib2
@@ -313,11 +314,28 @@ def get_all_mail(gservice, max_mails):
     km = KMeans(n_clusters=10)
     km.fit(tfidf_matrix)
 
+    #=================
+    #  Note pickle file is in /kmeans_obs 
+    #  move it to a convinient location
+    #  Kmeans has 12 clusters and 11 categories
+
+    #=========
+    #  --- replace above lines with
+    #  km = pickle.load(open('kmeans_model', 'rb'))
+
+    #  msg_labels = km.fit(tfidf_matrix)
+    #=========
+
     # Constructing dictionary
     order_centroids = km.cluster_centers_.argsort()[:, ::-1]
 
     data = {}
     msg_labels = km.labels_
+    #==========
+    #  Change above to
+    #  msg_labels = km.fit(tfidf_matrix)
+
+    #==========
     for i in range(msg_labels.shape[0]):
 
         key = str(msg_labels[i])
