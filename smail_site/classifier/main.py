@@ -217,26 +217,6 @@ def save(msg, cnt):
     print(msg['body'])
 
 
-def tokenize_and_stem(text):
-    """
-    Stem every word and return the unique stemmed tokens for text
-    """
-    # first tokenize by sentence, then by word to ensure that punctuation is
-    # caught as it's own token
-    tokens = [word for sent in nltk.sent_tokenize(text) for word in nltk.word_tokenize(sent)]
-    filtered_tokens = []
-
-    # filter out any tokens not containing letters (e.g., numeric tokens, raw punctuation)
-    for token in tokens:
-        # Only include words which start with a letter and have alpha numeric
-        # characters. Max words size = 12
-        if re.match('^[a-zA-Z][a-zA-Z0-9]*$', token) and len(token) < 12 and (token not in stopwords):
-            token = token.lower()
-            filtered_tokens.append(token)
-
-    stems = [stemmer.stem(t) for t in filtered_tokens]
-    return stems
-
 def predict_class(gservice,msg):
 
     km = pickle.load(open('./classifier/kmeans_model', 'rb'))
@@ -266,6 +246,26 @@ def get_all_mail(gservice, max_mails):
     """
     Process ALL-mail of a specific user(not inbox)
     """
+
+    def tokenize_and_stem(text):
+	    """
+	    Stem every word and return the unique stemmed tokens for text
+	    """
+	    # first tokenize by sentence, then by word to ensure that punctuation is
+	    # caught as it's own token
+	    tokens = [word for sent in nltk.sent_tokenize(text) for word in nltk.word_tokenize(sent)]
+	    filtered_tokens = []
+
+	    # filter out any tokens not containing letters (e.g., numeric tokens, raw punctuation)
+	    for token in tokens:
+	        # Only include words which start with a letter and have alpha numeric
+	        # characters. Max words size = 12
+	        if re.match('^[a-zA-Z][a-zA-Z0-9]*$', token) and len(token) < 12 and (token not in stopwords):
+	            token = token.lower()
+	            filtered_tokens.append(token)
+
+	    stems = [stemmer.stem(t) for t in filtered_tokens]
+	    return stems
 
     page_token = None
     tc = 0  # Total number of messages
@@ -333,6 +333,9 @@ def get_all_mail(gservice, max_mails):
                                        min_df=0.05, stop_words='english',
                                        use_idf=True, tokenizer=tokenize_and_stem, ngram_range=(1, 3))
     tfidf_matrix = tfidf_vectorizer.fit_transform(all_text)
+
+    # pickle.dump(tfidf_vectorizer, open('./classifier/transform', 'wb'))
+
     # print("The shape of the matrix is" + str(tfidf_matrix.shape))
     terms = tfidf_vectorizer.get_feature_names()
     # print("size of smaller vocabulary is" + str(len(terms)))
