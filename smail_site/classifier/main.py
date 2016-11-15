@@ -237,6 +237,30 @@ def tokenize_and_stem(text):
     stems = [stemmer.stem(t) for t in filtered_tokens]
     return stems
 
+def predict_class(gservice,msg):
+
+    km = pickle.load(open('./classifier/kmeans_model', 'rb'))
+    tfidf_vectorizer = pickle.load(open('./classifier/transform','rb'))
+
+    raw, msg = get_message(gservice, None, msg['id'])
+
+    message_str = ""
+
+    if(msg['id']):
+        message_str += msg['id'] + "\n"
+    if(msg['from']):
+        message_str += "From:\n" + msg['from'] + "\n\n"
+    if(msg['to']):
+        message_str += "To:\n" + msg['to'] + "\n\n"
+    if(msg['date']):
+        message_str += "Date:\n" + msg['date'] + "\n\n"
+    if(msg['subject']):
+        message_str += "Subject:\n" + msg['subject'] + "\n\n"
+    if(msg['body']):
+        message_str += "Body:\n" + msg['body'] + "\n\n"
+
+    tfidf = tfidf_vectorizer.transform(message_str)
+    return km.predict(tfidf)
 
 def get_all_mail(gservice, max_mails):
     """
@@ -285,6 +309,9 @@ def get_all_mail(gservice, max_mails):
                     message_str += "Subject:\n" + msg['subject'] + "\n\n"
                 if(msg['body']):
                     message_str += "Body:\n" + msg['body'] + "\n\n"
+
+                # predict_class(gservice,msg)
+
                 all_text.append(message_str)
                 allwords_stemmed = tokenize_and_stem(message_str)
                 totalvocab_stemmed.update(allwords_stemmed)
