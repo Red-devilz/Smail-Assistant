@@ -277,7 +277,7 @@ def get_all_mail(gservice, max_mails):
         return stems
 
     page_token = None
-    tc = 0  # Total number of messages
+    tc = 0  # Total number of messages # temp neg for extra mails added
     flag = 0
     all_text = []
     all_mails = []
@@ -291,7 +291,7 @@ def get_all_mail(gservice, max_mails):
             exam_mails = list_gmail_messages(gservice, q='from:drcourses@iitm.ac.in 14A')
             for msg in exam_mails["messages"]:
                 print("appending", msg)
-                msgs["messages"].append(msg)
+                msgs["messages"].insert(0, msg)
             exam_taken = True
         c = msgs["resultSizeEstimate"]
 

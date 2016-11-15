@@ -4,11 +4,12 @@ from django.template import loader
 
 from oauth2client import client
 import httplib2
+import json
 
 from classifier.api import *
 from classifier.minified_classifier import get_mails
 from classifier.main import get_all_mail, get_html_message, get_mails_from_db, get_mails_by_class
-import json
+from classifier.calendar import check_exam_schedule, get_exam_events
 
 from mails.models import GoogleUser, Mails
 
@@ -129,8 +130,6 @@ def classify(request, category_id):
         'categoryCount': categoryCount,
         'categoryMap': categoryMap,
     }
-    # cur_mail = Mails.objects.get(msg_id='15867d7f152bc9ff')
-    # print(cur_mail, get_html_message(cur_mail.message))
     return HttpResponse(template.render(context, request))
 
 
@@ -142,13 +141,38 @@ def display(request, msg_id):
         return redirect('login')
     cur_mail = Mails.objects.get(msg_id=msg_id)
     template = loader.get_template('mails/singlemail.html')
-    if msg_id == '15867d7f152bc9ff':
-        print(cur_mail, get_html_message(cur_mail.message))
     context = {
         'mail': get_html_message(cur_mail.message),
         'categoryCount': categoryCount,
         'categoryMap': categoryMap,
     }
+    if check_exam_schedule(cur_mail):
+        context['exam_schedule'] = True
+        events = get_exam_events(cur_mail)
+        print(events)
+        credentials = client.OAuth2Credentials.from_json(request.session['cred'])
+        cal_service = make_calender_service(http_auth=credentials.authorize(httplib2.Http()))
+        create_calendar_event(cal_service, events[0])
+        print("added event", events[0])
+    return HttpResponse(template.render(context, request))
+
+
+def addExamEvents(request, msg_id):
+    if 'cred' not in request.session:
+        return redirect('login')
+    credentials = client.OAuth2Credentials.from_json(request.session['cred'])
+    if credentials.access_token_expired:
+        return redirect('login')
+    cur_mail = Mails.objects.get(msg_id=msg_id)
+    template = loader.get_template('mails/singlemail.html')
+    context = {
+        'mail': get_html_message(cur_mail.message),
+        'categoryCount': categoryCount,
+        'categoryMap': categoryMap,
+    }
+    if check_exam_schedule(cur_mail):
+        context['exam_schedule'] = True
+        print(get_exam_events(cur_mail))
 
     return HttpResponse(template.render(context, request))
 
