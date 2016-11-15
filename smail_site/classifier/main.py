@@ -22,7 +22,6 @@ import glob
 from nltk.stem.snowball import SnowballStemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-
 flow = client.flow_from_clientsecrets(
     'client_secret.json',
     scope=[
@@ -347,10 +346,13 @@ def get_all_mail(gservice, max_mails):
             break
 
     # Implement featurisation here
-    tfidf_vectorizer = TfidfVectorizer(max_df=0.8, max_features=200000,
-                                       min_df=0.05, stop_words='english',
+    tfidf_vectorizer = TfidfVectorizer(max_df=0.9, max_features=200000,
+                                       min_df=0.02, stop_words='english', decode_error='ignore',
                                        use_idf=True, tokenizer=tokenize_and_stem, ngram_range=(1, 3))
-    tfidf_matrix = tfidf_vectorizer.fit_transform(all_text)
+
+    old_text = pickle.load(open('./classifier/vocab', 'rb'))
+    tfidf_vectorizer.fit(old_text)
+    tfidf_matrix = tfidf_vectorizer.transform(all_text)
 
     # If Training
     # old: pickle.dump(tfidf_vectorizer, open('./classifier/transform', 'wb'))
@@ -361,26 +363,23 @@ def get_all_mail(gservice, max_mails):
     # print("size of smaller vocabulary is" + str(len(terms)))
 
     # kmeans
-    km = KMeans(n_clusters=12)
-    km.fit(tfidf_matrix)
+    #  km = KMeans(n_clusters=12)
+    #  km.fit(tfidf_matrix)
 
-    #  Note pickle file is in /kmeans_obs
-    #  move it to a convinient location
     #  Kmeans has 12 clusters and 11 categories
 
     #  --- replace above lines with
-    # km = pickle.load(open('kmeans_model', 'rb'))
+    km = pickle.load(open('./classifier/kmeans_model', 'rb'))
 
-    # msg_labels = km.fit(tfidf_matrix)
 
     # Constructing dictionary
     order_centroids = km.cluster_centers_.argsort()[:, ::-1]
 
     data = {}
-    msg_labels = km.labels_
+    #  msg_labels = km.labels_
 
     #  Change above to
-    # msg_labels = km.fit(tfidf_matrix)
+    msg_labels = km.predict(tfidf_matrix)
 
     for i in range(msg_labels.shape[0]):
 

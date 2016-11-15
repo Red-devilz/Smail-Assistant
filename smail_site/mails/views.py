@@ -88,7 +88,7 @@ def oauth2callback(request):
     cur_user = GoogleUser.objects.get(email=cur_email)
     http_auth = credentials.authorize(httplib2.Http())
     gmail_service = make_gmail_service(http_auth)
-    label_dict, mail_dict = get_all_mail(gmail_service, 15)
+    label_dict, mail_dict = get_all_mail(gmail_service, 10)
     print(label_dict)
     for x in label_dict.keys():
         categoryCount['cat' + x] = len(label_dict[x])
