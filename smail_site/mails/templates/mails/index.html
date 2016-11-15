@@ -25,16 +25,18 @@
 		  <a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
 		  <!-- <a href="#">Important</a> -->
 		  <!-- <a href="#">Spam</a> -->
-		  <a href="0"><i class="fa fa-bandcamp" aria-hidden="true"></i> Category 0 ({{ categoryCount.cat0 }})</a>
-		  <a href="1"><i class="fa fa-bandcamp" aria-hidden="true"></i> Category 1 ({{ categoryCount.cat1 }})</a>
-		  <a href="2"><i class="fa fa-bandcamp" aria-hidden="true"></i> Category 2 ({{ categoryCount.cat2 }})</a>
-		  <a href="3"><i class="fa fa-bandcamp" aria-hidden="true"></i> Category 3 ({{ categoryCount.cat3 }})</a>
-		  <a href="4"><i class="fa fa-bandcamp" aria-hidden="true"></i> Category 4 ({{ categoryCount.cat4 }})</a>
-		  <a href="5"><i class="fa fa-bandcamp" aria-hidden="true"></i> Category 5 ({{ categoryCount.cat5 }})</a>
-		  <a href="6"><i class="fa fa-bandcamp" aria-hidden="true"></i> Category 6 ({{ categoryCount.cat6 }})</a>
-		  <a href="7"><i class="fa fa-bandcamp" aria-hidden="true"></i> Category 7 ({{ categoryCount.cat7 }})</a>
-		  <a href="8"><i class="fa fa-bandcamp" aria-hidden="true"></i> Category 8 ({{ categoryCount.cat8 }})</a>
-		  <a href="9"><i class="fa fa-bandcamp" aria-hidden="true"></i> Category 9 ({{ categoryCount.cat9 }})</a>
+		  <a href="0"><i class="fa fa-bandcamp" aria-hidden="true"></i> {{ categoryMap.cat0 }} ({{ categoryCount.cat0 }})</a>
+		  <a href="1"><i class="fa fa-bandcamp" aria-hidden="true"></i> {{ categoryMap.cat1 }} ({{ categoryCount.cat1 }})</a>
+		  <a href="2"><i class="fa fa-bandcamp" aria-hidden="true"></i> {{ categoryMap.cat2 }} ({{ categoryCount.cat2 }})</a>
+		  <a href="3"><i class="fa fa-bandcamp" aria-hidden="true"></i> {{ categoryMap.cat3 }} ({{ categoryCount.cat3 }})</a>
+		  <a href="4"><i class="fa fa-bandcamp" aria-hidden="true"></i> {{ categoryMap.cat4 }} ({{ categoryCount.cat4 }})</a>
+		  <a href="5"><i class="fa fa-bandcamp" aria-hidden="true"></i> {{ categoryMap.cat5 }} ({{ categoryCount.cat5 }})</a>
+		  <a href="6"><i class="fa fa-bandcamp" aria-hidden="true"></i> {{ categoryMap.cat6 }} ({{ categoryCount.cat6 }})</a>
+		  <a href="7"><i class="fa fa-bandcamp" aria-hidden="true"></i> {{ categoryMap.cat7 }} ({{ categoryCount.cat7 }})</a>
+		  <a href="8"><i class="fa fa-bandcamp" aria-hidden="true"></i> {{ categoryMap.cat8 }} ({{ categoryCount.cat8 }})</a>
+		  <a href="9"><i class="fa fa-bandcamp" aria-hidden="true"></i> {{ categoryMap.cat9 }} ({{ categoryCount.cat9 }})</a>
+		  <a href="10"><i class="fa fa-bandcamp" aria-hidden="true"></i> {{ categoryMap.cat10 }} ({{ categoryCount.cat10 }})</a>
+		  <a href="11"><i class="fa fa-bandcamp" aria-hidden="true"></i> {{ categoryMap.cat11 }} ({{ categoryCount.cat11 }})</a>
 		  <!-- <a href="#">Others</a> -->
 		</div>
 		<div id = "main" align = "left">
@@ -53,8 +55,8 @@
 				    	<figure class="mdl-card__media">
 						    <img src="{% static "mails/gmail2.png" %}" style="background-color:teal;width:250px;height:250px" />
 						</figure>
-					  <div class="mdl-card__title">
-					    <h2 class="mdl-card__title-text">Category 1</h2>
+					  <div class="mdl-card__title" align="center">
+					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat0 }} </h2>
 					  </div>
 					  <div class="mdl-card__supporting-text">
 					    Total : 
@@ -77,8 +79,8 @@
 				    	<figure class="mdl-card__media">
 						    <img src="{% static "mails/gmail2.png" %}" style="background-color:teal;width:250px;height:250px" />
 						</figure>
-					  <div class="mdl-card__title">
-					    <h2 class="mdl-card__title-text">Category 2</h2>
+					  <div class="mdl-card__title" align="center">
+					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat1 }} </h2>
 					  </div>
 					  <div class="mdl-card__supporting-text">
 					    Total : {{ categoryCount.cat1 }}  
@@ -100,8 +102,8 @@
 				    	<figure class="mdl-card__media">
 						    <img src="{% static "mails/gmail2.png" %}" style="background-color:teal;width:250px;height:250px" />
 						</figure>
-					  <div class="mdl-card__title">
-					    <h2 class="mdl-card__title-text">Category 3</h2>
+					  <div class="mdl-card__title" align="center">
+					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat2 }} </h2>
 					  </div>
 					  <div class="mdl-card__supporting-text">
 					    Total : {{ categoryCount.cat2 }} Mails
@@ -122,11 +124,11 @@
 				    	<figure class="mdl-card__media">
 						    <img src="{% static "mails/gmail2.png" %}" style="background-color:teal;width:250px;height:250px" />
 						</figure>
-					  <div class="mdl-card__title">
-					    <h2 class="mdl-card__title-text">Category 4</h2>
+					  <div class="mdl-card__title" align="center">
+					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat3 }} </h2>
 					  </div>
 					  <div class="mdl-card__supporting-text">
-					    Total : {{ categoryCount.cat0 }} Mails
+					    Total : {{ categoryCount.cat3 }} Mails
 					  </div>
 					  <div class="mdl-card__actions mdl-card--border">
 					    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -146,8 +148,8 @@
 				    	<figure class="mdl-card__media">
 						    <img src="{% static "mails/gmail2.png" %}" style="background-color:teal;width:250px;height:250px" />
 						</figure>
-					  <div class="mdl-card__title">
-					    <h2 class="mdl-card__title-text">Category 5</h2>
+					  <div class="mdl-card__title" align="center">
+					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat4 }} </h2>
 					  </div>
 					  <div class="mdl-card__supporting-text">
 					    Total : {{ categoryCount.cat4 }} Mails
@@ -168,8 +170,8 @@
 				    	<figure class="mdl-card__media">
 						    <img src="{% static "mails/gmail2.png" %}" style="background-color:teal;width:250px;height:250px" />
 						</figure>
-					  <div class="mdl-card__title">
-					    <h2 class="mdl-card__title-text">Category 6</h2>
+					  <div class="mdl-card__title" align="center">
+					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat5 }} </h2>
 					  </div>
 					  <div class="mdl-card__supporting-text">
 					    Total : {{ categoryCount.cat5 }} Mails
@@ -190,8 +192,8 @@
 				    	<figure class="mdl-card__media">
 						    <img src="{% static "mails/gmail2.png" %}" style="background-color:teal;width:250px;height:250px" />
 						</figure>
-					  <div class="mdl-card__title">
-					    <h2 class="mdl-card__title-text">Category 7</h2>
+					  <div class="mdl-card__title" align="center">
+					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat6 }} </h2>
 					  </div>
 					  <div class="mdl-card__supporting-text">
 					    Total : {{ categoryCount.cat6 }} Mails
@@ -212,8 +214,8 @@
 				    	<figure class="mdl-card__media">
 						    <img src="{% static "mails/gmail2.png" %}" style="background-color:teal;width:250px;height:250px" />
 						</figure>
-					  <div class="mdl-card__title">
-					    <h2 class="mdl-card__title-text">Category 8</h2>
+					  <div class="mdl-card__title" align="center">
+					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat7 }} </h2>
 					  </div>
 					  <div class="mdl-card__supporting-text">
 					    Total : {{ categoryCount.cat7 }} Mails
@@ -236,8 +238,8 @@
 				    	<figure class="mdl-card__media">
 						    <img src="{% static "mails/gmail2.png" %}" style="background-color:teal;width:250px;height:250px" />
 						</figure>
-					  <div class="mdl-card__title">
-					    <h2 class="mdl-card__title-text">Category 9</h2>
+					  <div class="mdl-card__title" align="center">
+					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat8 }} </h2>
 					  </div>
 					  <div class="mdl-card__supporting-text">
 					    Total : {{ categoryCount.cat8 }} Mails
@@ -258,11 +260,55 @@
 				    	<figure class="mdl-card__media">
 						    <img src="{% static "mails/gmail2.png" %}" style="background-color:teal;width:250px;height:250px" />
 						</figure>
-					  <div class="mdl-card__title">
-					    <h2 class="mdl-card__title-text">Category 10</h2>
+					  <div class="mdl-card__title" align="center">
+					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat9 }} </h2>
 					  </div>
 					  <div class="mdl-card__supporting-text">
 					    Total : {{ categoryCount.cat9 }} Mails
+					  </div>
+					  <div class="mdl-card__actions mdl-card--border">
+					    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+					      2 Unread
+					    </a>
+					  </div>
+					  <div class="mdl-card__menu">
+					  </div>
+					</div>
+				</button>
+			</td>
+			<td>
+		    		<button class="button" onclick="window.location.href='/9'" >
+				    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-color--teal-50">
+				    	<figure class="mdl-card__media">
+						    <img src="{% static "mails/gmail2.png" %}" style="background-color:teal;width:250px;height:250px" />
+						</figure>
+					  <div class="mdl-card__title" align="center">
+					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat10 }} </h2>
+					  </div>
+					  <div class="mdl-card__supporting-text">
+					    Total : {{ categoryCount.cat10 }} Mails
+					  </div>
+					  <div class="mdl-card__actions mdl-card--border">
+					    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+					      2 Unread
+					    </a>
+					  </div>
+					  <div class="mdl-card__menu">
+					  </div>
+					</div>
+				</button>
+			</td>
+			<td>
+		    		<button class="button" onclick="window.location.href='/9'" >
+				    <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-color--teal-50">
+				    	<figure class="mdl-card__media">
+						    <img src="{% static "mails/gmail2.png" %}" style="background-color:teal;width:250px;height:250px" />
+						</figure>
+					  <div class="mdl-card__title" align="center">
+					    <h2 class="mdl-card__title-text"> {{ categoryMap.cat11 }} </h2>
+					  </div>
+					  <div class="mdl-card__supporting-text">
+					    Total : {{ categoryCount.cat11 }} Mails
 					  </div>
 					  <div class="mdl-card__actions mdl-card--border">
 					    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -280,8 +326,8 @@
 	    </div>
 		<script>
 		function openNav() {
-			document.getElementById("mySidenav").style.width = "250px";
-    		document.getElementById("main").style.marginLeft = "250px";
+			document.getElementById("mySidenav").style.width = "300px";
+    		document.getElementById("main").style.marginLeft = "300px";
     		document.body.style.backgroundColor = "#365899";
     		document.getElementById("main").style.opacity = "0.3";
 		}

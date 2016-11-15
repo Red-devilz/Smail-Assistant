@@ -14,6 +14,21 @@ from mails.models import GoogleUser, Mails
 
 categoryCount = {}
 
+categoryMap = {
+    'cat0' : 'Seminars',
+    'cat1' : 'Sports',
+    'cat2' : 'Hostel Affairs',
+    'cat3' : 'Cultural/Literary',
+    'cat4' : 'Academic',
+    'cat5' : 'Moodle',
+    'cat6' : 'Research Affairs',
+    'cat7' : 'General',
+    'cat8' : 'Hostel Mail',
+    'cat9' : 'Miscellaneous',
+    'cat10' : 'Announcements',
+    'cat11' : 'CSE IITM',
+}
+
 def index(request):
     if 'cred' not in request.session:
         return redirect('login')
@@ -37,6 +52,7 @@ def index(request):
     context = {
         'mails_list': list([dict({'from':msg.sender, 'subject':msg.subject, 'snippet':msg.snippet, 'msg_id':msg.msg_id}) for msg in all_mails if msg.sender != '']),
         'categoryCount': categoryCount,
+        'categoryMap' : categoryMap,
     }
 
     return HttpResponse(template.render(context, request))
@@ -108,6 +124,7 @@ def classify(request, category_id):
         'mails_list': list([dict({'from':msg.sender, 'subject':msg.subject, 'snippet':msg.snippet, 'msg_id':msg.msg_id}) for msg in cur_mails if msg.sender != '']),
         'category': category_id,
         'categoryCount': categoryCount,
+        'categoryMap' : categoryMap,
     }
 
     return HttpResponse(template.render(context, request))
@@ -123,6 +140,7 @@ def display(request, msg_id):
     context = {
         'mail' : get_html_message(cur_mail.message),
         'categoryCount': categoryCount,
+        'categoryMap' : categoryMap,
     }
 
     return HttpResponse(template.render(context, request))

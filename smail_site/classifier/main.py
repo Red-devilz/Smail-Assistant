@@ -311,7 +311,7 @@ def get_all_mail(gservice, max_mails):
     # print("size of smaller vocabulary is" + str(len(terms)))
 
     # kmeans
-    km = KMeans(n_clusters=10)
+    km = KMeans(n_clusters=12)
     km.fit(tfidf_matrix)
 
     #=================
@@ -321,9 +321,9 @@ def get_all_mail(gservice, max_mails):
 
     #=========
     #  --- replace above lines with
-    #  km = pickle.load(open('kmeans_model', 'rb'))
+    # km = pickle.load(open('kmeans_model', 'rb'))
 
-    #  msg_labels = km.fit(tfidf_matrix)
+    # msg_labels = km.fit(tfidf_matrix)
     #=========
 
     # Constructing dictionary
@@ -333,7 +333,7 @@ def get_all_mail(gservice, max_mails):
     msg_labels = km.labels_
     #==========
     #  Change above to
-    #  msg_labels = km.fit(tfidf_matrix)
+    # msg_labels = km.fit(tfidf_matrix)
 
     #==========
     for i in range(msg_labels.shape[0]):
@@ -347,6 +347,7 @@ def get_all_mail(gservice, max_mails):
 
     print ('------Processed %d messages in total--------' % (tc))
     # print 
+    print (data.keys())
     return (data, message_dict)
 
 
