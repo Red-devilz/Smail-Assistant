@@ -69,7 +69,10 @@ def cluster_featurize():
                                      min_df=0.02, stop_words='english',
                                      use_idf=True, tokenizer=tokenize_and_stem, ngram_range=(1,3))
 
-    tfidf_matrix = tfidf_vectorizer.fit_transform(all_text) 
+    tfidf_vectorizer.fit(all_text) 
+    pickle.dump(tfidf_vectorizer, open('transform', 'wb'))
+
+    tfidf_matrix = tfidf_vectorizer.transform(all_text) 
     print("The shape of the matrix is" + str(tfidf_matrix.shape))
     terms = tfidf_vectorizer.get_feature_names()
     print("size of smaller vocabulary is" + str(len(terms)))
