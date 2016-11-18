@@ -90,8 +90,11 @@ def oauth2callback(request):
     gmail_service = make_gmail_service(http_auth)
     label_dict, mail_dict = get_all_mail(gmail_service, 10)
     print(label_dict)
-    for x in label_dict.keys():
-        categoryCount['cat' + x] = len(label_dict[x])
+    for x in range(12):
+        if str(x) in label_dict.keys():
+            categoryCount['cat' + str(x)] = len(label_dict[str(x)])
+        else:
+            categoryCount['cat' + str(x)] = 0
     for category in label_dict.keys():
         for key in label_dict[category]:
             check_mail = Mails.objects.filter(user=cur_user, msg_id=key)
