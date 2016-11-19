@@ -284,8 +284,7 @@ def get_all_mail(gservice, max_mails):
     exam_taken = False
     while True:
 
-        msgs = list_gmail_messages(gservice, pageToken=page_token,
-                                   maxResults=max_mails - tc)  # get list of msgs
+        msgs = list_gmail_messages(gservice, pageToken=page_token, maxResults=max_mails - tc)  # get list of msgs
         if not exam_taken:
             exam_mails = list_gmail_messages(gservice, q='from:drcourses@iitm.ac.in 14A')
             for msg in exam_mails["messages"]:
@@ -300,6 +299,7 @@ def get_all_mail(gservice, max_mails):
         # Processing each message and saving
         # necessary data points in a file named
         # with unique ID of the message
+        print(msgs)
         message_dict = {}
         for msg in msgs["messages"]:
             tc += 1

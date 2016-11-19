@@ -17,15 +17,15 @@ categoryCount = {}
 
 categoryMap = {
     'cat0': 'Seminars',
-    'cat1': 'Sports',
+    'cat1': 'General',
     'cat2': 'Hostel Affairs',
     'cat3': 'Cultural/Literary',
     'cat4': 'Academic',
     'cat5': 'Moodle',
-    'cat6': 'Research Affairs',
+    'cat6': 'Mischellaneous',
     'cat7': 'General',
     'cat8': 'Hostel Mail',
-    'cat9': 'Miscellaneous',
+    'cat9': 'Exams',
     'cat10': 'Announcements',
     'cat11': 'CSE IITM',
 }
@@ -85,11 +85,14 @@ def oauth2callback(request):
     if(len(users) == 0):
         new_user = GoogleUser(email=cur_email, google_id=cur_email.split('@')[0])
         new_user.save()
+
     cur_user = GoogleUser.objects.get(email=cur_email)
     http_auth = credentials.authorize(httplib2.Http())
     gmail_service = make_gmail_service(http_auth)
-    label_dict, mail_dict = get_all_mail(gmail_service, 10)
+    label_dict, mail_dict = get_all_mail(gmail_service, 80)
+
     print(label_dict)
+
     for x in range(12):
         if str(x) in label_dict.keys():
             categoryCount['cat' + str(x)] = len(label_dict[str(x)])
